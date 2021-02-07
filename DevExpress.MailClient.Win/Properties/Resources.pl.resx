@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutFrom" xml:space="preserve">
+    <value>Piotr Łuczak</value>
+  </data>
+  <data name="AboutSubj" xml:space="preserve">
+    <value>ToDo List - Zadanie Techniczne</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="AddressHtml" xml:space="preserve">
+    <value>&lt;br&gt;&lt;br&gt;Adres: &lt;b&gt;{0}&lt;/b&gt;</value>
+  </data>
+  <data name="AllFilesFilter" xml:space="preserve">
+    <value>Wszystkie pliki (*.*)|*.*</value>
+  </data>
+  <data name="Announcements" xml:space="preserve">
+    <value>Ogłoszenia</value>
+  </data>
+  <data name="AppointmentError" xml:space="preserve">
+    <value>Błąd: nie można wyeksportować zadań</value>
+  </data>
+  <data name="appointmentRibbonPageGroup1Caption" xml:space="preserve">
+    <value>Zadania To-Do</value>
+  </data>
+  <data name="arrangeRibbonPageGroup1Caption" xml:space="preserve">
+    <value>Aranżuj</value>
+  </data>
+  <data name="ASP" xml:space="preserve">
+    <value>ASP</value>
+  </data>
+  <data name="BirthDateHtml" xml:space="preserve">
+    <value>&lt;br&gt;Data urodzenia: &lt;b&gt;{0:d}&lt;/b&gt;</value>
+  </data>
+  <data name="btnAppointmentHint" xml:space="preserve">
+    <value>Utwórz nowe zadanie</value>
+  </data>
+  <data name="btnAppointmentLabel" xml:space="preserve">
+    <value>Nowe zadanie</value>
+  </data>
+  <data name="btnRecurringAppointmentHint" xml:space="preserve">
+    <value>Utwórz nowe zadanie cykliczne</value>
+  </data>
+  <data name="btnRecurringAppointmentLabel" xml:space="preserve">
+    <value>Nowe zadanie cykliczne</value>
+  </data>
+  <data name="btnSaveAsLabel" xml:space="preserve">
+    <value>Zapisz jako</value>
+  </data>
+  <data name="bvbiSaveAsCaption" xml:space="preserve">
+    <value>Zapisz jako</value>
+  </data>
+  <data name="bvbiSaveAttachmentCaption" xml:space="preserve">
+    <value>Zapisz załącznik</value>
+  </data>
+  <data name="bvbiSaveCalendarCaption" xml:space="preserve">
+    <value>Zapisz kalendarz</value>
+  </data>
+  <data name="bvtiExitCaption" xml:space="preserve">
+    <value>Wyjście</value>
+  </data>
+  <data name="bvtiExportCaption" xml:space="preserve">
+    <value>Eksportuj</value>
+  </data>
+  <data name="bvtiInfoCaption" xml:space="preserve">
+    <value>Informacja</value>
+  </data>
+  <data name="bvtiOpenCaption" xml:space="preserve">
+    <value>Otwórz</value>
+  </data>
+  <data name="bvtiPrintCaption" xml:space="preserve">
+    <value>Drukuj</value>
+  </data>
+  <data name="CalendarName" xml:space="preserve">
+    <value>Kalendarz</value>
+  </data>
+  <data name="CloseSearchDescription" xml:space="preserve">
+    <value>Zamknij aktualne wyszukiwanie</value>
+  </data>
+  <data name="Collated" xml:space="preserve">
+    <value>Po kolei</value>
+  </data>
+  <data name="CollatedDescription" xml:space="preserve">
+    <value>1,2,3   1,2,3  1,2,3</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Zakończone</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="ContactAlphabeticalDescription" xml:space="preserve">
+    <value>Listuj kontakty w porządku alfabetycznym</value>
+  </data>
+  <data name="ContactByStateDescription" xml:space="preserve">
+    <value>Grupuj kontakty według województw</value>
+  </data>
+  <data name="ContactCardDescription" xml:space="preserve">
+    <value>Wyświetl opis karty kontaktu</value>
+  </data>
+  <data name="ContactListDescription" xml:space="preserve">
+    <value>Listuj kontakty w porządku według daty utworzenia</value>
+  </data>
+  <data name="ContactsName" xml:space="preserve">
+    <value>Kontakty</value>
+  </data>
+  <data name="ContactTitleDr" xml:space="preserve">
+    <value>Dr</value>
+  </data>
+  <data name="ContactTitleMiss" xml:space="preserve">
+    <value>Panna</value>
+  </data>
+  <data name="ContactTitleMr" xml:space="preserve">
+    <value>Pan</value>
+  </data>
+  <data name="ContactTitleMrs" xml:space="preserve">
+    <value>Pani</value>
+  </data>
+  <data name="ContactTitleMs" xml:space="preserve">
+    <value>Panna</value>
+  </data>
+  <data name="ContactTitleProf" xml:space="preserve">
+    <value>Prof.</value>
+  </data>
+  <data name="CSVFilter" xml:space="preserve">
+    <value>Pliki CSV (*.csv)|*.csv</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Specjalny</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="DateDeleted" xml:space="preserve">
+    <value>Data usunięcia</value>
+  </data>
+  <data name="DateInbox" xml:space="preserve">
+    <value>Otrzymano</value>
+  </data>
+  <data name="DateOutbox" xml:space="preserve">
+    <value>Wysłano</value>
+  </data>
+  <data name="DeleteContactDescription" xml:space="preserve">
+    <value>Usuń kontakt</value>
+  </data>
+  <data name="DeletedItems" xml:space="preserve">
+    <value>Usunięte elementy</value>
+  </data>
+  <data name="DeleteFeedDescription" xml:space="preserve">
+    <value>Usuń tego feeda</value>
+  </data>
+  <data name="DeleteItemDescription" xml:space="preserve">
+    <value>Usuń ten element</value>
+  </data>
+  <data name="DeleteTaskDescription" xml:space="preserve">
+    <value>Usuń to zadanie</value>
+  </data>
+  <data name="Drafts" xml:space="preserve">
+    <value>Brudnopisy</value>
+  </data>
+  <data name="DueDateError" xml:space="preserve">
+    <value>Termin wykonania nie może być wcześniej niż data rozpoczęcia</value>
+  </data>
+  <data name="DueDateWarning" xml:space="preserve">
+    <value>Wprowadź termin wykonania</value>
+  </data>
+  <data name="EditContactDescription" xml:space="preserve">
+    <value>Edytuj kontakt</value>
+  </data>
+  <data name="EditFeedDescription" xml:space="preserve">
+    <value>Edytuj ustawienia feeda RSS</value>
+  </data>
+  <data name="EditTaskDescription" xml:space="preserve">
+    <value>Edytuj zadanie</value>
+  </data>
+  <data name="EmailHtml" xml:space="preserve">
+    <value>&lt;br&gt;Email: &lt;b&gt;{0}&lt;/b&gt;</value>
+  </data>
+  <data name="Engineering" xml:space="preserve">
+    <value>Techniczne</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Błąd</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Eksport</value>
+  </data>
+  <data name="ExportErrorText" xml:space="preserve">
+    <value>Wystąpił błąd podczas eksportowania</value>
+  </data>
+  <data name="FeedBBCNews" xml:space="preserve">
+    <value>BBC News</value>
+  </data>
+  <data name="FeedBlogs" xml:space="preserve">
+    <value>Blogi</value>
+  </data>
+  <data name="FeedEngadget" xml:space="preserve">
+    <value>Engadget</value>
+  </data>
+  <data name="FeedError" xml:space="preserve">
+    <value>Prosimy o wyrozumiałość, URL podanego feeda RSS jest aktualnie niedostępny&lt;br&gt;&lt;b&gt;{0}</value>
+  </data>
+  <data name="FeedGroupDX" xml:space="preserve">
+    <value>DevExpress</value>
+  </data>
+  <data name="FeedGroupMisc" xml:space="preserve">
+    <value>Różne</value>
+  </data>
+  <data name="FeedNews" xml:space="preserve">
+    <value>Wiadomości</value>
+  </data>
+  <data name="FeedNote" xml:space="preserve">
+    <value>&lt;b&gt; &lt;/b&gt;Zawartość pochodzi z publicznego  &lt;color={1}&gt;{0}&lt;/color&gt; feeda RSS</value>
+  </data>
+  <data name="FeedsName" xml:space="preserve">
+    <value>Feedy RSS</value>
+  </data>
+  <data name="FeedStackOverflow" xml:space="preserve">
+    <value>Stack Overflow</value>
+  </data>
+  <data name="FeedVideos" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="FeedWebinars" xml:space="preserve">
+    <value>Webinary</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Kobieta</value>
+  </data>
+  <data name="FlagCustomDescription" xml:space="preserve">
+    <value>Oflaguj ten element jako zadanie ze specjalnym terminem wykonania</value>
+  </data>
+  <data name="FlagNextWeekDescription" xml:space="preserve">
+    <value>Oflaguj ten element jako zadanie do wykonania w przyszłym tygodniu</value>
+  </data>
+  <data name="FlagNoDatekDescription" xml:space="preserve">
+    <value>Oflaguj ten element jako zadanie bez terminu wykonania</value>
+  </data>
+  <data name="FlagThisWeekDescription" xml:space="preserve">
+    <value>Oflaguj ten element jako zadanie do wykonania do końca przyszłego tygodnia</value>
+  </data>
+  <data name="FlagTodayDescription" xml:space="preserve">
+    <value>Oflaguj ten element jako zadanie do wykonania dzisiaj</value>
+  </data>
+  <data name="FlagTomorrowDescription" xml:space="preserve">
+    <value>Oflaguj ten element jako zadania do wykonania jutro</value>
+  </data>
+  <data name="FlipLayoutDescription" xml:space="preserve">
+    <value>Flip the layout of controls around a vertical axis.</value>
+  </data>
+  <data name="floatingPictureToolsRibbonPageCategory1Caption" xml:space="preserve">
+    <value>Narzędzia graficzne</value>
+  </data>
+  <data name="ForwardDescription" xml:space="preserve">
+    <value>Prześlij ten element do innego adresata</value>
+  </data>
+  <data name="ForwardTextEnd" xml:space="preserve">
+    <value>
+
+=================End of original message text===============</value>
+  </data>
+  <data name="ForwardTextStart" xml:space="preserve">
+    <value>Ta wiadomość jest sforwardowana.
+
+=================Tekst oryginalnej wiadomości===============
+
+</value>
+  </data>
+  <data name="Frameworks" xml:space="preserve">
+    <value>Frameworks</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Od</value>
+  </data>
+  <data name="FromDeleted" xml:space="preserve">
+    <value>Do/Od</value>
+  </data>
+  <data name="FromInbox" xml:space="preserve">
+    <value>Od</value>
+  </data>
+  <data name="FromOutbox" xml:space="preserve">
+    <value>Do</value>
+  </data>
+  <data name="groupByRibbonPageGroup1Caption" xml:space="preserve">
+    <value>Grupuj</value>
+  </data>
+  <data name="HighPriority" xml:space="preserve">
+    <value>Wysoki priorytet</value>
+  </data>
+  <data name="HTMLFilter" xml:space="preserve">
+    <value>Pliki HTML (*.html)|*.html</value>
+  </data>
+  <data name="IDETools" xml:space="preserve">
+    <value>Narzędzia IDE</value>
+  </data>
+  <data name="ImageFilter" xml:space="preserve">
+    <value>BMP files (*.bmp)|*.bmp|Gif files (*.gif)|*.gif|Jpeg files (*.jpeg)|*.jpeg|PNG files (*.png)|*.png|Tiff files (*.tiff)|*.tiff|EMF files (*.emf)|.emf|WMF files (*.wmf)|*.wmf</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>Skrzynka pocztowa</value>
+  </data>
+  <data name="InfoText" xml:space="preserve">
+    <value>ITEMS: {0}</value>
+  </data>
+  <data name="IsEarlierThisMonth" xml:space="preserve">
+    <value>Wcześniej w danym miesiącu</value>
+  </data>
+  <data name="IsEarlierThisWeek" xml:space="preserve">
+    <value>Wcześniej w danym tygodniu</value>
+  </data>
+  <data name="IsEarlierThisYear" xml:space="preserve">
+    <value>Wcześniej w danym roku</value>
+  </data>
+  <data name="IsLastWeek" xml:space="preserve">
+    <value>W ostatnim tygodniu</value>
+  </data>
+  <data name="IsToday" xml:space="preserve">
+    <value>Czy dzisiaj</value>
+  </data>
+  <data name="IsYesterday" xml:space="preserve">
+    <value>Czy wczoraj</value>
+  </data>
+  <data name="IT" xml:space="preserve">
+    <value>IT</value>
+  </data>
+  <data name="LandscapeOrientation" xml:space="preserve">
+    <value>Orientacja pozioma</value>
+  </data>
+  <data name="layoutRibbonPageGroup1Caption" xml:space="preserve">
+    <value>Rozkład</value>
+  </data>
+  <data name="LowPriority" xml:space="preserve">
+    <value>Niski priorytet</value>
+  </data>
+  <data name="MailName" xml:space="preserve">
+    <value>Poczta</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Mężczyzna</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Zarządzanie</value>
+  </data>
+  <data name="MarginsModerate" xml:space="preserve">
+    <value>Przeciętne</value>
+  </data>
+  <data name="MarginsModerateDescription" xml:space="preserve">
+    <value>Top:	25 mm	Bottom:	25 mm
+Left:	19 mm	Right:	19 mm</value>
+  </data>
+  <data name="MarginsNarrow" xml:space="preserve">
+    <value>Narrow</value>
+  </data>
+  <data name="MarginsNarrowDescription" xml:space="preserve">
+    <value>Top:	12 mm	Bottom:	12 mm
+Left:	12 mm	Right:	12 mm</value>
+  </data>
+  <data name="MarginsNormal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="MarginsNormalDescription" xml:space="preserve">
+    <value>Top:	25 mm	Bottom:	25 mm
+Left:	25 mm	Right:	25 mm</value>
+  </data>
+  <data name="MarginsWide" xml:space="preserve">
+    <value>Wide</value>
+  </data>
+  <data name="MarginsWideDescription" xml:space="preserve">
+    <value>Top:	25 mm	Bottom:	25 mm
+Left:	50 mm	Right:	50 mm</value>
+  </data>
+  <data name="MediumPriority" xml:space="preserve">
+    <value>Normalny priorytet</value>
+  </data>
+  <data name="MemoStyleString" xml:space="preserve">
+    <value>Typ memo</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Wiadomość</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>Wiadomości</value>
+  </data>
+  <data name="MHTFilter" xml:space="preserve">
+    <value>MHT files (*.mht)|*.mht</value>
+  </data>
+  <data name="NavigationDescription" xml:space="preserve">
+    <value>Przełącz pomiędzy modułami</value>
+  </data>
+  <data name="navigatorRibbonPageGroup1Caption" xml:space="preserve">
+    <value>Nawiguj</value>
+  </data>
+  <data name="NewContactDescription" xml:space="preserve">
+    <value>Utwórz nowy kontakt</value>
+  </data>
+  <data name="NewFeedDescription" xml:space="preserve">
+    <value>Utwórz nowy feed RSS</value>
+  </data>
+  <data name="NewFirstName" xml:space="preserve">
+    <value>Imię</value>
+  </data>
+  <data name="NewFolder" xml:space="preserve">
+    <value>Nowy folder</value>
+  </data>
+  <data name="NewItemDescription" xml:space="preserve">
+    <value>Utwórz nową wiadomość</value>
+  </data>
+  <data name="NewLastName" xml:space="preserve">
+    <value>Nazwisko</value>
+  </data>
+  <data name="NewTaskDescription" xml:space="preserve">
+    <value>Utwórz nowe zadanie</value>
+  </data>
+  <data name="NewTaskName" xml:space="preserve">
+    <value>Nowe zadanie</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>Następny tydzień</value>
+  </data>
+  <data name="NoDate" xml:space="preserve">
+    <value>Brak daty</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Brak</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OneSide" xml:space="preserve">
+    <value>Drukuj po jednej stronie</value>
+  </data>
+  <data name="OneSideDescription" xml:space="preserve">
+    <value>Drukuj tylko po jednej stronie kartki</value>
+  </data>
+  <data name="OpentFileQuestion" xml:space="preserve">
+    <value>Czy chcesz otworzyć ten plik?</value>
+  </data>
+  <data name="OwnerName" xml:space="preserve">
+    <value>Jan Kowalski</value>
+  </data>
+  <data name="PageInfo" xml:space="preserve">
+    <value>Strona {0} z {1}</value>
+  </data>
+  <data name="PaperKindA3" xml:space="preserve">
+    <value>A3</value>
+  </data>
+  <data name="PaperKindA3Description" xml:space="preserve">
+    <value>296 mm x 420 mm</value>
+  </data>
+  <data name="PaperKindA4" xml:space="preserve">
+    <value>A4</value>
+  </data>
+  <data name="PaperKindA4Description" xml:space="preserve">
+    <value>210 mm x 296 mm</value>
+  </data>
+  <data name="PaperKindA5" xml:space="preserve">
+    <value>A5</value>
+  </data>
+  <data name="PaperKindA5Description" xml:space="preserve">
+    <value>148 mm x 210 mm</value>
+  </data>
+  <data name="PaperKindA6" xml:space="preserve">
+    <value>A6</value>
+  </data>
+  <data name="PaperKindA6Description" xml:space="preserve">
+    <value>105 mm x 148 mm</value>
+  </data>
+  <data name="PaperKindExecutive" xml:space="preserve">
+    <value>Executive</value>
+  </data>
+  <data name="PaperKindExecutiveDescription" xml:space="preserve">
+    <value>184 mm x 266 mm</value>
+  </data>
+  <data name="PaperKindLegal" xml:space="preserve">
+    <value>Legal</value>
+  </data>
+  <data name="PaperKindLegalDescription" xml:space="preserve">
+    <value>215 mm x 355 mm</value>
+  </data>
+  <data name="PaperKindLetter" xml:space="preserve">
+    <value>Letter</value>
+  </data>
+  <data name="PaperKindLetterDescription" xml:space="preserve">
+    <value>215 mm x 279 mm</value>
+  </data>
+  <data name="PaperKindTabloid" xml:space="preserve">
+    <value>Tabloid</value>
+  </data>
+  <data name="PaperKindTabloidDescription" xml:space="preserve">
+    <value>279 mm x 431 mm</value>
+  </data>
+  <data name="PDFFilter" xml:space="preserve">
+    <value>Pliki PDF (*.pdf)|*.pdf</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Personalne</value>
+  </data>
+  <data name="PhoneHtml" xml:space="preserve">
+    <value>&lt;br&gt;Telefon &lt;b&gt;{0}&lt;/b&gt;</value>
+  </data>
+  <data name="Picture100Zoom" xml:space="preserve">
+    <value>Dopasuj obraz</value>
+  </data>
+  <data name="PortraitOrientation" xml:space="preserve">
+    <value>Pionowa orientacja</value>
+  </data>
+  <data name="PriorityDescription" xml:space="preserve">
+    <value>Ustaw priorytet tego elementu</value>
+  </data>
+  <data name="PriorityHigh" xml:space="preserve">
+    <value>Wysoki</value>
+  </data>
+  <data name="PriorityLow" xml:space="preserve">
+    <value>Niski</value>
+  </data>
+  <data name="PriorityMedium" xml:space="preserve">
+    <value>Normalny</value>
+  </data>
+  <data name="ProgressPanelCaption" xml:space="preserve">
+    <value>Proszę czekać</value>
+  </data>
+  <data name="ProgressPanelDescription" xml:space="preserve">
+    <value>Trwa ładowanie ...</value>
+  </data>
+  <data name="RefreshFeedDescription" xml:space="preserve">
+    <value>Odśwież ten feed RSS z servera.</value>
+  </data>
+  <data name="ReminderText" xml:space="preserve">
+    <value>REMINDERS: {0}</value>
+  </data>
+  <data name="ReplyAllDescription" xml:space="preserve">
+    <value>Odpowiedz nadawcy i wszystkim adresatom tej wiadomości</value>
+  </data>
+  <data name="ReplyDescription" xml:space="preserve">
+    <value>Odpowiedz nadawcy tej wiadomości</value>
+  </data>
+  <data name="ReplyText" xml:space="preserve">
+    <value>Szanowny/a, {0}
+
+{1}, napisałeś/napisałaś:
+
+</value>
+  </data>
+  <data name="RibbonPageCalendarTitle" xml:space="preserve">
+    <value>ZADANIA</value>
+  </data>
+  <data name="RotateLayoutDescription" xml:space="preserve">
+    <value>Rotate the layout of controls.</value>
+  </data>
+  <data name="RTFFilter" xml:space="preserve">
+    <value>Pliki RTF (*.rtf)|*.rtf</value>
+  </data>
+  <data name="RuleIsNotBlankWarning" xml:space="preserve">
+    <value>Wartość nie może być pusta</value>
+  </data>
+  <data name="RuleUniqueNamesWarning" xml:space="preserve">
+    <value>Wartość musi być unikalna i nie może być pusta</value>
+  </data>
+  <data name="Sales" xml:space="preserve">
+    <value>Sprzedaż</value>
+  </data>
+  <data name="SaveQuestion" xml:space="preserve">
+    <value>Czy chcesz zapisać zmiany?</value>
+  </data>
+  <data name="SearchClearDescription" xml:space="preserve">
+    <value>Usuń filtry wyszukiwania</value>
+  </data>
+  <data name="SearchCloseDescription" xml:space="preserve">
+    <value>Zamknij tab wyszukiwania</value>
+  </data>
+  <data name="SearchColumnsDescription" xml:space="preserve">
+    <value>Wybierz kolumny, w których jest poszukiwany tekst</value>
+  </data>
+  <data name="SearchHasAttachmentDescription" xml:space="preserve">
+    <value>Wyświetl wiadomości email z załącznikami</value>
+  </data>
+  <data name="SearchImportantDescription" xml:space="preserve">
+    <value>Wyświetl wiadomości email o wysokim priorytecie</value>
+  </data>
+  <data name="SearchReceivedDescription" xml:space="preserve">
+    <value>Filtruj wiadomości email według daty</value>
+  </data>
+  <data name="SearchResetDescription" xml:space="preserve">
+    <value>Usuń filtr z kolumn</value>
+  </data>
+  <data name="SearchString" xml:space="preserve">
+    <value>Szukaj {0} (Ctrl + E)</value>
+  </data>
+  <data name="SearchUnreadDescription" xml:space="preserve">
+    <value>Wyświetl wiadomości email nieodczytane</value>
+  </data>
+  <data name="SentItems" xml:space="preserve">
+    <value>Wysłane</value>
+  </data>
+  <data name="ShowPreviewDescription" xml:space="preserve">
+    <value>Wyświetl podgląd wiadomości</value>
+  </data>
+  <data name="Starting" xml:space="preserve">
+    <value>Inicjalizacja aplikacji...</value>
+  </data>
+  <data name="TableStyleString" xml:space="preserve">
+    <value>Styl tabeli</value>
+  </data>
+  <data name="tableToolsRibbonPageCategory1Caption" xml:space="preserve">
+    <value>Obsługa tabel</value>
+  </data>
+  <data name="TaskCategoryHouseChores" xml:space="preserve">
+    <value>Zadania domowe</value>
+  </data>
+  <data name="TaskCategoryOffice" xml:space="preserve">
+    <value>Praca</value>
+  </data>
+  <data name="TaskCategoryShopping" xml:space="preserve">
+    <value>Zakupy</value>
+  </data>
+  <data name="TaskCompletedDescription" xml:space="preserve">
+    <value>Listuj zakończone zadania i grupuj je według daty</value>
+  </data>
+  <data name="TaskDeferredDescription" xml:space="preserve">
+    <value>Listuj przełożone zadania</value>
+  </data>
+  <data name="TaskListDescription" xml:space="preserve">
+    <value>Listuj wszystkie zadania i grupuj je według daty</value>
+  </data>
+  <data name="TaskOverdueDescription" xml:space="preserve">
+    <value>Listuj spóźnione zadania</value>
+  </data>
+  <data name="TaskPrioritizedDescription" xml:space="preserve">
+    <value>Grupuj zadania według priorytetu</value>
+  </data>
+  <data name="TaskSimpleListDescription" xml:space="preserve">
+    <value>Listuj wszystkie zadania</value>
+  </data>
+  <data name="TasksName" xml:space="preserve">
+    <value>Zadania</value>
+  </data>
+  <data name="TaskStatusCompleted" xml:space="preserve">
+    <value>Zakończone</value>
+  </data>
+  <data name="TaskStatusDeferred" xml:space="preserve">
+    <value>Przełożone</value>
+  </data>
+  <data name="TaskStatusInProgress" xml:space="preserve">
+    <value>W trakcie wykonywania</value>
+  </data>
+  <data name="TaskStatusNotStarted" xml:space="preserve">
+    <value>Nierozpoczęte</value>
+  </data>
+  <data name="TaskStatusWaitingOnSomeoneElse" xml:space="preserve">
+    <value>Zadania zależne od kogoś innego</value>
+  </data>
+  <data name="TaskTodayDescription" xml:space="preserve">
+    <value>Listuj dzisiejsze zadania</value>
+  </data>
+  <data name="TaskToDoListDescription" xml:space="preserve">
+    <value>Listuj niezakończone zadania i grupuj je według daty</value>
+  </data>
+  <data name="TempFeedName" xml:space="preserve">
+    <value>Mój feed RSS</value>
+  </data>
+  <data name="TempGroupName" xml:space="preserve">
+    <value>Moja grupa</value>
+  </data>
+  <data name="TextFilter" xml:space="preserve">
+    <value>Pliki tekstowe (*.txt)|*.txt</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>Aktualny tydzień</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Dzisiaj</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>Jutro</value>
+  </data>
+  <data name="TwoSide" xml:space="preserve">
+    <value>Ręcznie drukuj na obu stronach</value>
+  </data>
+  <data name="TwoSideDescription" xml:space="preserve">
+    <value>Przełóż papier kiedy poinformowano aby drukować na drugiej stronie kartki</value>
+  </data>
+  <data name="Uncollated" xml:space="preserve">
+    <value>Nie po kolei</value>
+  </data>
+  <data name="UncollatedDescription" xml:space="preserve">
+    <value>1,1,1  2,2,2  3,3,3</value>
+  </data>
+  <data name="UnknownContactName" xml:space="preserve">
+    <value>Nieznany</value>
+  </data>
+  <data name="UnreadReadDescription" xml:space="preserve">
+    <value>Jeśli ten element jest oznaczony jako nieprzeczytany, oznacz go jako przeczytany.
+Jeśli ten element jest oznaczony jako przeczytany, oznacz go jako nieprzeczytany.</value>
+  </data>
+  <data name="WinForms" xml:space="preserve">
+    <value>WinForms</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>Praca</value>
+  </data>
+  <data name="XLSFilter" xml:space="preserve">
+    <value>Pliki XLS (*.xls)|*.xls</value>
+  </data>
+  <data name="XLSXFilter" xml:space="preserve">
+    <value>Pliki XLSX (*.xls)|*.xls</value>
+  </data>
+</root>
