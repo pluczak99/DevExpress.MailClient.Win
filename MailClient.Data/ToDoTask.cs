@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
 namespace MailClient.Data.Library
@@ -6,7 +7,7 @@ namespace MailClient.Data.Library
 	public class ToDoTask
 	{
 		[Key]
-		public Int64 Id { get; set; }
+		public int Id { get; set; }
 		public bool AllDay { get; set; }
 		public DateTime StartDate { get; set; }
 		public DateTime EndDate { get; set; }

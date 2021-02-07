@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevExpress.MailClient.Win",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailClient.Data.Library", "MailClient.Data\MailClient.Data.Library.csproj", "{469F6284-E475-4697-ABDD-30FB0A40CDF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailClient.Data.Service.Library", "MailClient.Data.Service.Library\MailClient.Data.Service.Library.csproj", "{D8EFE6FD-7A74-42E1-B216-05F5DBC7C14F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailClient.Service.Library", "MailClient.Data.Service.Library\MailClient.Service.Library.csproj", "{D8EFE6FD-7A74-42E1-B216-05F5DBC7C14F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

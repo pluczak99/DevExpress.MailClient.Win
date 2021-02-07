@@ -64,6 +64,7 @@ namespace DevExpress.MailClient.Win.Modules
 			this.panelDescription = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.panel3 = new System.Windows.Forms.Panel();
+			this.backstageViewManager1 = new DevExpress.XtraBars.Ribbon.BackstageViewManager();
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
 			this.backstageViewControl1.SuspendLayout();
@@ -145,7 +146,6 @@ namespace DevExpress.MailClient.Win.Modules
 			this.backstageViewControl1.SelectedTab = this.bvtPrint;
 			this.backstageViewControl1.SelectedTabIndex = 0;
 			this.backstageViewControl1.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013;
-			this.backstageViewControl1.VisibleInDesignTime = true;
 			// 
 			// bvPrint
 			// 
@@ -546,6 +546,10 @@ namespace DevExpress.MailClient.Win.Modules
 			resources.ApplyResources(this.panel3, "panel3");
 			this.panel3.Name = "panel3";
 			// 
+			// backstageViewManager1
+			// 
+			this.backstageViewManager1.BackstageView = this.backstageViewControl1;
+			// 
 			// OutlookAppointmentForm
 			// 
 			this.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
@@ -648,5 +652,6 @@ namespace DevExpress.MailClient.Win.Modules
 		private DevExpress.XtraBars.Ribbon.BackstageViewClientControl bvPrint;
 		private DevExpress.XtraBars.Ribbon.BackstageViewTabItem bvtPrint;
 		private DevExpress.XtraScheduler.Design.AppointmentBackstageControl appointmentBackstageControl;
+		private XtraBars.Ribbon.BackstageViewManager backstageViewManager1;
 	}
 }

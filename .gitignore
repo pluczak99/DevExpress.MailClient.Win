@@ -3,3 +3,9 @@
 ################################################################################
 
 /DevExpress.MailClient.Win/bin/Debug
+/.vs
+/MailClient.Data/bin/Debug
+/MailClient.Data/obj/Debug
+/MailClient.Data.Service.Library/bin/Debug
+/MailClient.Data.Service.Library/obj/Debug
+/packages/EntityFramework.6.0.2

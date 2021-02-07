@@ -386,5 +386,10 @@ namespace DevExpress.MailClient.Win {
                 }
             }
         }
+
+		private void newAppointmentItem1_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            e.Item.Id = new Random().Next(0, Int32.MaxValue);
+		}
 	}
 }

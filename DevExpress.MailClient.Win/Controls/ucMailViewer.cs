@@ -45,7 +45,7 @@ namespace DevExpress.MailClient.Win {
             lbSubject.Text = message.Subject;
             lbFrom.Text = message.FullName;
             lbDate.Text = message.Date.ToString();
-            pePhoto.Image = DataHelper.GetPhotoByEmail(message.Email);
+            //pePhoto.Image = DataHelper.GetPhotoByEmail(message.Email);
             lcPicture.Padding = new XtraLayout.Utils.Padding(pePhoto.Image == null ? 10 : 0);
             pePhoto.Properties.OptionsMask.MaskLayoutMode = pePhoto.Image == null ? 
                 XtraEditors.Controls.PictureEditMaskLayoutMode.Default : XtraEditors.Controls.PictureEditMaskLayoutMode.Stretch;

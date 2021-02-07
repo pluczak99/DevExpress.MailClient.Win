@@ -118,7 +118,6 @@ namespace DevExpress.MailClient.Win.Modules
 
 		public virtual void LoadFormData(Appointment appointment)
 		{
-			//do nothing
 		}
 		public virtual bool SaveFormData(Appointment appointment)
 		{

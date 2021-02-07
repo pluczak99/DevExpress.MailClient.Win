@@ -962,6 +962,7 @@ namespace DevExpress.MailClient.Win {
 			this.newAppointmentItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("newAppointmentItem1.ImageOptions.Image")));
 			this.newAppointmentItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("newAppointmentItem1.ImageOptions.LargeImage")));
 			this.newAppointmentItem1.Name = "newAppointmentItem1";
+			this.newAppointmentItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.newAppointmentItem1_ItemClick);
 			// 
 			// newRecurringAppointmentItem1
 			// 

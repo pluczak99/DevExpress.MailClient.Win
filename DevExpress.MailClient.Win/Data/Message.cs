@@ -23,7 +23,7 @@ namespace DevExpress.MailClient.Win
 			this.row = row;
 			date = DateTime.Now.AddDays((int)row["Day"]).AddSeconds(-new Random().Next(10000));
 			email = string.Format("{0}", row["From"]);
-			from = DataHelper.GetNameByEmail(email);
+			//from = DataHelper.GetNameByEmail(email);
 			subject = string.Format("{0}", row["Subject"]);
 			read = Delay > TimeSpan.FromHours(48);
 			text = string.Format("{0}", row["Text"]);

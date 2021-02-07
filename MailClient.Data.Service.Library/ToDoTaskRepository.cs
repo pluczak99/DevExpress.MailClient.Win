@@ -10,6 +10,12 @@ namespace MailClient.Data.Service
 {
 	public class ToDoTaskRepository
     {
+
+	    ToDoScheduleDbContext DbContext { get; set; }
+        public ToDoTaskRepository()
+        {
+            this.DbContext = new ToDoScheduleDbContext();
+		}
         public List<ToDoTask> ListAllTasks()
         {
             // TODO: implement

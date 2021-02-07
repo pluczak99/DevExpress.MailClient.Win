@@ -377,30 +377,32 @@ namespace DevExpress.MailClient.Win {
             return collection;
         }
         internal static List<string> GetCities() {
-            IEnumerable cities = (from contact in DataHelper.Contacts select contact.City).OrderBy(s => s).Distinct();
-            return cities.Cast<string>().ToList();
+            //IEnumerable cities = (from contact in DataHelper.Contacts select contact.City).OrderBy(s => s).Distinct();
+            //return cities.Cast<string>().ToList();
+            return new List<string>();
         }
         internal static List<string> GetStates() {
-            IEnumerable states = (from contact in DataHelper.Contacts select contact.State).OrderBy(s => s).Distinct();
-            return states.Cast<string>().ToList();
+            //IEnumerable states = (from contact in DataHelper.Contacts select contact.State).OrderBy(s => s).Distinct();
+            //return states.Cast<string>().ToList();
+			return new List<string>();
         }
     }
     public class TokenEditHelper {
         public static void Initialize(TokenEdit tokenEdit) {
-            foreach(Contact contact in DataHelper.Contacts.OrderBy(p => p.EmployeeName)) {
-                TokenEditToken item = new TokenEditToken(contact.EmployeeName, contact);
-                tokenEdit.Properties.Tokens.Add(item);
-            }
+            //foreach(Contact contact in DataHelper.Contacts.OrderBy(p => p.EmployeeName)) {
+            //    TokenEditToken item = new TokenEditToken(contact.EmployeeName, contact);
+            //    tokenEdit.Properties.Tokens.Add(item);
+            //}
         }
         public static IList<Contact> ParseFromField(string fromField) {
             BindingList<Contact> contactList = new BindingList<Contact>();
             if(string.IsNullOrEmpty(fromField)) return contactList;
             foreach(string from in SplitFromField(fromField)) {
-                Contact contact = DataHelper.FindByName(from);
-                if(contact == null) {
-                    contact = new UnknownContact(FormatEmail(from));
-                }
-                contactList.Add(contact);
+                //Contact contact = DataHelper.FindByName(from);
+                //if(contact == null) {
+                //    contact = new UnknownContact(FormatEmail(from));
+                //}
+                //contactList.Add(contact);
             }
             return contactList;
         }

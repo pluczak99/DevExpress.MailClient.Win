@@ -11,10 +11,12 @@ using DevExpress.XtraScheduler;
 using DevExpress.XtraScheduler.iCalendar;
 using DevExpress.MailClient.Win.Controls;
 using System.IO;
-using DevExpress.XtraScheduler.UI;
 using DevExpress.XtraEditors;
 using System.Xml.Serialization;
-using System.IO;
+
+using System.Configuration;
+using DevExpress.XtraScheduler.Internal.Implementations;
+using MailClient.Data.Service;
 
 namespace DevExpress.MailClient.Win
 {
@@ -24,13 +26,17 @@ namespace DevExpress.MailClient.Win
 		ucCalendar calendarControls;
 		RibbonPageCategory appointmentCategory = null;
 		RibbonPage lastSelectedPage = null;
+
+		ToDoTaskRepository todoTaskRepository { get; set; }
+
 		public override string ModuleName { get { return Properties.Resources.CalendarName; } }
 		public Calendar()
 		{
 			InitializeComponent();
-
 			DatabindScheduler();
 			schedulerControl1.Start = DateTime.Today;
+			this.todoTaskRepository = new ToDoTaskRepository();
+
 		}
 		public override DevExpress.XtraPrinting.IPrintable PrintableComponent
 		{
@@ -42,7 +48,7 @@ namespace DevExpress.MailClient.Win
 		protected override bool SaveCalendarVisible { get { return true; } }
 		private void DatabindScheduler()
 		{
-			schedulerStorage1.Resources.DataSource = DataHelper.CalendarResources;
+			//schedulerStorage1.Resources.DataSource = DataHelper.CalendarResources;
 			schedulerStorage1.Appointments.DataSource = DataHelper.CalendarAppointments;
 		}
 		internal override void InitModule(DevExpress.Utils.Menu.IDXMenuManager manager, object data)
@@ -59,6 +65,7 @@ namespace DevExpress.MailClient.Win
 				this.calendarControls.InitResourcesTree(this.schedulerStorage1);
 				this.calendarControls.InitBarController(this.schedulerControl1);
 			}
+
 		}
 		private RibbonPageCategory FindAppointmentPage(RibbonControl ribbonControl)
 		{
@@ -113,10 +120,10 @@ namespace DevExpress.MailClient.Win
 		{
 			if (e.Appointment != null && e.Appointment.Id != null)
 			{
-				var serializer = new XmlSerializer(typeof(Appointment));
-				var stringWriter = new StringWriter();
-				serializer.Serialize(stringWriter, e.Appointment);
-				Console.WriteLine(stringWriter.ToString());
+				//var serializer = new XmlSerializer(typeof(AppointmentInstance));
+				//var stringWriter = new StringWriter();
+				//serializer.Serialize(stringWriter, e.Appointment);
+				//Console.WriteLine(stringWriter.ToString());
 			}
 
 			var form = new CustomAppointmentRibbonForm(this.schedulerControl1, e.Appointment, e.OpenRecurrenceForm);
@@ -264,27 +271,6 @@ namespace DevExpress.MailClient.Win
 		//	}
 
 		//}
-	}
-
-	public class CustomAppointmentRibbonForm : AppointmentRibbonForm
-	{
-		public CustomAppointmentRibbonForm()
-		{
-		}
-
-		public CustomAppointmentRibbonForm(SchedulerControl control, Appointment apt) : base(control, apt)
-		{
-		}
-
-		public CustomAppointmentRibbonForm(SchedulerControl control, Appointment apt, bool openRecurrenceForm) : base(control, apt, openRecurrenceForm)
-		{
-		}
-
-		protected override DialogResult ShowRecurrenceForm(Form form)
-		{
-			string name = System.Threading.Thread.CurrentThread.CurrentCulture.Name;
-			return base.ShowRecurrenceForm(form);
-		}
 	}
 
 }

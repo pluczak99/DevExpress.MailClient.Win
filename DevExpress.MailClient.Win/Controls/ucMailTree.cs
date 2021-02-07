@@ -84,11 +84,11 @@ namespace DevExpress.MailClient.Win {
             List<Message> messages = new List<Message>();
             MailType mailType = GetNodeMailType(node);
             int mailFolder = GetNodeMailFolder(node);
-            foreach(Message message in DataHelper.Messages) {
-                if(message.MailType == mailType && ((message.MailFolder & mailFolder) > 0 || 
-                    mailFolder == (int)MailFolder.All || mailType == MailType.Deleted) && !message.Deleted)
-                        messages.Add(message);
-            }
+            //foreach(Message message in DataHelper.Messages) {
+            //    if(message.MailType == mailType && ((message.MailFolder & mailFolder) > 0 || 
+            //        mailFolder == (int)MailFolder.All || mailType == MailType.Deleted) && !message.Deleted)
+            //            messages.Add(message);
+            //}
             node.SetValue(colData, messages);
         }
         protected override void LookAndFeelStyleChanged() {

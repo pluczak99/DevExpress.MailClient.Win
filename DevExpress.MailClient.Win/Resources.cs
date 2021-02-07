@@ -17,10 +17,6 @@ namespace DevExpress.MailClient.Win {
     public enum FlagStatus { Today, Tomorrow, ThisWeek, NextWeek, NoDate, Custom, Completed };
     public class StringResources { 
         public static string Get(string name) {
-            //if(LocalizationHelper.IsJapanese) {
-            //    FieldInfo fi = typeof(StringResources).GetField(name);
-            //    if(fi != null) return string.Format("{0}", fi.GetValue(null));
-            //}
             return GetDefault(name);
         }
         static string GetDefault(string name) {

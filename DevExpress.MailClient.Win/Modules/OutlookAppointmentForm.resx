@@ -1577,6 +1577,9 @@
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="backstageViewManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1717,6 +1720,12 @@
   </data>
   <data name="&gt;&gt;riAppointmentResource.Type" xml:space="preserve">
     <value>DevExpress.XtraScheduler.UI.RepositoryItemAppointmentResource, DevExpress.XtraScheduler.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;backstageViewManager1.Name" xml:space="preserve">
+    <value>backstageViewManager1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewManager, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>OutlookAppointmentForm</value>
