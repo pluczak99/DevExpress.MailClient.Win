@@ -52,10 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202102072238254_Initial corrections.cs" />
-    <Compile Include="Migrations\202102072238254_Initial corrections.designer.cs">
-      <DependentUpon>202102072238254_Initial corrections.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\ToDoTaskConfiguration.cs" />
     <Compile Include="ToDoScheduleDbContext.cs" />
@@ -69,11 +65,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202102072238254_Initial corrections.resx">
-      <DependentUpon>202102072238254_Initial corrections.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

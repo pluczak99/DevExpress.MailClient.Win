@@ -18,23 +18,7 @@ namespace MailClient.Data.Service
 		}
         public List<ToDoTask> ListAllTasks()
         {
-            var task1 = new ToDoTask()
-            {
-                Note = "Test1",
-                StartDate = DateTime.Today.AddDays(-1),
-                EndDate = DateTime.Today.AddDays(1)
-            };
-
-            var task2 = new ToDoTask()
-            {
-                Note = "Test2",
-                StartDate = DateTime.Today.AddDays(0),
-                EndDate = DateTime.Today.AddDays(2)
-            };
-
-            var tasks = new List<ToDoTask>();
-            tasks.AddRange(new ToDoTask[] { task1, task2 });
-            
+            var tasks = this.DbContext.ToDoTasks.ToList();
             return tasks;
 		}
 

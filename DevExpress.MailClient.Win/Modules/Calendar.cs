@@ -122,7 +122,9 @@ namespace DevExpress.MailClient.Win
 					Start = task.StartDate,
 					End = task.EndDate,
 					Subject = $"Subject {task.Id}",
-					Description = task.Note
+					Description = task.Note,
+					Location = task.Location,
+					AllDay = task.AllDay
 				});
 			}
 
@@ -239,7 +241,7 @@ namespace DevExpress.MailClient.Win
 				ImportAppointments(stream);
 			}
 
-			this.schedulerControl1.DataStorage.Appointments.Add(new AppointmentInstance() { Start = DateTime.Now, Subject = "Surprise!" });
+			//this.schedulerControl1.DataStorage.Appointments.Add(new AppointmentInstance() { Start = DateTime.Now, Subject = "Surprise!" });
 		}
 
 		void ExportAppointments(Stream stream)
@@ -295,22 +297,6 @@ namespace DevExpress.MailClient.Win
 					return page;
 			return null;
 		}
-
-		//private void schedulerControl1_EditAppointmentFormShowing_1(object sender, AppointmentFormEventArgs e)
-		//{
-		//	DevExpress.XtraScheduler.SchedulerControl scheduler = ((DevExpress.XtraScheduler.SchedulerControl)(sender));
-		//	DevExpress.MailClient.Win.Modules.OutlookAppointmentForm form = new DevExpress.MailClient.Win.Modules.OutlookAppointmentForm(scheduler, e.Appointment, e.OpenRecurrenceForm);
-		//	try
-		//	{
-		//		e.DialogResult = form.ShowDialog();
-		//		e.Handled = true;
-		//	}
-		//	finally
-		//	{
-		//		form.Dispose();
-		//	}
-
-		//}
 	}
 
 }

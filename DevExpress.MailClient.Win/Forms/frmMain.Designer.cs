@@ -216,9 +216,7 @@ namespace DevExpress.MailClient.Win {
 			((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
 			this.navBarControl1.SuspendLayout();
-			this.navBarGroupControlContainer1.SuspendLayout();
 			this.navBarGroupControlContainer2.SuspendLayout();
-			this.navBarGroupControlContainer3.SuspendLayout();
 			this.navBarGroupControlContainer4.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.navBarControl2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pcMain)).BeginInit();
@@ -1556,7 +1554,6 @@ namespace DevExpress.MailClient.Win {
 			// 
 			this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
 			resources.ApplyResources(this.navBarGroupControlContainer1, "navBarGroupControlContainer1");
-
 			// 
 			// navBarGroupControlContainer2
 			// 
@@ -1726,9 +1723,7 @@ namespace DevExpress.MailClient.Win {
 			((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
 			this.navBarControl1.ResumeLayout(false);
-			this.navBarGroupControlContainer1.ResumeLayout(false);
 			this.navBarGroupControlContainer2.ResumeLayout(false);
-			this.navBarGroupControlContainer3.ResumeLayout(false);
 			this.navBarGroupControlContainer4.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.navBarControl2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pcMain)).EndInit();

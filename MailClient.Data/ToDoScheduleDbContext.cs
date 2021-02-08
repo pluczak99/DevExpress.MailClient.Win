@@ -17,6 +17,7 @@ namespace MailClient.Data.Library
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{ 
+
 			modelBuilder.Configurations.Add(new MailClient.Data.Library.Migrations.ToDoTaskConfiguration());
 			modelBuilder.Entity<ToDoTask>().ToTable("ToDoTask");
 			modelBuilder.Entity<ToDoTaskUser>().ToTable("ToDoTaskUser");

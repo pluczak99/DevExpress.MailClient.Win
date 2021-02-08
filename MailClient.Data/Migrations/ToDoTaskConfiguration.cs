@@ -10,6 +10,7 @@
     {
         public ToDoTaskConfiguration()
         {
+            this.Property(s => s.Id).IsRequired();
             this.Property(s => s.Note).IsRequired();
             this.Property(s => s.Location).IsRequired();
             this.Property(s => s.StartDate).IsRequired();

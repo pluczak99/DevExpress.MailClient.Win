@@ -881,30 +881,6 @@
   <data name="nbgMail.Caption" xml:space="preserve">
     <value>Mail</value>
   </data>
-  <data name="ucMailTree1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ucMailTree1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ucMailTree1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 362</value>
-  </data>
-  <data name="ucMailTree1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.Name" xml:space="preserve">
-    <value>ucMailTree1</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.ucMailTree, DevExpress.MailClient.Win, Version=20.2.5.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.Parent" xml:space="preserve">
-    <value>navBarGroupControlContainer1</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="navBarGroupControlContainer1.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 362</value>
   </data>
@@ -967,30 +943,6 @@
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer2.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="ucContacts1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ucContacts1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ucContacts1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 342</value>
-  </data>
-  <data name="ucContacts1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ucContacts1.Name" xml:space="preserve">
-    <value>ucContacts1</value>
-  </data>
-  <data name="&gt;&gt;ucContacts1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ucContacts, DevExpress.MailClient.Win, Version=20.2.5.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucContacts1.Parent" xml:space="preserve">
-    <value>navBarGroupControlContainer3</value>
-  </data>
-  <data name="&gt;&gt;ucContacts1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="navBarGroupControlContainer3.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 342</value>
