@@ -24,6 +24,7 @@ using DevExpress.Utils.Taskbar.Core;
 using DevExpress.Utils.Taskbar;
 using System.Globalization;
 using DevExpress.MailClient.Win.Properties;
+using MailClient.Data.Service;
 
 namespace DevExpress.MailClient.Win {
     public partial class frmMain : RibbonForm {
@@ -32,6 +33,7 @@ namespace DevExpress.MailClient.Win {
         internal FilterColumnsManager FilterColumnManager;
         ZoomManager zoomManager;
         List<BarItem> AllowCustomizationMenuList = new List<BarItem>();
+        ToDoTaskRepository ToDoTaskRepository { get; set; }
         public frmMain() {
             SplashScreenManager.ShowForm(null, typeof(ssMain), true, true, false, 1000);
 
@@ -142,7 +144,7 @@ namespace DevExpress.MailClient.Win {
             ribbonControl1.Toolbar.ItemLinks.Add(skinDropDownButtonItem1);
             ribbonControl1.Toolbar.ItemLinks.Add(skinPaletteRibbonGalleryBarItem1);
 
-			TaskGenerator.GenerateTasks(this.ucCalendar1);
+            this.ToDoTaskRepository = new ToDoTaskRepository();
         }
 
         void InitGalleryItem(GalleryItem galleryItem, string tag, string description) {

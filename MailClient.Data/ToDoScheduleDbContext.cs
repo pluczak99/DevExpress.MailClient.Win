@@ -10,7 +10,7 @@ namespace MailClient.Data.Library
 	public class ToDoScheduleDbContext : DbContext
 	{
 		public ToDoScheduleDbContext()
-		: base("TODOLIST")
+		: base("name=TODOLIST")
 		{
 			Database.SetInitializer<ToDoScheduleDbContext>(new ToDoScheduleDbInitializer());
 		}

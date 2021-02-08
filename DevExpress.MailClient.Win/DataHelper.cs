@@ -25,11 +25,6 @@ namespace DevExpress.MailClient.Win
 		internal static bool ShowAllMessageCount = false;
 		internal static bool ShowUnreadMessageCount = true;
 
-		static List<Task> tasks = null;
-		static DataTable calendarResourcesTable;
-		static DataTable calendarAppointmentsTable;
-
-
 		internal static DateTime CalendarDate = DateTime.Today;
 		internal static string[] ApplicationArguments;
 	}

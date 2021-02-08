@@ -73,16 +73,15 @@ namespace DevExpress.MailClient.Win
 			schedulerControl1.MenuManager = manager;
 			this.ribbon = manager as RibbonControl;
 			this.appointmentCategory = FindAppointmentPage(this.ribbon);
-			//this.todoTaskRepository = new ToDoTaskRepository();
 
-			var appointment = new AppointmentInstance();
-			appointment.Start = DateTime.Now;
-			appointment.End = DateTime.Now.AddDays(1);
-			appointment.Subject = "BLAH";
-			appointment.Duration = TimeSpan.FromHours(2);
-			appointment.HasReminder = true;
-			appointment.Reminder.TimeBeforeStart = TimeSpan.FromDays(5);
-			this.schedulerControl1.DataStorage.Appointments.Add(appointment);
+			//var appointment = new AppointmentInstance();
+			//appointment.Start = DateTime.Now;
+			//appointment.End = DateTime.Now.AddDays(1);
+			//appointment.Subject = "BLAH";
+			//appointment.Duration = TimeSpan.FromHours(2);
+			//appointment.HasReminder = true;
+			//appointment.Reminder.TimeBeforeStart = TimeSpan.FromDays(5);
+			//this.schedulerControl1.DataStorage.Appointments.Add(appointment);
 
 
 			if (calendarControls == null)
