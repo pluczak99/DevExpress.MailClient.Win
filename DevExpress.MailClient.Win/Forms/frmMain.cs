@@ -237,6 +237,7 @@ namespace DevExpress.MailClient.Win {
             return string.Format(" - {0}", modulesNavigator.CurrentModule.PartName);
         }
         private void navBarControl1_ActiveGroupChanged(object sender, DevExpress.XtraNavBar.NavBarGroupEventArgs e) {
+            ((NavBarGroupTagObject)e.Group.Tag).Repository = this.ToDoTaskRepository;
             object data = GetModuleData((NavBarGroupTagObject)e.Group.Tag);
             modulesNavigator.ChangeGroup(e.Group, data);
         }

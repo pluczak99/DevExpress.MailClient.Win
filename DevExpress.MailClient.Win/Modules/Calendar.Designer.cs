@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MailClient.Data.Service;
+using System;
 
 namespace DevExpress.MailClient.Win {
     public partial class Calendar {
@@ -99,6 +100,7 @@ namespace DevExpress.MailClient.Win {
 			((System.ComponentModel.ISupportInitialize)(this.schedulerControl1)).EndInit();
 			this.ResumeLayout(false);
 
+			this.todoTaskRepository = new ToDoTaskRepository();
         }
 
 		private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
@@ -106,13 +108,13 @@ namespace DevExpress.MailClient.Win {
 
 		private void SchedulerControl1_EditAppointmentFormShowing1(object sender, XtraScheduler.AppointmentFormEventArgs e)
 		{
-			(sender as CustomAppointmentRibbonForm).Repository = this.todoTaskRepository;
+			e.Appointment.CustomFields["_repository"] = this.todoTaskRepository;
 		}
 
 		private void SchedulerControl1_InitNewAppointment(object sender, XtraScheduler.AppointmentEventArgs e)
 		{
-			(sender as CustomAppointmentRibbonForm).Repository = this.todoTaskRepository;
 			e.Appointment.SetId(Guid.NewGuid()); // assign ID to a new appointment and use it while saving
+			e.Appointment.CustomFields["_repository"] = this.todoTaskRepository;
 		}
 
 		#endregion
