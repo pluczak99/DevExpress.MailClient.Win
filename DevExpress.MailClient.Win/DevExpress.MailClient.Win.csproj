@@ -300,12 +300,6 @@
     <Compile Include="Controls\RibbonApplicationUserControl.Designer.cs">
       <DependentUpon>RibbonApplicationUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ucMessageInfo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\ucMessageInfo.Designer.cs">
-      <DependentUpon>ucMessageInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="DataHelper.cs" />
     <Compile Include="Data\FeedReaderInfo.cs" />
     <Compile Include="DateFilterMenu.cs">
@@ -326,18 +320,6 @@
     </Compile>
     <Compile Include="Controls\ucCalendar.Designer.cs">
       <DependentUpon>ucCalendar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\ucContactInfo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\ucContactInfo.Designer.cs">
-      <DependentUpon>ucContactInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\ucMailViewer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\ucMailViewer.Designer.cs">
-      <DependentUpon>ucMailViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmEditTask_Resources.cs">
       <SubType>Form</SubType>
@@ -450,37 +432,6 @@
     <EmbeddedResource Include="Controls\RibbonApplicationUserControl.resx">
       <DependentUpon>RibbonApplicationUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucContactInfo.ar.resx">
-      <DependentUpon>ucContactInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucContactInfo.fa.resx">
-      <DependentUpon>ucContactInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucContactInfo.he.resx">
-      <DependentUpon>ucContactInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMailViewer.ar.resx">
-      <DependentUpon>ucMailViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMailViewer.fa.resx">
-      <DependentUpon>ucMailViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMailViewer.he.resx">
-      <DependentUpon>ucMailViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMessageInfo.ar.resx">
-      <DependentUpon>ucMessageInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMessageInfo.fa.resx">
-      <DependentUpon>ucMessageInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMessageInfo.he.resx">
-      <DependentUpon>ucMessageInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMessageInfo.resx">
-      <DependentUpon>ucMessageInfo.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmEditTask.pl.resx">
       <DependentUpon>frmEditTask.cs</DependentUpon>
     </EmbeddedResource>
@@ -490,14 +441,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucCalendar.resx">
       <DependentUpon>ucCalendar.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucContactInfo.resx">
-      <DependentUpon>ucContactInfo.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMailViewer.resx">
-      <DependentUpon>ucMailViewer.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmReminders.ar.resx">

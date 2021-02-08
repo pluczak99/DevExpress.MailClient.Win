@@ -36,7 +36,6 @@ namespace DevExpress.MailClient.Win.Forms {
             UpdateCaption();
             InitValidationProvider();
             if(task.AssignTo != null) {
-                ucContactInfo1.Init(task.AssignTo, string.Empty);
                 splitContainerControl1.Collapsed = LayoutOption.TaskCollapsed;
             } else
                 splitContainerControl1.PanelVisibility = SplitPanelVisibility.Panel1;

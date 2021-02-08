@@ -237,7 +237,7 @@
 			this.lciPriority = new DevExpress.XtraLayout.LayoutControlItem();
 			this.lciPercentComplete = new DevExpress.XtraLayout.LayoutControlItem();
 			this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-			this.ucContactInfo1 = new DevExpress.MailClient.Win.Controls.ucContactInfo();
+			//this.ucContactInfo1 = new DevExpress.MailClient.Win.Controls.ucContactInfo();
 			this.richEditBarController1 = new DevExpress.XtraRichEdit.UI.RichEditBarController(this.components);
 			this.showFontFormItem1 = new DevExpress.XtraRichEdit.UI.ShowFontFormItem();
 			this.showParagraphFormItem1 = new DevExpress.XtraRichEdit.UI.ShowParagraphFormItem();
@@ -302,7 +302,7 @@
 			// 
 			// splitContainerControl1.Panel2
 			// 
-			this.splitContainerControl1.Panel2.Controls.Add(this.ucContactInfo1);
+			//this.splitContainerControl1.Panel2.Controls.Add(this.ucContactInfo1);
 			resources.ApplyResources(this.splitContainerControl1.Panel2, "splitContainerControl1.Panel2");
 			this.splitContainerControl1.SplitterPosition = 225;
 			// 
@@ -1921,19 +1921,13 @@
 			this.emptySpaceItem1.Name = "emptySpaceItem1";
 			this.emptySpaceItem1.Size = new System.Drawing.Size(183, 24);
 			this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-			// 
-			// ucContactInfo1
-			// 
-			resources.ApplyResources(this.ucContactInfo1, "ucContactInfo1");
-			this.ucContactInfo1.Name = "ucContactInfo1";
-			this.ucContactInfo1.ZoomFactor = 1F;
-			// 
+			//
 			// richEditBarController1
 			// 
 			this.richEditBarController1.BarItems.Add(this.pasteItem1);
 			this.richEditBarController1.BarItems.Add(this.cutItem1);
 			this.richEditBarController1.BarItems.Add(this.copyItem1);
-			this.richEditBarController1.BarItems.Add(this.pasteSpecialItem1);
+			this.richEditBarController1.BarItems.Add(this.pasteSpecialItem1); 
 			this.richEditBarController1.BarItems.Add(this.changeFontNameItem1);
 			this.richEditBarController1.BarItems.Add(this.changeFontSizeItem1);
 			this.richEditBarController1.BarItems.Add(this.fontSizeIncreaseItem1);
@@ -2374,7 +2368,6 @@
         private DevExpress.XtraLayout.LayoutControlItem lciPercentComplete;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
-        private DevExpress.MailClient.Win.Controls.ucContactInfo ucContactInfo1;
         private Utils.SvgImageCollection icCategory;
         private Utils.SvgImageCollection icEditors;
     }
