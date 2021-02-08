@@ -1045,4 +1045,7 @@ Left:	12 mm	Right:	12 mm</value>
   <data name="backstageViewLabel1_QuickHelp_Description" xml:space="preserve">
     <value>Get help using DevExpress components.</value>
   </data>
+  <data name="appointmentRibbonPage1Caption" xml:space="preserve">
+    <value>TO DO TASK DETAILS</value>
+  </data>
 </root>

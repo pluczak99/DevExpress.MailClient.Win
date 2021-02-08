@@ -114,6 +114,18 @@ namespace DevExpress.MailClient.Win
 		}
 		internal override void ShowModule(bool firstShow)
 		{
+			var todotasks = this.todoTaskRepository.ListAllTasks();
+			foreach (var task in todotasks)
+			{
+				this.schedulerStorage1.Appointments.Add(new AppointmentInstance()
+				{
+					Start = task.StartDate,
+					End = task.EndDate,
+					Subject = $"Subject {task.Id}",
+					Description = task.Note
+				});
+			}
+
 			base.ShowModule(firstShow);
 			SubscribeSchedulerEvents();
 			UpdateAppointmentCategory();

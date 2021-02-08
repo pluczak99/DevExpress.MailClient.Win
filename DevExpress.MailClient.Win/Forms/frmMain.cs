@@ -139,6 +139,7 @@ namespace DevExpress.MailClient.Win {
             AllowCustomizationMenuList.Add(skinPaletteRibbonGalleryBarItem1);
             ribbonControl1.Toolbar.ItemLinks.Add(skinDropDownButtonItem1);
             ribbonControl1.Toolbar.ItemLinks.Add(skinPaletteRibbonGalleryBarItem1);
+            appointmentRibbonPage1.Text = Properties.Resources.appointmentRibbonPage1Caption;
 
             this.ToDoTaskRepository = new ToDoTaskRepository();
         }

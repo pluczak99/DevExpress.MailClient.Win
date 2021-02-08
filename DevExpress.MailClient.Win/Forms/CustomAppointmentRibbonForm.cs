@@ -20,6 +20,7 @@ namespace DevExpress.MailClient.Win
 
 		public CustomAppointmentRibbonForm(SchedulerControl control, Appointment apt, bool openRecurrenceForm) : base(control, apt, openRecurrenceForm)
 		{
+
 			this.Repository = apt.CustomFields["_repository"] as ToDoTaskRepository;
 			this.Scheduler = control;
 			this.Appointment = apt;

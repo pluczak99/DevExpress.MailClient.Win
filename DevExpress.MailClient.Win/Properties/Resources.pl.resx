@@ -138,6 +138,9 @@
   <data name="AppointmentError" xml:space="preserve">
     <value>Błąd: nie można wyeksportować zadań</value>
   </data>
+  <data name="appointmentRibbonPage1Caption" xml:space="preserve">
+    <value>SZCZEGÓŁY</value>
+  </data>
   <data name="appointmentRibbonPageGroup1Caption" xml:space="preserve">
     <value>Zadania To-Do</value>
   </data>

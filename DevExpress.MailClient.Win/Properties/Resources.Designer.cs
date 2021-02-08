@@ -124,6 +124,15 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TO DO TASK DETAILS.
+        /// </summary>
+        internal static string appointmentRibbonPage1Caption {
+            get {
+                return ResourceManager.GetString("appointmentRibbonPage1Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to To-Do Tasks.
         /// </summary>
         internal static string appointmentRibbonPageGroup1Caption {
