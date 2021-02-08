@@ -86,8 +86,8 @@ namespace DevExpress.MailClient.Win {
 			this.schedulerControl1.Views.WorkWeekView.ShowWorkTimeOnly = true;
 			this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler2);
 			this.schedulerControl1.Views.YearView.UseOptimizedScrolling = false;
-			this.schedulerControl1.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.SchedulerControl1_EditAppointmentFormShowing);
 			this.schedulerControl1.InitNewAppointment += SchedulerControl1_InitNewAppointment;
+			this.schedulerControl1.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.SchedulerControl1_EditAppointmentFormShowing);
 			// 
 			// Calendar
 			// 
@@ -101,15 +101,21 @@ namespace DevExpress.MailClient.Win {
 
         }
 
+		private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
+		private DevExpress.XtraScheduler.SchedulerControl schedulerControl1;
+
+		private void SchedulerControl1_EditAppointmentFormShowing1(object sender, XtraScheduler.AppointmentFormEventArgs e)
+		{
+			(sender as CustomAppointmentRibbonForm).Repository = this.todoTaskRepository;
+		}
+
 		private void SchedulerControl1_InitNewAppointment(object sender, XtraScheduler.AppointmentEventArgs e)
 		{
+			(sender as CustomAppointmentRibbonForm).Repository = this.todoTaskRepository;
 			e.Appointment.SetId(Guid.NewGuid()); // assign ID to a new appointment and use it while saving
-			//XtraScheduler.Appointment
 		}
 
 		#endregion
 
-		private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
-        private DevExpress.XtraScheduler.SchedulerControl schedulerControl1;
     }
 }
