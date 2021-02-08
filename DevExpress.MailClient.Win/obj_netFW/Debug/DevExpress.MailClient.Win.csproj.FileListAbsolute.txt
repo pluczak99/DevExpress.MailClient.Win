@@ -13,7 +13,6 @@ D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bi
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\fa\DevExpress.MailClient.Win.resources.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\he\DevExpress.MailClient.Win.resources.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\pl\DevExpress.MailClient.Win.resources.dll
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\de\DevExpress.MailClient.Win.resources.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\EntityFramework.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\MailClient.Data.dll
@@ -37,7 +36,6 @@ D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\ob
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.frmMain.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.LanguageSelectorFormExt.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Calendar.resources
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Modules.OutlookAppointmentForm.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Properties.Resources.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ExportControl.ar.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ExportControl.fa.resources
@@ -52,7 +50,6 @@ D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\ob
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Forms.ssMain.ar.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Forms.ssMain.fa.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Forms.ssMain.he.resources
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Modules.OutlookAppointmentForm.de.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Properties.Resources.pl.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.csproj.GenerateResource.cache
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.exe.licenses
@@ -61,7 +58,6 @@ D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\ob
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\fa\DevExpress.MailClient.Win.resources.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\he\DevExpress.MailClient.Win.resources.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\pl\DevExpress.MailClient.Win.resources.dll
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\de\DevExpress.MailClient.Win.resources.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.csproj.CopyComplete
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.exe
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.pdb

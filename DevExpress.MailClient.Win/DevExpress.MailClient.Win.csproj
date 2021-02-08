@@ -374,12 +374,6 @@
     <Compile Include="Modules\CustomAppointmentRibbonForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\OutlookAppointmentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\OutlookAppointmentForm.Designer.cs">
-      <DependentUpon>OutlookAppointmentForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="NavBarGroupTagObject.cs" />
     <Compile Include="NavPanePanel.cs">
       <SubType>UserControl</SubType>
@@ -476,13 +470,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\OutlookAppointmentForm.de.resx">
-      <DependentUpon>OutlookAppointmentForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\OutlookAppointmentForm.resx">
-      <DependentUpon>OutlookAppointmentForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.pl.resx">
