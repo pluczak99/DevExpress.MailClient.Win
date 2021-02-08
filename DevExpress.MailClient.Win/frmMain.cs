@@ -174,12 +174,6 @@ namespace DevExpress.MailClient.Win {
 
 
 		}
-		public void ReadMessagesChanged() {
-            ucMailTree1.RefreshTreeList();
-        }
-        public void UpdateTreeViewMessages() {
-            ucMailTree1.UpdateTreeViewMessages();
-        }
         internal void EnableDelete(bool enabled) {
             bbiDelete.Enabled = enabled;
             bbiUnreadRead.Enabled = enabled;
@@ -256,28 +250,6 @@ namespace DevExpress.MailClient.Win {
         }
         private void bbi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
             modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
-        }
-        private void ucMailTree1_DataSourceChanged(object sender, DataSourceChangedEventArgs e) {
-            currentMailType = e.Type;
-            modulesNavigator.CurrentModule.MessagesDataChanged(e);
-            ShowInfo(e.List.Count);
-        }
-        private void ucMailTree1_ShowMenu(object sender, MouseEventArgs e) {
-            pmTreeView.ShowPopup(ucMailTree1.PointToScreen(e.Location));
-        }
-        private void pmTreeView_BeforePopup(object sender, CancelEventArgs e) {
-            biCreateFolder.Enabled = !ucMailTree1.IsDeletedFolderFocused();
-            biRename.Enabled = !ucMailTree1.IsDeletedFolderFocused();
-            bciShowAllMessageCount.Checked = DataHelper.ShowAllMessageCount;
-            bciShowUnreadMessageCount.Checked = DataHelper.ShowUnreadMessageCount;
-        }
-        private void bciShowAllMessageCount_CheckedChanged(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
-            DataHelper.ShowAllMessageCount = bciShowAllMessageCount.Checked;
-            ucMailTree1.RefreshTreeList();
-        }
-        private void bciShowUnreadMessageCount_CheckedChanged(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
-            DataHelper.ShowUnreadMessageCount = bciShowUnreadMessageCount.Checked;
-            ucMailTree1.RefreshTreeList();
         }
         private void frmMain_KeyDown(object sender, KeyEventArgs e) {
             if(modulesNavigator != null && modulesNavigator.CurrentModule != null)
@@ -368,17 +340,6 @@ namespace DevExpress.MailClient.Win {
             e.CustomizationMenu.InitializeMenu();
             if(e.Link == null || !AllowCustomizationMenuList.Contains(e.Link.Item))
                 e.CustomizationMenu.RemoveLink(e.CustomizationMenu.ItemLinks[0]);
-        }
-
-        private void ucMailTree1_UCTreeDragDrop(object sender, UCTreeDragDropEventArgs e) {
-        }
-
-        void biRename_ItemClick(object sender, ItemClickEventArgs e) {
-            ucMailTree1.StartEditing();
-        }
-
-        void biCreateFolder_ItemClick(object sender, ItemClickEventArgs e) {
-            ucMailTree1.CreateNewFolder();
         }
 
         private void bbiReminder_ItemClick(object sender, ItemClickEventArgs e) {

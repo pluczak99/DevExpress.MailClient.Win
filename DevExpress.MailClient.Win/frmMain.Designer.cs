@@ -188,7 +188,6 @@ namespace DevExpress.MailClient.Win {
 			this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
 			this.nbgMail = new DevExpress.XtraNavBar.NavBarGroup();
 			this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-			this.ucMailTree1 = new DevExpress.MailClient.Win.ucMailTree();
 			this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
 			this.ucCalendar1 = new DevExpress.MailClient.Win.Controls.ucCalendar();
 			this.navBarGroupControlContainer3 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
@@ -521,7 +520,6 @@ namespace DevExpress.MailClient.Win {
 			this.bciShowUnreadMessageCount.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.False;
 			this.bciShowUnreadMessageCount.Id = 4;
 			this.bciShowUnreadMessageCount.Name = "bciShowUnreadMessageCount";
-			this.bciShowUnreadMessageCount.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.bciShowUnreadMessageCount_CheckedChanged);
 			// 
 			// bciShowAllMessageCount
 			// 
@@ -529,7 +527,6 @@ namespace DevExpress.MailClient.Win {
 			this.bciShowAllMessageCount.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.False;
 			this.bciShowAllMessageCount.Id = 5;
 			this.bciShowAllMessageCount.Name = "bciShowAllMessageCount";
-			this.bciShowAllMessageCount.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.bciShowAllMessageCount_CheckedChanged);
 			// 
 			// bbiDelete
 			// 
@@ -1167,14 +1164,12 @@ namespace DevExpress.MailClient.Win {
 			resources.ApplyResources(this.biRename, "biRename");
 			this.biRename.Id = 98;
 			this.biRename.Name = "biRename";
-			this.biRename.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.biRename_ItemClick);
 			// 
 			// biCreateFolder
 			// 
 			resources.ApplyResources(this.biCreateFolder, "biCreateFolder");
 			this.biCreateFolder.Id = 99;
 			this.biCreateFolder.Name = "biCreateFolder";
-			this.biCreateFolder.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.biCreateFolder_ItemClick);
 			// 
 			// bbiReminder
 			// 
@@ -1560,16 +1555,9 @@ namespace DevExpress.MailClient.Win {
 			// 
 			// navBarGroupControlContainer1
 			// 
-			this.navBarGroupControlContainer1.Controls.Add(this.ucMailTree1);
 			this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
 			resources.ApplyResources(this.navBarGroupControlContainer1, "navBarGroupControlContainer1");
-			// 
-			// ucMailTree1
-			// 
-			resources.ApplyResources(this.ucMailTree1, "ucMailTree1");
-			this.ucMailTree1.Name = "ucMailTree1";
-			this.ucMailTree1.DataSourceChanged += new DevExpress.MailClient.Win.DataSourceChangedEventHandler(this.ucMailTree1_DataSourceChanged);
-			this.ucMailTree1.ShowMenu += new System.Windows.Forms.MouseEventHandler(this.ucMailTree1_ShowMenu);
+
 			// 
 			// navBarGroupControlContainer2
 			// 
@@ -1665,7 +1653,6 @@ namespace DevExpress.MailClient.Win {
 			this.pmTreeView.ItemLinks.Add(this.biRename);
 			this.pmTreeView.Name = "pmTreeView";
 			this.pmTreeView.Ribbon = this.ribbonControl1;
-			this.pmTreeView.BeforePopup += new System.ComponentModel.CancelEventHandler(this.pmTreeView_BeforePopup);
 			// 
 			// pmMessage
 			// 
@@ -1778,7 +1765,6 @@ namespace DevExpress.MailClient.Win {
         private DevExpress.XtraNavBar.NavBarGroup nbgTasks;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgDelete;
         private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
-        private ucMailTree ucMailTree1;
         private DevExpress.XtraBars.Ribbon.RibbonPage rpCalendar;
         private DevExpress.XtraBars.Ribbon.RibbonPage rpContacts;
         private DevExpress.XtraBars.Ribbon.RibbonPage rpFeeds;

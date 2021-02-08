@@ -36,7 +36,6 @@ D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\ob
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ucCalendar.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ucContactInfo.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ucContacts.resources
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.ucMailTree.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.ucMailViewer.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Forms.frmReminders.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Forms.ssMain.resources
@@ -58,9 +57,6 @@ D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\ob
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ucContacts.ar.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ucContacts.fa.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ucContacts.he.resources
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.ucMailTree.ar.resources
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.ucMailTree.fa.resources
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.ucMailTree.he.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.ucMailViewer.ar.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.ucMailViewer.fa.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.ucMailViewer.he.resources
@@ -87,3 +83,7 @@ D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\ob
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.csproj.CopyComplete
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.exe
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.pdb
+D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ucMailTree.resources
+D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ucMailTree.ar.resources
+D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ucMailTree.fa.resources
+D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ucMailTree.he.resources
