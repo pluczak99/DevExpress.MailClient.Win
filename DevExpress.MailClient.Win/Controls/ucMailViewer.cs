@@ -67,13 +67,7 @@ namespace DevExpress.MailClient.Win {
             text += StringResources.Get("MessageTileEnd");
             recMessage.HtmlText = text;
         }
-        internal void ShowFeed(FeedItem feed, bool showUrl) {
-            ShowMessageInfo(false);
-            if(showUrl) layoutControlItem2.Visibility = XtraLayout.Utils.LayoutVisibility.Always;
-            else layoutControlItem2.Visibility = XtraLayout.Utils.LayoutVisibility.Never;
-            linkView.Text = feed.Url;
-            recMessage.HtmlText = feed.Description;
-        }
+
         internal void ClearInfo() {
             recMessage.Text = string.Empty;
             layoutControlItem2.Visibility = XtraLayout.Utils.LayoutVisibility.Never;

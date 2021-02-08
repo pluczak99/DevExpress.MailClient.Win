@@ -307,7 +307,6 @@
       <DependentUpon>ucMessageInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="DataHelper.cs" />
-    <Compile Include="Data\FeedItem.cs" />
     <Compile Include="Data\FeedReaderInfo.cs" />
     <Compile Include="DateFilterMenu.cs">
       <SubType>Component</SubType>
