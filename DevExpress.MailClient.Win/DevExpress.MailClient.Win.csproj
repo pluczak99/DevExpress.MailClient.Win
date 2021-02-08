@@ -339,12 +339,6 @@
     <Compile Include="Controls\ucContacts.Designer.cs">
       <DependentUpon>ucContacts.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ucMailTree.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\ucMailTree.Designer.cs">
-      <DependentUpon>ucMailTree.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\ucMailViewer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -480,18 +474,6 @@
     <EmbeddedResource Include="Controls\ucContacts.he.resx">
       <DependentUpon>ucContacts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMailTree.ar.resx">
-      <DependentUpon>ucMailTree.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMailTree.fa.resx">
-      <DependentUpon>ucMailTree.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMailTree.he.resx">
-      <DependentUpon>ucMailTree.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucMailViewer.ar.resx">
       <DependentUpon>ucMailViewer.cs</DependentUpon>
     </EmbeddedResource>
@@ -531,10 +513,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucContacts.resx">
       <DependentUpon>ucContacts.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ucMailTree.resx">
-      <DependentUpon>ucMailTree.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucMailViewer.resx">
