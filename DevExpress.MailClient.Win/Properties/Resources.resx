@@ -1024,4 +1024,25 @@ Left:	12 mm	Right:	12 mm</value>
   <data name="tableToolsRibbonPageCategory1Caption" xml:space="preserve">
     <value>Table Tools</value>
   </data>
+  <data name="backstageViewLabel1" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="backstageViewLabel1_GetStarted" xml:space="preserve">
+    <value>Get Started</value>
+  </data>
+  <data name="backstageViewLabel1_GetStarted_Description" xml:space="preserve">
+    <value>Let us know if you need help or how we can make our components better</value>
+  </data>
+  <data name="backstageViewLabel1_GetSupport" xml:space="preserve">
+    <value>How to Get Support</value>
+  </data>
+  <data name="backstageViewLabel1_GetSupport_Description" xml:space="preserve">
+    <value>See what's new and find resources to help you learn the basics quickly</value>
+  </data>
+  <data name="backstageViewLabel1_QuickHelp" xml:space="preserve">
+    <value>Quick Help</value>
+  </data>
+  <data name="backstageViewLabel1_QuickHelp_Description" xml:space="preserve">
+    <value>Get help using DevExpress components.</value>
+  </data>
 </root>

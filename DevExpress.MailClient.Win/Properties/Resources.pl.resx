@@ -147,6 +147,27 @@
   <data name="ASP" xml:space="preserve">
     <value>ASP</value>
   </data>
+  <data name="backstageViewLabel1" xml:space="preserve">
+    <value>Wsparcie</value>
+  </data>
+  <data name="backstageViewLabel1_GetStarted" xml:space="preserve">
+    <value>Jak zacząć</value>
+  </data>
+  <data name="backstageViewLabel1_GetStarted_Description" xml:space="preserve">
+    <value>Sprawdź co nowego i znajdź zasoby aby szybko opanować fundamenty użycia komponentów DevExpress</value>
+  </data>
+  <data name="backstageViewLabel1_GetSupport" xml:space="preserve">
+    <value>Jak otrzymać wsparcie</value>
+  </data>
+  <data name="backstageViewLabel1_GetSupport_Description" xml:space="preserve">
+    <value>Daj nam znać jeśli potrzebujesz pomocy lub jak możemy ulepszyć nasze komponenty</value>
+  </data>
+  <data name="backstageViewLabel1_QuickHelp" xml:space="preserve">
+    <value>Szybka pomoc</value>
+  </data>
+  <data name="backstageViewLabel1_QuickHelp_Description" xml:space="preserve">
+    <value>Otrzymaj pomoc w użyciu komponentów DevExpress</value>
+  </data>
   <data name="BirthDateHtml" xml:space="preserve">
     <value>&lt;br&gt;Data urodzenia: &lt;b&gt;{0:d}&lt;/b&gt;</value>
   </data>

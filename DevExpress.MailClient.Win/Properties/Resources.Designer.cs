@@ -151,6 +151,69 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Support.
+        /// </summary>
+        internal static string backstageViewLabel1 {
+            get {
+                return ResourceManager.GetString("backstageViewLabel1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Started.
+        /// </summary>
+        internal static string backstageViewLabel1_GetStarted {
+            get {
+                return ResourceManager.GetString("backstageViewLabel1_GetStarted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Let us know if you need help or how we can make our components better.
+        /// </summary>
+        internal static string backstageViewLabel1_GetStarted_Description {
+            get {
+                return ResourceManager.GetString("backstageViewLabel1_GetStarted_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to How to Get Support.
+        /// </summary>
+        internal static string backstageViewLabel1_GetSupport {
+            get {
+                return ResourceManager.GetString("backstageViewLabel1_GetSupport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to See what&apos;s new and find resources to help you learn the basics quickly.
+        /// </summary>
+        internal static string backstageViewLabel1_GetSupport_Description {
+            get {
+                return ResourceManager.GetString("backstageViewLabel1_GetSupport_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quick Help.
+        /// </summary>
+        internal static string backstageViewLabel1_QuickHelp {
+            get {
+                return ResourceManager.GetString("backstageViewLabel1_QuickHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get help using DevExpress components..
+        /// </summary>
+        internal static string backstageViewLabel1_QuickHelp_Description {
+            get {
+                return ResourceManager.GetString("backstageViewLabel1_QuickHelp_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;br&gt;Birth Date: &lt;b&gt;{0:d}&lt;/b&gt;.
         /// </summary>
         internal static string BirthDateHtml {
