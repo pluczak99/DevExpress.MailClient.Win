@@ -29,9 +29,6 @@ namespace DevExpress.MailClient.Win
 			this.Scheduler = control;
 			this.Appointment = apt;
 			this.OpenRecurrenceForm = openRecurrenceForm;
-
-			//this.edtStartDate.Text = Properties.Resources.appointmentRibbonForm_StartTime_Label;
-
 		}
 
 		protected override void OnLoad(EventArgs e)

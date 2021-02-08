@@ -164,20 +164,9 @@ namespace DevExpress.MailClient.Win {
 			this.arrangeRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.ArrangeRibbonPageGroup();
 			this.groupByRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.GroupByRibbonPageGroup();
 			this.layoutRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup();
-			this.rpContacts = new DevExpress.XtraBars.Ribbon.RibbonPage();
-			this.rpgContacts = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.rpgCurrentView = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.rpgLayoutContacts = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.rpFeeds = new DevExpress.XtraBars.Ribbon.RibbonPage();
-			this.rpgFeeds = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.rpgActionsFeeds = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.rpgLayoutFeeds = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.rpTasks = new DevExpress.XtraBars.Ribbon.RibbonPage();
-			this.rpgTasks = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.rpgFollowUp = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.rpdCurrentViewTasks = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
 			this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+			this.rpdCurrentViewTasks = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.rpgNew = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.rpgDelete = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.rpgTags = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -332,10 +321,7 @@ namespace DevExpress.MailClient.Win {
             this.rpcSearch,
             this.calendarToolsRibbonPageCategory1});
 			this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.rpCalendar,
-            this.rpContacts,
-            this.rpFeeds,
-            this.rpTasks});
+            this.rpCalendar});
 			this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemZoomTrackBar1,
             this.repositoryItemSpinEdit1,
@@ -1318,113 +1304,6 @@ namespace DevExpress.MailClient.Win {
 			this.layoutRibbonPageGroup1.ItemLinks.Add(this.switchTimeScalesItem1);
 			this.layoutRibbonPageGroup1.Name = "layoutRibbonPageGroup1";
 			// 
-			// rpContacts
-			// 
-			this.rpContacts.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgContacts,
-            this.rpgCurrentView,
-            this.rpgLayoutContacts});
-			this.rpContacts.Name = "rpContacts";
-			this.rpContacts.Tag = "Contacts";
-			resources.ApplyResources(this.rpContacts, "rpContacts");
-			// 
-			// rpgContacts
-			// 
-			this.rpgContacts.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgContacts.ItemLinks.Add(this.bbiNewContact);
-			this.rpgContacts.ItemLinks.Add(this.bbiEditContact);
-			this.rpgContacts.ItemLinks.Add(this.bbiDeleteContact, true);
-			this.rpgContacts.Name = "rpgContacts";
-			resources.ApplyResources(this.rpgContacts, "rpgContacts");
-			// 
-			// rpgCurrentView
-			// 
-			this.rpgCurrentView.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgCurrentView.ItemLinks.Add(this.rgbiCurrentView);
-			this.rpgCurrentView.Name = "rpgCurrentView";
-			resources.ApplyResources(this.rpgCurrentView, "rpgCurrentView");
-			// 
-			// rpgLayoutContacts
-			// 
-			this.rpgLayoutContacts.AllowTextClipping = false;
-			this.rpgLayoutContacts.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgLayoutContacts.ItemLinks.Add(this.bbiFlipLayout);
-			this.rpgLayoutContacts.Name = "rpgLayoutContacts";
-			resources.ApplyResources(this.rpgLayoutContacts, "rpgLayoutContacts");
-			// 
-			// rpFeeds
-			// 
-			this.rpFeeds.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgFeeds,
-            this.rpgActionsFeeds,
-            this.rpgLayoutFeeds});
-			this.rpFeeds.Name = "rpFeeds";
-			this.rpFeeds.Tag = "Feeds";
-			resources.ApplyResources(this.rpFeeds, "rpFeeds");
-			// 
-			// rpgFeeds
-			// 
-			this.rpgFeeds.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgFeeds.ItemLinks.Add(this.bbiNewFeed);
-			this.rpgFeeds.ItemLinks.Add(this.bbiEditFeed);
-			this.rpgFeeds.ItemLinks.Add(this.bbiDeleteFeed, true);
-			this.rpgFeeds.Name = "rpgFeeds";
-			resources.ApplyResources(this.rpgFeeds, "rpgFeeds");
-			// 
-			// rpgActionsFeeds
-			// 
-			this.rpgActionsFeeds.AllowTextClipping = false;
-			this.rpgActionsFeeds.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgActionsFeeds.ItemLinks.Add(this.bbiRefreshFeed);
-			this.rpgActionsFeeds.Name = "rpgActionsFeeds";
-			resources.ApplyResources(this.rpgActionsFeeds, "rpgActionsFeeds");
-			// 
-			// rpgLayoutFeeds
-			// 
-			this.rpgLayoutFeeds.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgLayoutFeeds.ItemLinks.Add(this.bbiRotateLayout);
-			this.rpgLayoutFeeds.ItemLinks.Add(this.bbiFlipLayout);
-			this.rpgLayoutFeeds.Name = "rpgLayoutFeeds";
-			resources.ApplyResources(this.rpgLayoutFeeds, "rpgLayoutFeeds");
-			// 
-			// rpTasks
-			// 
-			this.rpTasks.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgTasks,
-            this.rpgFollowUp,
-            this.rpdCurrentViewTasks});
-			this.rpTasks.Name = "rpTasks";
-			this.rpTasks.Tag = "Tasks";
-			resources.ApplyResources(this.rpTasks, "rpTasks");
-			// 
-			// rpgTasks
-			// 
-			this.rpgTasks.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgTasks.ItemLinks.Add(this.bbiNewTask);
-			this.rpgTasks.ItemLinks.Add(this.bbiEditTask);
-			this.rpgTasks.ItemLinks.Add(this.bbiDeleteTask, true);
-			this.rpgTasks.Name = "rpgTasks";
-			resources.ApplyResources(this.rpgTasks, "rpgTasks");
-			// 
-			// rpgFollowUp
-			// 
-			this.rpgFollowUp.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgFollowUp.ItemLinks.Add(this.bbiTodayFlag);
-			this.rpgFollowUp.ItemLinks.Add(this.bbiTomorrowFlag);
-			this.rpgFollowUp.ItemLinks.Add(this.bbiThisWeekFlag);
-			this.rpgFollowUp.ItemLinks.Add(this.bbiNextWeekFlag);
-			this.rpgFollowUp.ItemLinks.Add(this.bbiNoDateFlag);
-			this.rpgFollowUp.ItemLinks.Add(this.bbiCustomFlag);
-			this.rpgFollowUp.Name = "rpgFollowUp";
-			resources.ApplyResources(this.rpgFollowUp, "rpgFollowUp");
-			// 
-			// rpdCurrentViewTasks
-			// 
-			this.rpdCurrentViewTasks.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpdCurrentViewTasks.ItemLinks.Add(this.rgbiCurrentViewTasks);
-			this.rpdCurrentViewTasks.Name = "rpdCurrentViewTasks";
-			resources.ApplyResources(this.rpdCurrentViewTasks, "rpdCurrentViewTasks");
-			// 
 			// repositoryItemSpinEdit1
 			// 
 			resources.ApplyResources(this.repositoryItemSpinEdit1, "repositoryItemSpinEdit1");
@@ -1455,6 +1334,10 @@ namespace DevExpress.MailClient.Win {
 			resources.ApplyResources(this.ribbonStatusBar1, "ribbonStatusBar1");
 			this.ribbonStatusBar1.Name = "ribbonStatusBar1";
 			this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
+			// 
+			// rpdCurrentViewTasks
+			// 
+			this.rpdCurrentViewTasks.Name = "rpdCurrentViewTasks";
 			// 
 			// rpgNew
 			// 

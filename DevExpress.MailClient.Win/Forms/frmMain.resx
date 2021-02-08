@@ -785,42 +785,6 @@
   <data name="appointmentRibbonPageGroup1.Text" xml:space="preserve">
     <value>Appointments</value>
   </data>
-  <data name="rpgContacts.Text" xml:space="preserve">
-    <value>New / Edit</value>
-  </data>
-  <data name="rpgCurrentView.Text" xml:space="preserve">
-    <value>Current View</value>
-  </data>
-  <data name="rpgLayoutContacts.Text" xml:space="preserve">
-    <value>Layout</value>
-  </data>
-  <data name="rpContacts.Text" xml:space="preserve">
-    <value>CONTACTS</value>
-  </data>
-  <data name="rpgFeeds.Text" xml:space="preserve">
-    <value>New / Edit</value>
-  </data>
-  <data name="rpgActionsFeeds.Text" xml:space="preserve">
-    <value>Actions</value>
-  </data>
-  <data name="rpgLayoutFeeds.Text" xml:space="preserve">
-    <value>Layout</value>
-  </data>
-  <data name="rpFeeds.Text" xml:space="preserve">
-    <value>FEEDS</value>
-  </data>
-  <data name="rpgTasks.Text" xml:space="preserve">
-    <value>New / Edit</value>
-  </data>
-  <data name="rpgFollowUp.Text" xml:space="preserve">
-    <value>Follow Up</value>
-  </data>
-  <data name="rpdCurrentViewTasks.Text" xml:space="preserve">
-    <value>Current View</value>
-  </data>
-  <data name="rpTasks.Text" xml:space="preserve">
-    <value>TASKS</value>
-  </data>
   <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -1766,83 +1730,17 @@
   <data name="&gt;&gt;layoutRibbonPageGroup1.Type" xml:space="preserve">
     <value>DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup, DevExpress.XtraScheduler.v20.2.Extensions, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;rpContacts.Name" xml:space="preserve">
-    <value>rpContacts</value>
+  <data name="&gt;&gt;repositoryItemSpinEdit1.Name" xml:space="preserve">
+    <value>repositoryItemSpinEdit1</value>
   </data>
-  <data name="&gt;&gt;rpContacts.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgContacts.Name" xml:space="preserve">
-    <value>rpgContacts</value>
-  </data>
-  <data name="&gt;&gt;rpgContacts.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgCurrentView.Name" xml:space="preserve">
-    <value>rpgCurrentView</value>
-  </data>
-  <data name="&gt;&gt;rpgCurrentView.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgLayoutContacts.Name" xml:space="preserve">
-    <value>rpgLayoutContacts</value>
-  </data>
-  <data name="&gt;&gt;rpgLayoutContacts.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpFeeds.Name" xml:space="preserve">
-    <value>rpFeeds</value>
-  </data>
-  <data name="&gt;&gt;rpFeeds.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgFeeds.Name" xml:space="preserve">
-    <value>rpgFeeds</value>
-  </data>
-  <data name="&gt;&gt;rpgFeeds.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgActionsFeeds.Name" xml:space="preserve">
-    <value>rpgActionsFeeds</value>
-  </data>
-  <data name="&gt;&gt;rpgActionsFeeds.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgLayoutFeeds.Name" xml:space="preserve">
-    <value>rpgLayoutFeeds</value>
-  </data>
-  <data name="&gt;&gt;rpgLayoutFeeds.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpTasks.Name" xml:space="preserve">
-    <value>rpTasks</value>
-  </data>
-  <data name="&gt;&gt;rpTasks.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgTasks.Name" xml:space="preserve">
-    <value>rpgTasks</value>
-  </data>
-  <data name="&gt;&gt;rpgTasks.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgFollowUp.Name" xml:space="preserve">
-    <value>rpgFollowUp</value>
-  </data>
-  <data name="&gt;&gt;rpgFollowUp.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;repositoryItemSpinEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpdCurrentViewTasks.Name" xml:space="preserve">
     <value>rpdCurrentViewTasks</value>
   </data>
   <data name="&gt;&gt;rpdCurrentViewTasks.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemSpinEdit1.Name" xml:space="preserve">
-    <value>repositoryItemSpinEdit1</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemSpinEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpgNew.Name" xml:space="preserve">
     <value>rpgNew</value>

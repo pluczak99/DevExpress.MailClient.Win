@@ -167,7 +167,7 @@ namespace DevExpress.MailClient.Win
 			}
 
 
-			e.Appointment.CustomFields.Add(new XtraScheduler.Native.CustomField("_repository", this.todoTaskRepository));
+			//e.Appointment.CustomFields.Add(new XtraScheduler.Native.CustomField("_repository", this.todoTaskRepository));
 			var form = new CustomAppointmentRibbonForm(this.schedulerControl1, e.Appointment, e.OpenRecurrenceForm);
 			form.LookAndFeel.ParentLookAndFeel = LookAndFeel;
 			form.SetMenuManager(this.schedulerControl1.MenuManager);
