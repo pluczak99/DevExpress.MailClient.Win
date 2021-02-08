@@ -31,9 +31,8 @@ namespace DevExpress.MailClient.Win
 		protected override void OnLoad(EventArgs e)
 		{
 			base.OnLoad(e);
-
 		}
-
+		
 		protected override void InitCore()
 		{
 			base.InitCore();
