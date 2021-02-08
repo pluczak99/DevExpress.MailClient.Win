@@ -45,9 +45,6 @@ D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\ob
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Forms.frmReminders.ar.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Forms.frmReminders.fa.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Forms.frmReminders.he.resources
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Forms.ssMain.ar.resources
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Forms.ssMain.fa.resources
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Forms.ssMain.he.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Properties.Resources.pl.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.csproj.GenerateResource.cache
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.exe.licenses

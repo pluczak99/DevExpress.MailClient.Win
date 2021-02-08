@@ -83,10 +83,6 @@ namespace DevExpress.MailClient.Win {
             InitBarButtonItem(bbiResetColumnsToDefault, TagResources.ResetColumnsToDefault);
             InitBarButtonItem(bbiDate, TagResources.DateFilterMenu);
             InitBarButtonItem(bbiClearFilter, TagResources.ClearFilter);
-            InitBarButtonItem(bbiNewFeed, TagResources.FeedNew, Properties.Resources.NewFeedDescription);
-            InitBarButtonItem(bbiEditFeed, TagResources.FeedEdit, Properties.Resources.EditFeedDescription);
-            InitBarButtonItem(bbiDeleteFeed, TagResources.FeedDelete, Properties.Resources.DeleteFeedDescription);
-            InitBarButtonItem(bbiRefreshFeed, TagResources.FeedRefresh, Properties.Resources.RefreshFeedDescription);
             InitBarButtonItem(bbiNewContact, TagResources.ContactNew, Properties.Resources.NewContactDescription);
             InitBarButtonItem(bbiEditContact, TagResources.ContactEdit, Properties.Resources.EditContactDescription);
             InitBarButtonItem(bbiDeleteContact, TagResources.ContactDelete, Properties.Resources.DeleteContactDescription);
@@ -184,11 +180,6 @@ namespace DevExpress.MailClient.Win {
             bbiReply.Enabled = enabled && currentMailType == MailType.Inbox;
             bbiReplyAll.Enabled = enabled && currentMailType == MailType.Inbox;
             bbiForward.Enabled = enabled && currentMailType == MailType.Inbox;
-        }
-        internal void EnableEditFeed(bool enabled) {
-            bbiDeleteFeed.Enabled = enabled;
-            bbiEditFeed.Enabled = enabled;
-            bbiRefreshFeed.Enabled = enabled;
         }
         internal void EnableEditContact(bool enabled) {
             bbiDeleteContact.Enabled = enabled;

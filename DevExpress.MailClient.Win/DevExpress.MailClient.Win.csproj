@@ -264,11 +264,10 @@
     </Compile>
     <Compile Include="Controls\ContactToolTipController.cs" />
     <Compile Include="Data\Address.cs" />
-    <Compile Include="Controls\CommonControls.cs">
+    <Compile Include="Controls\PictureEditSimpleZoom.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Data\Contact.cs" />
-    <Compile Include="Controls\Controls.cs" />
+    <Compile Include="Controls\ModulesNavigator.cs" />
     <Compile Include="Controls\BackstageViewLabel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -296,8 +295,10 @@
     <Compile Include="Controls\RibbonApplicationUserControl.Designer.cs">
       <DependentUpon>RibbonApplicationUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\Contact.cs" />
+    <Compile Include="Data\Task.cs" />
+    <Compile Include="Utils\ColorHelper.cs" />
     <Compile Include="Utils\DataHelper.cs" />
-    <Compile Include="Data\FeedReaderInfo.cs" />
     <Compile Include="Controls\DateFilterMenu.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -339,15 +340,15 @@
     <Compile Include="Forms\frmMain_Resources.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Utils\Helpers.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Utils\EditorHelper.cs" />
+    <Compile Include="Utils\GridHelper.cs" />
+    <Compile Include="Utils\TokenEditHelper.cs" />
     <Compile Include="Data\LayoutOption.cs" />
     <Compile Include="Utils\ImageCreator.cs" />
-    <Compile Include="LanguageSelectorFormExt.cs">
+    <Compile Include="Forms\LanguageSelectorFormExt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LanguageSelectorFormExt.Designer.cs">
+    <Compile Include="Forms\LanguageSelectorFormExt.Designer.cs">
       <DependentUpon>LanguageSelectorFormExt.cs</DependentUpon>
     </Compile>
     <Compile Include="Localizer\BarLocalizer.cs" />
@@ -355,7 +356,6 @@
     <Compile Include="Localizer\GridLocalizer.cs" />
     <Compile Include="Localizer\NavBarLocalizer.cs" />
     <Compile Include="Localizer\SchedulerLocalizer.cs" />
-    <Compile Include="Data\Message.cs" />
     <Compile Include="Modules\Calendar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -370,17 +370,21 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\ObjectToolTipController.cs" />
-    <Compile Include="Controls\PriorityMenu.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Data\Task.cs" />
     <Compile Include="Data\TaskGenerator.cs" />
     <Compile Include="Data\UnknownContact.cs" />
+    <Compile Include="Utils\ImageHelper.cs" />
+    <Compile Include="Utils\MyGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils\NavBarHelper.cs" />
+    <Compile Include="Utils\ObjectHelper.cs" />
     <Compile Include="Utils\RibbonInitUtils.cs" />
+    <Compile Include="Utils\UniqueNameValidationRule.cs" />
     <Compile Include="Utils\UnpackHelper.cs" />
     <Compile Include="Managers\ZoomManager.cs" />
+    <Compile Include="Utils\ValidationRulesHelper.cs" />
     <EmbeddedResource Include="Controls\ExportControl.ar.resx">
       <DependentUpon>ExportControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -430,15 +434,6 @@
       <DependentUpon>frmReminders.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ssMain.ar.resx">
-      <DependentUpon>ssMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ssMain.fa.resx">
-      <DependentUpon>ssMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ssMain.he.resx">
-      <DependentUpon>ssMain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ssMain.resx">
       <DependentUpon>ssMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -449,7 +444,7 @@
       <DependentUpon>frmMain.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="LanguageSelectorFormExt.resx">
+    <EmbeddedResource Include="Forms\LanguageSelectorFormExt.resx">
       <DependentUpon>LanguageSelectorFormExt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Calendar.resx">
@@ -618,9 +613,7 @@
   <ItemGroup>
     <Content Include="AppIcon.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dictionaries\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\MailClient.Data.Service.Library\MailClient.Service.Library.csproj">
       <Project>{d8efe6fd-7a74-42e1-b216-05f5dbc7c14f}</Project>

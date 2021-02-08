@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace DevExpress.MailClient.Win {
-    partial class Calendar {
+    public partial class Calendar {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
@@ -88,8 +88,6 @@ namespace DevExpress.MailClient.Win {
 			this.schedulerControl1.Views.YearView.UseOptimizedScrolling = false;
 			this.schedulerControl1.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.SchedulerControl1_EditAppointmentFormShowing);
 			this.schedulerControl1.InitNewAppointment += SchedulerControl1_InitNewAppointment;
-			//this.schedulerControl1.InitNewAppointment += new DevExpress.XtraScheduler.AppointmentEventHandler(this.schedulerControl1_InitNewAppointment);
-			//this.schedulerControl1.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.schedulerControl1_EditAppointmentFormShowing_1);
 			// 
 			// Calendar
 			// 

@@ -21,7 +21,7 @@ namespace DevExpress.MailClient.Win
 		protected override void InitCore()
 		{
 			base.InitCore();
-			
+
 		}
 
 		protected override void OnSaveButton()
