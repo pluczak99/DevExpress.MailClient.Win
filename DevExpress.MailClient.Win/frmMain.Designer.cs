@@ -191,7 +191,6 @@ namespace DevExpress.MailClient.Win {
 			this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
 			this.ucCalendar1 = new DevExpress.MailClient.Win.Controls.ucCalendar();
 			this.navBarGroupControlContainer3 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-			this.ucContacts1 = new DevExpress.MailClient.Win.Controls.ucContacts();
 			this.navBarGroupControlContainer4 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
 			this.navBarControl2 = new DevExpress.XtraNavBar.NavBarControl();
 			this.nbgCalendar = new DevExpress.XtraNavBar.NavBarGroup();
@@ -1576,15 +1575,8 @@ namespace DevExpress.MailClient.Win {
 			// 
 			// navBarGroupControlContainer3
 			// 
-			this.navBarGroupControlContainer3.Controls.Add(this.ucContacts1);
 			this.navBarGroupControlContainer3.Name = "navBarGroupControlContainer3";
 			resources.ApplyResources(this.navBarGroupControlContainer3, "navBarGroupControlContainer3");
-			// 
-			// ucContacts1
-			// 
-			resources.ApplyResources(this.ucContacts1, "ucContacts1");
-			this.ucContacts1.Name = "ucContacts1";
-			this.ucContacts1.CheckedChanged += new System.EventHandler(this.ucContacts1_CheckedChanged);
 			// 
 			// navBarGroupControlContainer4
 			// 
@@ -1808,7 +1800,6 @@ namespace DevExpress.MailClient.Win {
         private DevExpress.XtraBars.BarButtonItem bbiClearFilter;
         private DevExpress.MailClient.Win.Controls.ucCalendar ucCalendar1;
         private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer3;
-        private DevExpress.MailClient.Win.Controls.ucContacts ucContacts1;
         private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer4;
         private DevExpress.XtraNavBar.NavBarControl navBarControl2;
         private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;

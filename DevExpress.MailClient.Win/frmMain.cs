@@ -133,7 +133,6 @@ namespace DevExpress.MailClient.Win {
             items.Add(bbiAttachmentColumn);
             items.Add(bbiDate);
             FilterColumnManager = new FilterColumnsManager(items);
-            ucContacts1.SynchronizeGalleryItems(rgbiCurrentView);
             ucCalendar1.SetBarController(schedulerBarController1);
             AllowCustomizationMenuList.Add(bbiFlipLayout);
             AllowCustomizationMenuList.Add(bbiRotateLayout);
@@ -265,10 +264,6 @@ namespace DevExpress.MailClient.Win {
             SetPageLayoutStyle();
         }
         object moduleTag = null;
-        private void ucContacts1_CheckedChanged(object sender, EventArgs e) {
-            moduleTag = ((CheckEdit)sender).Tag;
-            BeginInvoke(new MethodInvoker(NavigateModule));
-        }
         void NavigateModule() {
             modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", moduleTag));
         }
