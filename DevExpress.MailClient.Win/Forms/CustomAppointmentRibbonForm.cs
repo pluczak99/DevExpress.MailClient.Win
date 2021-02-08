@@ -51,7 +51,7 @@ namespace DevExpress.MailClient.Win
 			this.Controls.Find("lblLocation", true)[0].SetStringProperty("Text", Properties.Resources.appointmentRibbonForm_Location_Label);
 			this.Controls.Find("lblStartTime", true)[0].SetStringProperty("Text", Properties.Resources.appointmentRibbonForm_StartTime_Label);
 			this.Controls.Find("lblEndTime", true)[0].SetStringProperty("Text", Properties.Resources.appointmentRibbonForm_EndTime_Label);
-			this.Controls.Find("lblPercentComlete", true)[0].SetStringProperty("Text", Properties.Resources.appointmentRibbonForm_lblPercentComplete_Label);
+			this.Controls.Find("lblPercentComplete", true)[0].SetStringProperty("Text", Properties.Resources.appointmentRibbonForm_lblPercentComplete_Label);
 		}
 
 		protected override void InitCore()
