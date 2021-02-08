@@ -48,11 +48,13 @@ namespace DevExpress.MailClient.Win
 			bool firstShow = groupObject.Module == null;
 			if (firstShow)
 			{
+
 				if (SplashScreenManager.Default == null)
 					SplashScreenManager.ShowForm(ribbon.FindForm(), typeof(DevExpress.MailClient.Win.Forms.wfMain), false, true);
 				ConstructorInfo constructorInfoObj = groupObject.ModuleType.GetConstructor(Type.EmptyTypes);
 				if (constructorInfoObj != null)
 				{
+
 					groupObject.Module = constructorInfoObj.Invoke(null) as BaseModule;
 					groupObject.Module.InitModule(ribbon, moduleData);
 				}

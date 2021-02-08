@@ -48,7 +48,8 @@ namespace DevExpress.MailClient.Win
 			this.dropdownLanguages.Location = new System.Drawing.Point(178, 36);
 			this.dropdownLanguages.Name = "dropdownLanguages";
 			this.dropdownLanguages.Size = new System.Drawing.Size(203, 21);
-			this.dropdownLanguages.TabIndex = 1;
+			this.dropdownLanguages.TabIndex = 0;
+			this.dropdownLanguages.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dropdownLanguages_KeyPress);
 			// 
 			// btnOK
 			// 
@@ -56,10 +57,11 @@ namespace DevExpress.MailClient.Win
 			this.btnOK.Location = new System.Drawing.Point(257, 147);
 			this.btnOK.Name = "btnOK";
 			this.btnOK.Size = new System.Drawing.Size(75, 23);
-			this.btnOK.TabIndex = 2;
+			this.btnOK.TabIndex = 1;
 			this.btnOK.Text = "OK";
 			this.btnOK.UseVisualStyleBackColor = true;
 			this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+			this.btnOK.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnOK_KeyPress);
 			// 
 			// btnCancel
 			// 
@@ -67,7 +69,7 @@ namespace DevExpress.MailClient.Win
 			this.btnCancel.Location = new System.Drawing.Point(360, 147);
 			this.btnCancel.Name = "btnCancel";
 			this.btnCancel.Size = new System.Drawing.Size(75, 23);
-			this.btnCancel.TabIndex = 3;
+			this.btnCancel.TabIndex = 2;
 			this.btnCancel.Text = "Cancel";
 			this.btnCancel.UseVisualStyleBackColor = true;
 			// 

@@ -17,6 +17,7 @@ using System.Xml.Serialization;
 using System.Configuration;
 using DevExpress.XtraScheduler.Internal.Implementations;
 using MailClient.Data.Service;
+using MailClient.Data.Library;
 
 namespace DevExpress.MailClient.Win
 {
@@ -27,7 +28,7 @@ namespace DevExpress.MailClient.Win
 		RibbonPageCategory appointmentCategory = null;
 		RibbonPage lastSelectedPage = null;
 
-		ToDoTaskRepository todoTaskRepository { get; set; }
+		public ToDoTaskRepository todoTaskRepository { get; set; }
 
 		public override string ModuleName { get { return Properties.Resources.CalendarName; } }
 		public Calendar()
@@ -35,7 +36,6 @@ namespace DevExpress.MailClient.Win
 			InitializeComponent();
 			DatabindScheduler();
 			schedulerControl1.Start = DateTime.Today;
-			this.todoTaskRepository = new ToDoTaskRepository();
 
 		}
 		public override DevExpress.XtraPrinting.IPrintable PrintableComponent
@@ -45,11 +45,27 @@ namespace DevExpress.MailClient.Win
 				return schedulerControl1;
 			}
 		}
+
+		public List<Appointment> ConvertToDoTasksToAppointments ( IEnumerable<ToDoTask> tasks )
+		{
+			List<Appointment> appointments = new List<Appointment>();
+			foreach (var task in tasks)
+			{
+				var appointment = new AppointmentInstance();
+				appointment.Start = task.StartDate;
+				appointment.End = task.EndDate;
+				appointment.Description = task.Note;
+				appointments.Add(appointment);
+			}
+			return appointments;
+		}
 		protected override bool SaveCalendarVisible { get { return true; } }
 		private void DatabindScheduler()
 		{
 			//schedulerStorage1.Resources.DataSource = DataHelper.CalendarResources;
-			schedulerStorage1.Appointments.DataSource = DataHelper.CalendarAppointments;
+			//schedulerStorage1.Appointments.DataSource = this.todoTaskRepository.ListAllTasks();
+			//ToDoTaskRepository todoTaskRepository = new ToDoTaskRepository();
+
 		}
 		internal override void InitModule(DevExpress.Utils.Menu.IDXMenuManager manager, object data)
 		{
@@ -57,6 +73,17 @@ namespace DevExpress.MailClient.Win
 			schedulerControl1.MenuManager = manager;
 			this.ribbon = manager as RibbonControl;
 			this.appointmentCategory = FindAppointmentPage(this.ribbon);
+			//this.todoTaskRepository = new ToDoTaskRepository();
+
+			var appointment = new AppointmentInstance();
+			appointment.Start = DateTime.Now;
+			appointment.End = DateTime.Now.AddDays(1);
+			appointment.Subject = "BLAH";
+			appointment.Duration = TimeSpan.FromHours(2);
+			appointment.HasReminder = true;
+			appointment.Reminder.TimeBeforeStart = TimeSpan.FromDays(5);
+			this.schedulerControl1.DataStorage.Appointments.Add(appointment);
+
 
 			if (calendarControls == null)
 			{
@@ -200,6 +227,8 @@ namespace DevExpress.MailClient.Win
 			{
 				ImportAppointments(stream);
 			}
+
+			this.schedulerControl1.DataStorage.Appointments.Add(new AppointmentInstance() { Start = DateTime.Now, Subject = "Surprise!" });
 		}
 
 		void ExportAppointments(Stream stream)

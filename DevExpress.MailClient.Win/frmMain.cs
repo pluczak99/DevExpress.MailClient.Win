@@ -142,6 +142,8 @@ namespace DevExpress.MailClient.Win {
             AllowCustomizationMenuList.Add(skinPaletteRibbonGalleryBarItem1);
             ribbonControl1.Toolbar.ItemLinks.Add(skinDropDownButtonItem1);
             ribbonControl1.Toolbar.ItemLinks.Add(skinPaletteRibbonGalleryBarItem1);
+
+			TaskGenerator.GenerateTasks(this.ucCalendar1);
         }
 
         void InitGalleryItem(GalleryItem galleryItem, string tag, string description) {
@@ -169,8 +171,10 @@ namespace DevExpress.MailClient.Win {
         }
         void InitNavBarGroups() {
             nbgCalendar.Tag = new NavBarGroupTagObject(DevExpress.MailClient.Win.Properties.Resources.CalendarName, typeof(DevExpress.MailClient.Win.Calendar));
-        }
-        public void ReadMessagesChanged() {
+
+
+		}
+		public void ReadMessagesChanged() {
             ucMailTree1.RefreshTreeList();
         }
         public void UpdateTreeViewMessages() {

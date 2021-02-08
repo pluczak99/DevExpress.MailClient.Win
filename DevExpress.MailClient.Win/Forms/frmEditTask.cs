@@ -40,6 +40,7 @@ namespace DevExpress.MailClient.Win.Forms {
                 splitContainerControl1.Collapsed = LayoutOption.TaskCollapsed;
             } else
                 splitContainerControl1.PanelVisibility = SplitPanelVisibility.Panel1;
+
         }
 
         void InitValidationProvider() {

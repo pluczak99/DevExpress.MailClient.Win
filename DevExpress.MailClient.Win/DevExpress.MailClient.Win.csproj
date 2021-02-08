@@ -196,6 +196,9 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework.DynamicFilters, Version=3.2.0.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.DynamicFilters.3.2.0\lib\net40\EntityFramework.DynamicFilters.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
@@ -598,7 +601,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="connectionStrings.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -752,6 +757,10 @@
     <ProjectReference Include="..\MailClient.Data.Service.Library\MailClient.Service.Library.csproj">
       <Project>{d8efe6fd-7a74-42e1-b216-05f5dbc7c14f}</Project>
       <Name>MailClient.Service.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MailClient.Data\MailClient.Data.Library.csproj">
+      <Project>{469F6284-E475-4697-ABDD-30FB0A40CDF5}</Project>
+      <Name>MailClient.Data.Library</Name>
     </ProjectReference>
   </ItemGroup>
   <!--ONLY NETCORE3 

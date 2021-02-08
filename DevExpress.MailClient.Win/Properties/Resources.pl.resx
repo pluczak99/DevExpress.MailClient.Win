@@ -644,7 +644,7 @@ Left:	50 mm	Right:	50 mm</value>
     <value>Odśwież ten feed RSS z servera.</value>
   </data>
   <data name="ReminderText" xml:space="preserve">
-    <value>REMINDERS: {0}</value>
+    <value>Przypomnienia: {0}</value>
   </data>
   <data name="ReplyAllDescription" xml:space="preserve">
     <value>Odpowiedz nadawcy i wszystkim adresatom tej wiadomości</value>

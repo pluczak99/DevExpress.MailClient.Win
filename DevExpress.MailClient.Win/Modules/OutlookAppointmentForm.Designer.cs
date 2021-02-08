@@ -146,6 +146,7 @@ namespace DevExpress.MailClient.Win.Modules
 			this.backstageViewControl1.SelectedTab = this.bvtPrint;
 			this.backstageViewControl1.SelectedTabIndex = 0;
 			this.backstageViewControl1.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013;
+			this.backstageViewControl1.VisibleInDesignTime = true;
 			// 
 			// bvPrint
 			// 

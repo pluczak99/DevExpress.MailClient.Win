@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Windows.Forms;
 using DevExpress.MailClient.Win.Forms;
@@ -43,6 +44,7 @@ namespace DevExpress.MailClient.Win
 					break;
 			}
 			SetCulture(locale);
+			this.DialogResult = DialogResult.OK;
 		}
 
 		internal static void SetCulture(string name)
@@ -64,7 +66,7 @@ namespace DevExpress.MailClient.Win
 			dropdownLanguages.Items.Add("English");
 			dropdownLanguages.SelectedIndex = 0;
 			this.ActiveControl = dropdownLanguages;
-			
+
 		}
 
 		private static XtraLocalizer<SchedulerExtensionsStringId> GetActiveSchedulerExtensionsLocalizer(string name)
@@ -130,6 +132,30 @@ namespace DevExpress.MailClient.Win
 					return new PolishGridLocalizer();
 				default:
 					return GridLocalizer.Active;
+			}
+		}
+
+		private void dropdownLanguages_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			KeyPressEventArgs args = new KeyPressEventArgs(e.KeyChar);
+			switch (args.KeyChar)
+			{
+				case '\r':
+				case ' ':
+					args.KeyChar = '\r';
+					this.btnOK_Click(this.btnOK, args);
+					break;
+			}
+		}
+
+		private void btnOK_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			switch (e.KeyChar)
+			{
+				case '\r':
+				case ' ':
+					this.btnOK_Click(sender, new KeyPressEventArgs('\r'));
+					break;
 			}
 		}
 	}

@@ -15,6 +15,32 @@ namespace DevExpress.MailClient.Win
 		{
 		}
 
+		protected override void InitCore()
+		{
+			base.InitCore();
+			
+		}
+
+		protected override void OnSaveButton()
+		{
+			base.OnSaveButton();
+		}
+
+		protected override void OnFormClosing(FormClosingEventArgs e)
+		{
+			base.OnFormClosing(e);
+		}
+
+		protected override void OnFormClosed(FormClosedEventArgs e)
+		{
+			base.OnFormClosed(e);
+		}
+
+		protected override void OnDeleteButton()
+		{
+			base.OnDeleteButton();
+		}
+
 		protected override DialogResult ShowRecurrenceForm(Form form)
 		{
 			string name = System.Threading.Thread.CurrentThread.CurrentCulture.Name;

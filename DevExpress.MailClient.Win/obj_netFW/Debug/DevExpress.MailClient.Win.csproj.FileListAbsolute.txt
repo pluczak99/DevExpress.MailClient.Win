@@ -5,6 +5,7 @@ D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bi
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\Icons\Universal.ico
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\Icons\Win.ico
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\connectionStrings.config
+D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\App.config
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\DevExpress.MailClient.Win.exe.config
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\DevExpress.MailClient.Win.exe
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\DevExpress.MailClient.Win.pdb
@@ -14,12 +15,16 @@ D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bi
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\pl\DevExpress.MailClient.Win.resources.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\de\DevExpress.MailClient.Win.resources.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\EntityFramework.dll
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\MailClient.Service.Library.dll
+D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\EntityFramework.DynamicFilters.dll
+D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\MailClient.Data.dll
+D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\MailClient.Service.Library.dll
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\MailClient.Service.Library.pdb
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\MailClient.Service.Library.dll.config
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\MailClient.Data.pdb
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\MailClient.Data.dll.config
+D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\EntityFramework.DynamicFilters.xml
+D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\EntityFramework.SqlServer.xml
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.csprojAssemblyReference.cache
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.g.resources
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.Controls.ExportControl.resources
@@ -82,6 +87,3 @@ D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\ob
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.csproj.CopyComplete
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.exe
 D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\obj_netFW\Debug\DevExpress.MailClient.Win.pdb
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\EntityFramework.SqlServer.dll
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\EntityFramework.SqlServer.xml
-D:\Projects\DevExpress.ToDoList\DevExpress.ToDoList\DevExpress.MailClient.Win\bin\Debug\App.config

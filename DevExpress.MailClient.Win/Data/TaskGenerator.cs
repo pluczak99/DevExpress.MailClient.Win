@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraScheduler.Internal.Implementations;
+using System;
 using System.Collections.Generic;
 
 namespace DevExpress.MailClient.Win
@@ -59,6 +60,17 @@ namespace DevExpress.MailClient.Win
 				task.CompletedDate = task.StartDate.Value.AddHours(rndGenerator.Next(48) + 24);
 			}
 			return task;
+		}
+
+		public static void GenerateTasks ( DevExpress.MailClient.Win.Controls.ucCalendar calendar )
+		{
+			Task t1 = new Task("Test", TaskCategory.Office);
+			t1.StartDate = DateTime.Now.AddDays(-1);
+			t1.DueDate = DateTime.Now.AddDays(1);
+			t1.Description = "Description";
+			var appointment = new AppointmentItem();
+			appointment.Subject = Guid.NewGuid().ToString("X");
+			//scheduler.DataStorage.Appointments.Add(appointment);
 		}
 	}
 }

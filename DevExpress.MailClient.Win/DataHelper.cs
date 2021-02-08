@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Data.Entity;
+using System.Data.EntityClient;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -123,7 +125,7 @@ namespace DevExpress.MailClient.Win
 				if (calendarAppointmentsTable == null)
 				{
 					string table = "Appointments";
-					calendarAppointmentsTable = CreateDataTable(table);
+					calendarAppointmentsTable =  CreateDataTable(table);
 				}
 				return calendarAppointmentsTable;
 			}

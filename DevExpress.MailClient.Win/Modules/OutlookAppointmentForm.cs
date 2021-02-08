@@ -197,6 +197,13 @@ namespace DevExpress.MailClient.Win.Modules
 
 			BindBoolToVisibility(this.btnTimeZones, "Visibility", "TimeZonesEnabled");
 			BindProperties(this.btnTimeZones, "Down", "TimeZoneVisible");
+
+			this.btnDelete.ItemClick += BtnDelete_ItemClick;
+		}
+
+		private void BtnDelete_ItemClick(object sender, ItemClickEventArgs e)
+		{
+			
 		}
 
 		protected virtual void BindControllerToIcon()
@@ -442,6 +449,7 @@ namespace DevExpress.MailClient.Win.Modules
 		{
 			return XtraMessageBox.Show(this, text, caption, buttons, icon);
 		}
+
 		protected internal virtual void OnDeleteButton()
 		{
 			if (IsNewAppointment)
