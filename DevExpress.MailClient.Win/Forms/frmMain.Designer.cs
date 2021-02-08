@@ -158,11 +158,6 @@ namespace DevExpress.MailClient.Win {
 			this.appointmentRibbonPage1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPage();
 			this.actionsRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.ActionsRibbonPageGroup();
 			this.optionsRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.OptionsRibbonPageGroup();
-			this.rpMail = new DevExpress.XtraBars.Ribbon.RibbonPage();
-			this.rpgNew = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.rpgDelete = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.rpgTags = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.rpgLayoutMail = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.rpCalendar = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.appointmentRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPageGroup();
 			this.navigatorRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.NavigatorRibbonPageGroup();
@@ -183,6 +178,10 @@ namespace DevExpress.MailClient.Win {
 			this.rpdCurrentViewTasks = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
 			this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+			this.rpgNew = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+			this.rpgDelete = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+			this.rpgTags = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+			this.rpgLayoutMail = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.rpgNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.prgAppearance = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
@@ -333,7 +332,6 @@ namespace DevExpress.MailClient.Win {
             this.rpcSearch,
             this.calendarToolsRibbonPageCategory1});
 			this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.rpMail,
             this.rpCalendar,
             this.rpContacts,
             this.rpFeeds,
@@ -1265,52 +1263,6 @@ namespace DevExpress.MailClient.Win {
 			this.optionsRibbonPageGroup1.ItemLinks.Add(this.changeAppointmentReminderItem1);
 			this.optionsRibbonPageGroup1.Name = "optionsRibbonPageGroup1";
 			// 
-			// rpMail
-			// 
-			this.rpMail.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgNew,
-            this.rpgDelete,
-            this.rpgTags,
-            this.rpgLayoutMail});
-			this.rpMail.Name = "rpMail";
-			this.rpMail.Tag = "Mail";
-			resources.ApplyResources(this.rpMail, "rpMail");
-			// 
-			// rpgNew
-			// 
-			this.rpgNew.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgNew.ItemLinks.Add(this.bbiNew);
-			this.rpgNew.ItemLinks.Add(this.bbiReply, true);
-			this.rpgNew.ItemLinks.Add(this.bbiReplyAll);
-			this.rpgNew.ItemLinks.Add(this.bbiForward);
-			this.rpgNew.Name = "rpgNew";
-			resources.ApplyResources(this.rpgNew, "rpgNew");
-			// 
-			// rpgDelete
-			// 
-			this.rpgDelete.AllowTextClipping = false;
-			this.rpgDelete.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgDelete.ItemLinks.Add(this.bbiDelete);
-			this.rpgDelete.Name = "rpgDelete";
-			resources.ApplyResources(this.rpgDelete, "rpgDelete");
-			// 
-			// rpgTags
-			// 
-			this.rpgTags.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgTags.ItemLinks.Add(this.bbiUnreadRead);
-			this.rpgTags.ItemLinks.Add(this.bbiPriority);
-			this.rpgTags.Name = "rpgTags";
-			resources.ApplyResources(this.rpgTags, "rpgTags");
-			// 
-			// rpgLayoutMail
-			// 
-			this.rpgLayoutMail.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-			this.rpgLayoutMail.ItemLinks.Add(this.bbiRotateLayout);
-			this.rpgLayoutMail.ItemLinks.Add(this.bbiFlipLayout);
-			this.rpgLayoutMail.ItemLinks.Add(this.bbiShowPreview);
-			this.rpgLayoutMail.Name = "rpgLayoutMail";
-			resources.ApplyResources(this.rpgLayoutMail, "rpgLayoutMail");
-			// 
 			// rpCalendar
 			// 
 			this.rpCalendar.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1503,6 +1455,41 @@ namespace DevExpress.MailClient.Win {
 			resources.ApplyResources(this.ribbonStatusBar1, "ribbonStatusBar1");
 			this.ribbonStatusBar1.Name = "ribbonStatusBar1";
 			this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
+			// 
+			// rpgNew
+			// 
+			this.rpgNew.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+			this.rpgNew.ItemLinks.Add(this.bbiNew);
+			this.rpgNew.ItemLinks.Add(this.bbiReply, true);
+			this.rpgNew.ItemLinks.Add(this.bbiReplyAll);
+			this.rpgNew.ItemLinks.Add(this.bbiForward);
+			this.rpgNew.Name = "rpgNew";
+			resources.ApplyResources(this.rpgNew, "rpgNew");
+			// 
+			// rpgDelete
+			// 
+			this.rpgDelete.AllowTextClipping = false;
+			this.rpgDelete.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+			this.rpgDelete.ItemLinks.Add(this.bbiDelete);
+			this.rpgDelete.Name = "rpgDelete";
+			resources.ApplyResources(this.rpgDelete, "rpgDelete");
+			// 
+			// rpgTags
+			// 
+			this.rpgTags.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+			this.rpgTags.ItemLinks.Add(this.bbiUnreadRead);
+			this.rpgTags.ItemLinks.Add(this.bbiPriority);
+			this.rpgTags.Name = "rpgTags";
+			resources.ApplyResources(this.rpgTags, "rpgTags");
+			// 
+			// rpgLayoutMail
+			// 
+			this.rpgLayoutMail.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+			this.rpgLayoutMail.ItemLinks.Add(this.bbiRotateLayout);
+			this.rpgLayoutMail.ItemLinks.Add(this.bbiFlipLayout);
+			this.rpgLayoutMail.ItemLinks.Add(this.bbiShowPreview);
+			this.rpgLayoutMail.Name = "rpgLayoutMail";
+			resources.ApplyResources(this.rpgLayoutMail, "rpgLayoutMail");
 			// 
 			// rpgNavigation
 			// 
@@ -1740,7 +1727,6 @@ namespace DevExpress.MailClient.Win {
         #endregion
 
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage rpMail;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgNew;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraNavBar.NavBarControl navBarControl1;

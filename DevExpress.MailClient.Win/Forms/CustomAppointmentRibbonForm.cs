@@ -11,7 +11,7 @@ namespace DevExpress.MailClient.Win
 		public ToDoTaskRepository Repository { get; set; }
 		public SchedulerControl Scheduler { get; set; }
 		public Appointment Appointment { get; set; }
-		public bool OpenRecurrenceForm { get; set; }
+		public new bool OpenRecurrenceForm { get; set; }
 
 		public override bool SaveFormData(Appointment appointment)
 		{
@@ -31,9 +31,6 @@ namespace DevExpress.MailClient.Win
 		protected override void OnLoad(EventArgs e)
 		{
 			base.OnLoad(e);
-
-
-
 
 		}
 

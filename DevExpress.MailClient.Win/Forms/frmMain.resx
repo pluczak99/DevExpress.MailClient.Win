@@ -782,21 +782,6 @@
   <data name="calendarToolsRibbonPageCategory1.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="rpgNew.Text" xml:space="preserve">
-    <value>New / Respond</value>
-  </data>
-  <data name="rpgDelete.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="rpgTags.Text" xml:space="preserve">
-    <value>Tags</value>
-  </data>
-  <data name="rpgLayoutMail.Text" xml:space="preserve">
-    <value>Layout</value>
-  </data>
-  <data name="rpMail.Text" xml:space="preserve">
-    <value>MAIL</value>
-  </data>
   <data name="appointmentRibbonPageGroup1.Text" xml:space="preserve">
     <value>Appointments</value>
   </data>
@@ -871,6 +856,18 @@
   </data>
   <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="rpgNew.Text" xml:space="preserve">
+    <value>New / Respond</value>
+  </data>
+  <data name="rpgDelete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="rpgTags.Text" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="rpgLayoutMail.Text" xml:space="preserve">
+    <value>Layout</value>
   </data>
   <data name="rpgNavigation.Text" xml:space="preserve">
     <value>Navigation</value>
@@ -1733,36 +1730,6 @@
   <data name="&gt;&gt;optionsRibbonPageGroup1.Type" xml:space="preserve">
     <value>DevExpress.XtraScheduler.UI.OptionsRibbonPageGroup, DevExpress.XtraScheduler.v20.2.Extensions, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;rpMail.Name" xml:space="preserve">
-    <value>rpMail</value>
-  </data>
-  <data name="&gt;&gt;rpMail.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgNew.Name" xml:space="preserve">
-    <value>rpgNew</value>
-  </data>
-  <data name="&gt;&gt;rpgNew.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgDelete.Name" xml:space="preserve">
-    <value>rpgDelete</value>
-  </data>
-  <data name="&gt;&gt;rpgDelete.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgTags.Name" xml:space="preserve">
-    <value>rpgTags</value>
-  </data>
-  <data name="&gt;&gt;rpgTags.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgLayoutMail.Name" xml:space="preserve">
-    <value>rpgLayoutMail</value>
-  </data>
-  <data name="&gt;&gt;rpgLayoutMail.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;rpCalendar.Name" xml:space="preserve">
     <value>rpCalendar</value>
   </data>
@@ -1876,6 +1843,30 @@
   </data>
   <data name="&gt;&gt;repositoryItemSpinEdit1.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rpgNew.Name" xml:space="preserve">
+    <value>rpgNew</value>
+  </data>
+  <data name="&gt;&gt;rpgNew.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rpgDelete.Name" xml:space="preserve">
+    <value>rpgDelete</value>
+  </data>
+  <data name="&gt;&gt;rpgDelete.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rpgTags.Name" xml:space="preserve">
+    <value>rpgTags</value>
+  </data>
+  <data name="&gt;&gt;rpgTags.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rpgLayoutMail.Name" xml:space="preserve">
+    <value>rpgLayoutMail</value>
+  </data>
+  <data name="&gt;&gt;rpgLayoutMail.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpgNavigation.Name" xml:space="preserve">
     <value>rpgNavigation</value>
