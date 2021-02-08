@@ -297,6 +297,7 @@
     </Compile>
     <Compile Include="Data\Contact.cs" />
     <Compile Include="Data\Task.cs" />
+    <Compile Include="Utils\ControlExtensions.cs" />
     <Compile Include="Utils\ColorHelper.cs" />
     <Compile Include="Utils\DataHelper.cs" />
     <Compile Include="Controls\DateFilterMenu.cs">

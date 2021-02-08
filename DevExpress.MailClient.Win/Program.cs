@@ -14,13 +14,14 @@ using System.IO;
 using DevExpress.Tutorials;
 
 namespace DevExpress.MailClient.Win {
-    static class Program {
+    static class Program
+    {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main(string[] arguments) {
-            AppDomain.CurrentDomain.AssemblyResolve += OnCurrentDomainAssemblyResolve;
+        static void Main(string[] arguments)
+        {
             DataHelper.ApplicationArguments = arguments;
             DevExpress.Utils.LocalizationHelper.SetCurrentCulture(DataHelper.ApplicationArguments);
             DevExpress.UserSkins.BonusSkins.Register();
@@ -38,16 +39,8 @@ namespace DevExpress.MailClient.Win {
             if (result == DialogResult.Cancel)
             {
                 return;
-			}
-			Application.Run(new frmMain());
-        }
-        static Assembly OnCurrentDomainAssemblyResolve(object sender, ResolveEventArgs args) {
-            string partialName = DevExpress.Utils.AssemblyHelper.GetPartialName(args.Name).ToLower();
-            if(partialName == "entityframework" || partialName == "system.data.sqlite" || partialName == "system.data.sqlite.ef6") {
-                string path = FilePathUtils.FindFilePath("Dll\\" + partialName + ".dll", false);
-                return Assembly.LoadFrom(path);
             }
-            return null;
+            Application.Run(new frmMain());
         }
     }
 }

@@ -138,6 +138,45 @@
   <data name="AppointmentError" xml:space="preserve">
     <value>Błąd: nie można wyeksportować zadań</value>
   </data>
+  <data name="appointmentRibbonForm_AllDay_Label" xml:space="preserve">
+    <value>Zadanie całodniowe:</value>
+  </data>
+  <data name="appointmentRibbonForm_btn_Options" xml:space="preserve">
+    <value>Opcje drukowania</value>
+  </data>
+  <data name="appointmentRibbonForm_btn_Print" xml:space="preserve">
+    <value>Drukuj</value>
+  </data>
+  <data name="appointmentRibbonForm_Description_Label" xml:space="preserve">
+    <value>Opis:</value>
+  </data>
+  <data name="appointmentRibbonForm_EndDate_Label" xml:space="preserve">
+    <value>Data zakończenia:</value>
+  </data>
+  <data name="appointmentRibbonForm_EndTime_Label" xml:space="preserve">
+    <value>Zakończenie:</value>
+  </data>
+  <data name="appointmentRibbonForm_lblPercentComplete_Label" xml:space="preserve">
+    <value>% zrobione</value>
+  </data>
+  <data name="appointmentRibbonForm_Location_Label" xml:space="preserve">
+    <value>Lokacja</value>
+  </data>
+  <data name="appointmentRibbonForm_Reminder_Label" xml:space="preserve">
+    <value>Przypomnienie:</value>
+  </data>
+  <data name="appointmentRibbonForm_Resource_Label" xml:space="preserve">
+    <value>Zasób:</value>
+  </data>
+  <data name="appointmentRibbonForm_StartTime_Label" xml:space="preserve">
+    <value>Rozpoczęcie:</value>
+  </data>
+  <data name="appointmentRibbonForm_Subject_Label" xml:space="preserve">
+    <value>Przedmiot:</value>
+  </data>
+  <data name="appointmentRibbonForm_TimeZones_Label" xml:space="preserve">
+    <value>Strefa czasowa</value>
+  </data>
   <data name="appointmentRibbonPage1Caption" xml:space="preserve">
     <value>SZCZEGÓŁY</value>
   </data>

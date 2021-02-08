@@ -1045,7 +1045,46 @@ Left:	12 mm	Right:	12 mm</value>
   <data name="backstageViewLabel1_QuickHelp_Description" xml:space="preserve">
     <value>Get help using DevExpress components.</value>
   </data>
+  <data name="appointmentRibbonForm_AllDay_Label" xml:space="preserve">
+    <value>All day event:</value>
+  </data>
+  <data name="appointmentRibbonForm_Description_Label" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="appointmentRibbonForm_EndDate_Label" xml:space="preserve">
+    <value>End date:</value>
+  </data>
+  <data name="appointmentRibbonForm_EndTime_Label" xml:space="preserve">
+    <value>End time:</value>
+  </data>
+  <data name="appointmentRibbonForm_Location_Label" xml:space="preserve">
+    <value>Location:</value>
+  </data>
+  <data name="appointmentRibbonForm_Reminder_Label" xml:space="preserve">
+    <value>Reminder:</value>
+  </data>
+  <data name="appointmentRibbonForm_StartTime_Label" xml:space="preserve">
+    <value>Start time:</value>
+  </data>
+  <data name="appointmentRibbonForm_Subject_Label" xml:space="preserve">
+    <value>Subject:</value>
+  </data>
+  <data name="appointmentRibbonForm_TimeZones_Label" xml:space="preserve">
+    <value>Time zones:</value>
+  </data>
   <data name="appointmentRibbonPage1Caption" xml:space="preserve">
     <value>TO DO TASK DETAILS</value>
+  </data>
+  <data name="appointmentRibbonForm_btn_Options" xml:space="preserve">
+    <value>Options:</value>
+  </data>
+  <data name="appointmentRibbonForm_btn_Print" xml:space="preserve">
+    <value>Print:</value>
+  </data>
+  <data name="appointmentRibbonForm_lblPercentComplete_Label" xml:space="preserve">
+    <value>% Complete</value>
+  </data>
+  <data name="appointmentRibbonForm_Resource_Label" xml:space="preserve">
+    <value>Resource:</value>
   </data>
 </root>

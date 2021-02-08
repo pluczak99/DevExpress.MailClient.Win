@@ -124,6 +124,123 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All day event:.
+        /// </summary>
+        internal static string appointmentRibbonForm_AllDay_Label {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_AllDay_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Options:.
+        /// </summary>
+        internal static string appointmentRibbonForm_btn_Options {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_btn_Options", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Print:.
+        /// </summary>
+        internal static string appointmentRibbonForm_btn_Print {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_btn_Print", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description:.
+        /// </summary>
+        internal static string appointmentRibbonForm_Description_Label {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_Description_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to End date:.
+        /// </summary>
+        internal static string appointmentRibbonForm_EndDate_Label {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_EndDate_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to End time:.
+        /// </summary>
+        internal static string appointmentRibbonForm_EndTime_Label {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_EndTime_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to % Complete.
+        /// </summary>
+        internal static string appointmentRibbonForm_lblPercentComplete_Label {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_lblPercentComplete_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Location:.
+        /// </summary>
+        internal static string appointmentRibbonForm_Location_Label {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_Location_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reminder:.
+        /// </summary>
+        internal static string appointmentRibbonForm_Reminder_Label {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_Reminder_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resource:.
+        /// </summary>
+        internal static string appointmentRibbonForm_Resource_Label {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_Resource_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start time:.
+        /// </summary>
+        internal static string appointmentRibbonForm_StartTime_Label {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_StartTime_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subject:.
+        /// </summary>
+        internal static string appointmentRibbonForm_Subject_Label {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_Subject_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Time zones:.
+        /// </summary>
+        internal static string appointmentRibbonForm_TimeZones_Label {
+            get {
+                return ResourceManager.GetString("appointmentRibbonForm_TimeZones_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TO DO TASK DETAILS.
         /// </summary>
         internal static string appointmentRibbonPage1Caption {
