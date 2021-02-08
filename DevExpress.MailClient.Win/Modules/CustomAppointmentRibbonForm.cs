@@ -1,11 +1,14 @@
 ﻿using System.Windows.Forms;
 using DevExpress.XtraScheduler;
 using DevExpress.XtraScheduler.UI;
+using MailClient.Data.Service;
 
 namespace DevExpress.MailClient.Win
 {
 	public class CustomAppointmentRibbonForm : AppointmentRibbonForm
 	{
+		public ToDoTaskRepository Repository { get; set; }
+
 		public override bool SaveFormData(Appointment appointment)
 		{
 			return base.SaveFormData(appointment);

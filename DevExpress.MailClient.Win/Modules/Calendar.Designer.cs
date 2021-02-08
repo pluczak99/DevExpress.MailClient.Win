@@ -106,6 +106,7 @@ namespace DevExpress.MailClient.Win {
 		private void SchedulerControl1_InitNewAppointment(object sender, XtraScheduler.AppointmentEventArgs e)
 		{
 			e.Appointment.SetId(Guid.NewGuid()); // assign ID to a new appointment and use it while saving
+			//XtraScheduler.Appointment
 		}
 
 		#endregion
