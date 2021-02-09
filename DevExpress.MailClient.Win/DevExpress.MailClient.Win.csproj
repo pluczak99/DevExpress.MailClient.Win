@@ -487,7 +487,9 @@
     <None Include="DEVEXPRESSDataSet1.xss">
       <DependentUpon>DEVEXPRESSDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="ApplicationDescription.MD" />
     <None Include="Installation.MD" />
+    <None Include="Installation\DevExpress.ToDoList.Demo.msi" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
