@@ -782,7 +782,7 @@ Left:	12 mm	Right:	12 mm</value>
     <value>First</value>
   </data>
   <data name="AppointmentError" xml:space="preserve">
-    <value>Error: could not export appointments</value>
+    <value>Error: could not export to-do tasks</value>
   </data>
   <data name="task" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\task.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
@@ -962,19 +962,19 @@ Left:	12 mm	Right:	12 mm</value>
     <value>..\Resources\ContactUs.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="btnAppointmentLabel" xml:space="preserve">
-    <value>Appointment</value>
+    <value>To-Do Task</value>
   </data>
   <data name="btnAppointmentHint" xml:space="preserve">
-    <value>Create a new appointment</value>
+    <value>Create a new to-do task</value>
   </data>
   <data name="btnRecurringAppointmentLabel" xml:space="preserve">
-    <value>New Recurring Appointment</value>
+    <value>New Recurring To-Do Task</value>
   </data>
   <data name="btnSaveAsLabel" xml:space="preserve">
     <value>Save As</value>
   </data>
   <data name="btnRecurringAppointmentHint" xml:space="preserve">
-    <value>Create a new recurring appointment</value>
+    <value>Create a new recurring To-Do Task</value>
   </data>
   <data name="RibbonPageCalendarTitle" xml:space="preserve">
     <value>TO DO LIST</value>
@@ -1091,19 +1091,19 @@ Left:	12 mm	Right:	12 mm</value>
     <value>Delete</value>
   </data>
   <data name="Appointment_btnDelete_Hint" xml:space="preserve">
-    <value>Delete this to do task appointment</value>
+    <value>Delete this to-do task</value>
   </data>
   <data name="Appointment_btnSaveAndClose_Caption" xml:space="preserve">
     <value>Save and Close</value>
   </data>
   <data name="Appointment_btnSaveAndClose_Hint" xml:space="preserve">
-    <value>Save and close the to-do task appointment</value>
+    <value>Save and close the to-do task</value>
   </data>
   <data name="Appointment_barLabel_Caption" xml:space="preserve">
     <value>Category</value>
   </data>
   <data name="Appointment_barLabel_Hint" xml:space="preserve">
-    <value>Set appointment category</value>
+    <value>Set to-do task category</value>
   </data>
   <data name="Appointment_barReminder_Caption" xml:space="preserve">
     <value>Reminder</value>
@@ -1121,28 +1121,28 @@ Left:	12 mm	Right:	12 mm</value>
     <value>Next</value>
   </data>
   <data name="Appointment_btnNext_Hint" xml:space="preserve">
-    <value>Next appointment</value>
+    <value>Next to-do task</value>
   </data>
   <data name="Appointment_btnPrevious_Caption" xml:space="preserve">
     <value>Previous</value>
   </data>
   <data name="Appointment_btnPrevious_Hint" xml:space="preserve">
-    <value>Previous appointment</value>
+    <value>Previous to-do task</value>
   </data>
   <data name="Appointment_btnRecurrence_Caption" xml:space="preserve">
     <value>Recurrence</value>
   </data>
   <data name="Appointment_btnRecurrence_Hint" xml:space="preserve">
-    <value>Define appointment recurrence</value>
+    <value>Define to-do task recurrence</value>
   </data>
   <data name="Appointment_btnSave_Caption" xml:space="preserve">
     <value>Save</value>
   </data>
   <data name="Appointment_btnSave_Hint" xml:space="preserve">
-    <value>Save appointment</value>
+    <value>Save to-do task</value>
   </data>
   <data name="Appointment_Ribbon_Page_Caption" xml:space="preserve">
-    <value>APPOINTMENT</value>
+    <value>TO DO TASK</value>
   </data>
   <data name="Reminder_btnDismissAll_Caption" xml:space="preserve">
     <value>Dismiss &amp;All</value>

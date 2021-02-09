@@ -307,10 +307,10 @@ namespace DevExpress.MailClient.Win {
             modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
         }
 
-        private void ucCalendar1_VisibleChanged(object sender, EventArgs e) {
-            if(ucCalendar1.Visible)
-                ucCalendar1.UpdateTreeListHeight();
-        }
+        //private void ucCalendar1_VisibleChanged(object sender, EventArgs e) {
+        //    if(ucCalendar1.Visible)
+        //        ucCalendar1.UpdateTreeListHeight();
+        //}
 
         private void bvtiPrint_SelectedChanged(object sender, BackstageViewItemEventArgs e) {
             if(backstageViewControl1.SelectedTab == bvtiPrint)
@@ -346,5 +346,15 @@ namespace DevExpress.MailClient.Win {
         {
             e.Item.Id = new Random().Next(0, Int32.MaxValue);
 		}
+
+		private void newRecurringAppointmentItem1_ItemClick(object sender, ItemClickEventArgs e)
+		{
+
+		}
+
+		//private void newRecurringAppointmentItem1_ItemClick(object sender, ItemClickEventArgs e)
+		//{
+
+		//}
 	}
 }

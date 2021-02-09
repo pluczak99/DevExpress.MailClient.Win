@@ -931,6 +931,7 @@ namespace DevExpress.MailClient.Win {
 			// 
 			// newAppointmentItem1
 			// 
+			resources.ApplyResources(this.newAppointmentItem1, "newAppointmentItem1");
 			this.newAppointmentItem1.Enabled = false;
 			this.newAppointmentItem1.Id = 67;
 			this.newAppointmentItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("newAppointmentItem1.ImageOptions.Image")));
@@ -940,11 +941,13 @@ namespace DevExpress.MailClient.Win {
 			// 
 			// newRecurringAppointmentItem1
 			// 
+			resources.ApplyResources(this.newRecurringAppointmentItem1, "newRecurringAppointmentItem1");
 			this.newRecurringAppointmentItem1.Enabled = false;
 			this.newRecurringAppointmentItem1.Id = 68;
 			this.newRecurringAppointmentItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("newRecurringAppointmentItem1.ImageOptions.Image")));
 			this.newRecurringAppointmentItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("newRecurringAppointmentItem1.ImageOptions.LargeImage")));
 			this.newRecurringAppointmentItem1.Name = "newRecurringAppointmentItem1";
+			this.newRecurringAppointmentItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.newRecurringAppointmentItem1_ItemClick);
 			// 
 			// navigateViewBackwardItem1
 			// 
@@ -1434,7 +1437,6 @@ namespace DevExpress.MailClient.Win {
 			resources.ApplyResources(this.ucCalendar1, "ucCalendar1");
 			this.ucCalendar1.Name = "ucCalendar1";
 			this.ucCalendar1.State = DevExpress.XtraNavBar.NavPaneState.Collapsed;
-			this.ucCalendar1.VisibleChanged += new System.EventHandler(this.ucCalendar1_VisibleChanged);
 			// 
 			// navBarGroupControlContainer3
 			// 

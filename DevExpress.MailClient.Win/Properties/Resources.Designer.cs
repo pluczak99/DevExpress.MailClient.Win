@@ -124,7 +124,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Set appointment category.
+        ///   Looks up a localized string similar to Set to-do task category.
         /// </summary>
         internal static string Appointment_barLabel_Hint {
             get {
@@ -178,7 +178,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete this to do task appointment.
+        ///   Looks up a localized string similar to Delete this to-do task.
         /// </summary>
         internal static string Appointment_btnDelete_Hint {
             get {
@@ -196,7 +196,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Next appointment.
+        ///   Looks up a localized string similar to Next to-do task.
         /// </summary>
         internal static string Appointment_btnNext_Hint {
             get {
@@ -214,7 +214,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Previous appointment.
+        ///   Looks up a localized string similar to Previous to-do task.
         /// </summary>
         internal static string Appointment_btnPrevious_Hint {
             get {
@@ -232,7 +232,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Define appointment recurrence.
+        ///   Looks up a localized string similar to Define to-do task recurrence.
         /// </summary>
         internal static string Appointment_btnRecurrence_Hint {
             get {
@@ -250,7 +250,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Save appointment.
+        ///   Looks up a localized string similar to Save to-do task.
         /// </summary>
         internal static string Appointment_btnSave_Hint {
             get {
@@ -268,7 +268,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Save and close the to-do task appointment.
+        ///   Looks up a localized string similar to Save and close the to-do task.
         /// </summary>
         internal static string Appointment_btnSaveAndClose_Hint {
             get {
@@ -277,7 +277,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to APPOINTMENT.
+        ///   Looks up a localized string similar to TO DO TASK.
         /// </summary>
         internal static string Appointment_Ribbon_Page_Caption {
             get {
@@ -286,7 +286,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error: could not export appointments.
+        ///   Looks up a localized string similar to Error: could not export to-do tasks.
         /// </summary>
         internal static string AppointmentError {
             get {
@@ -540,7 +540,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create a new appointment.
+        ///   Looks up a localized string similar to Create a new to-do task.
         /// </summary>
         internal static string btnAppointmentHint {
             get {
@@ -549,7 +549,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Appointment.
+        ///   Looks up a localized string similar to To-Do Task.
         /// </summary>
         internal static string btnAppointmentLabel {
             get {
@@ -558,7 +558,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create a new recurring appointment.
+        ///   Looks up a localized string similar to Create a new recurring To-Do Task.
         /// </summary>
         internal static string btnRecurringAppointmentHint {
             get {
@@ -567,7 +567,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to New Recurring Appointment.
+        ///   Looks up a localized string similar to New Recurring To-Do Task.
         /// </summary>
         internal static string btnRecurringAppointmentLabel {
             get {

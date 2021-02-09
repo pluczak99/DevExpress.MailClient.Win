@@ -28,10 +28,9 @@ namespace DevExpress.MailClient.Win
 
 			this.Repository = apt.CustomFields["_repository"] as ToDoTaskRepository;
 			this.Scheduler = control;
-			this.Appointment = apt;
+			//this.Appointment = apt;
 			this.OpenRecurrenceForm = openRecurrenceForm;
 			this.Storage.EnableReminders = true;
-
 			this.Appointment = this.Storage.CreateAppointment(AppointmentType.Normal);
 			this.Appointment.Assign(apt);
 
@@ -45,7 +44,7 @@ namespace DevExpress.MailClient.Win
 			if (this.Appointment.Id == null)
 			{
 				this.Appointment.SetId(Guid.NewGuid());
-				if (this.Appointment.HasReminder == false)
+				if (this.Appointment.HasReminder == false && this.Appointment.Type != AppointmentType.Pattern)
 				{
 					var r = this.Storage.CreateReminder(this.Appointment);
 					if (r != null)
@@ -54,16 +53,12 @@ namespace DevExpress.MailClient.Win
 						r.AlertTime = this.Appointment.Start.Subtract(r.TimeBeforeStart);
 						
 						this.Appointment.Reminders.Add(r);
-						this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = TimeSpan.FromMinutes(15);
-						
+						//this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = TimeSpan.FromMinutes(15);
+						//this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = this.Appointment.Reminder.TimeBeforeStart;	
 					}
-				}
-				else
-				{
-					this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = this.Appointment.Reminder.TimeBeforeStart;
+					this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = TimeSpan.FromMinutes(15);
 				}
 			}
-
 
 			this.Controls.FindControl("lblSubject").SetText(Properties.Resources.appointmentRibbonForm_Subject_Label);
 			this.Controls.FindControl("lblResource").SetText(Properties.Resources.appointmentRibbonForm_Resource_Label);
@@ -94,21 +89,6 @@ namespace DevExpress.MailClient.Win
 
 		}
 
-		//protected override void OnShown(EventArgs e)
-		//{
-		//	base.OnShown(e);
-		//}
-
-		//protected override void InitCore()
-		//{
-		//	base.InitCore();
-		//}
-
-		//protected override void OnMove(EventArgs e)
-		//{
-		//	base.OnMove(e);
-		//}
-
 		protected override void OnSaveButton()
 		{
 			base.OnSaveButton();
@@ -130,12 +110,6 @@ namespace DevExpress.MailClient.Win
 		protected override void OnDeleteButton()
 		{
 			base.OnDeleteButton();
-		}
-
-		protected override DialogResult ShowRecurrenceForm(Form form)
-		{
-			string name = System.Threading.Thread.CurrentThread.CurrentCulture.Name;
-			return base.ShowRecurrenceForm(form);
 		}
 	}
 

@@ -90,53 +90,53 @@ namespace DevExpress.MailClient.Win.Controls {
             //FillSelectedNodes(treeResources.Nodes[1], result);
             return result;
         }
-        private void FillSelectedNodes(TreeListNode node, List<int> resourceIds) {
-            foreach (TreeListNode item in node.Nodes)
-                if (item.CheckState == CheckState.Checked)
-                    resourceIds.Add((int)item.Tag);
-        }
+        //private void FillSelectedNodes(TreeListNode node, List<int> resourceIds) {
+        //    foreach (TreeListNode item in node.Nodes)
+        //        if (item.CheckState == CheckState.Checked)
+        //            resourceIds.Add((int)item.Tag);
+        //}
 
-        private void treeResources_AfterCollapse(object sender, DevExpress.XtraTreeList.NodeEventArgs e) {
-            EndCalcTreeListHeight();
-        }
+        //private void treeResources_AfterCollapse(object sender, DevExpress.XtraTreeList.NodeEventArgs e) {
+        //    EndCalcTreeListHeight();
+        //}
 
-        private void treeResources_AfterExpand(object sender, DevExpress.XtraTreeList.NodeEventArgs e) {
-            EndCalcTreeListHeight();
-        }
-        void StartCalcTreeListHeight() {
-            //treeResources.BeginUpdate();
-        }
-        void CalcTreeListHeight() {
-            //treeResources.Height = GetExpandedRowCount(treeResources.Nodes) * treeResources.ViewInfo.RowHeight + 2;
-        }
-        void EndCalcTreeListHeight() {
-            CalcTreeListHeight();
-            //treeResources.EndUpdate();
-        }
-        public void UpdateTreeListHeight() {
-            BeginInvoke(new MethodInvoker(CalcTreeListHeight));
-        }
-        int GetExpandedRowCount(TreeListNodes nodes) {
-            int count = 0;
-            foreach(TreeListNode node in nodes) {
-                count++;
-                if(node.Expanded)
-                    count += GetExpandedRowCount(node.Nodes);
-            }
-            return count;
-        }
+        //private void treeResources_AfterExpand(object sender, DevExpress.XtraTreeList.NodeEventArgs e) {
+        //    EndCalcTreeListHeight();
+        //}
+        //void StartCalcTreeListHeight() {
+        //    //treeResources.BeginUpdate();
+        //}
+        //void CalcTreeListHeight() {
+        //    //treeResources.Height = GetExpandedRowCount(treeResources.Nodes) * treeResources.ViewInfo.RowHeight + 2;
+        //}
+        //void EndCalcTreeListHeight() {
+        //    CalcTreeListHeight();
+        //    //treeResources.EndUpdate();
+        //}
+        //public void UpdateTreeListHeight() {
+        //    BeginInvoke(new MethodInvoker(CalcTreeListHeight));
+        //}
+        //int GetExpandedRowCount(TreeListNodes nodes) {
+        //    int count = 0;
+        //    foreach(TreeListNode node in nodes) {
+        //        count++;
+        //        if(node.Expanded)
+        //            count += GetExpandedRowCount(node.Nodes);
+        //    }
+        //    return count;
+        //}
 
-        private void treeResources_BeforeCollapse(object sender, DevExpress.XtraTreeList.BeforeCollapseEventArgs e) {
-            StartCalcTreeListHeight();
-        }
+        //private void treeResources_BeforeCollapse(object sender, DevExpress.XtraTreeList.BeforeCollapseEventArgs e) {
+        //    StartCalcTreeListHeight();
+        //}
 
-        private void treeResources_BeforeExpand(object sender, DevExpress.XtraTreeList.BeforeExpandEventArgs e) {
-            StartCalcTreeListHeight();
-        }
-        protected override void LookAndFeelStyleChanged() {
-            base.LookAndFeelStyleChanged();
-            CalcTreeListHeight();
-        }
+        //private void treeResources_BeforeExpand(object sender, DevExpress.XtraTreeList.BeforeExpandEventArgs e) {
+        //    StartCalcTreeListHeight();
+        //}
+        //protected override void LookAndFeelStyleChanged() {
+        //    base.LookAndFeelStyleChanged();
+        //    CalcTreeListHeight();
+        //}
 
         public void SetBarController(SchedulerBarController barController) {
             this.barController = barController;

@@ -610,6 +610,9 @@
   <data name="bbiDeleteTask.Caption" xml:space="preserve">
     <value>Delete</value>
   </data>
+  <data name="newAppointmentItem1.Caption" xml:space="preserve">
+    <value>New To-Do Task</value>
+  </data>
   <data name="newAppointmentItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABx0RVh0VGl0
@@ -666,6 +669,9 @@
         WL0p0UTCyo1INuC1PHrp6k0nzezu/8mqDxN63vSOXEbC/OeF/z3JBuwLfH/m0nB/FH74P8CvW5PB3/EN
         iP81iewJ+SqgD7vhRe6LAr+vfZEo+4rM7ZABSP8GvuBPbq/Z/TAAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="newRecurringAppointmentItem1.Caption" xml:space="preserve">
+    <value>New Recurring To-Do Task</value>
   </data>
   <data name="newRecurringAppointmentItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -771,7 +777,7 @@
     <value>False</value>
   </data>
   <data name="appointmentRibbonPageGroup1.Text" xml:space="preserve">
-    <value>Appointments</value>
+    <value>To-Do Tasks</value>
   </data>
   <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
