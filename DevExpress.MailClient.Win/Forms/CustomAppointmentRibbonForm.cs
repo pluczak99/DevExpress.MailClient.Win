@@ -8,8 +8,6 @@ using DevExpress.XtraScheduler.UI;
 using MailClient.Data.Service;
 
 namespace DevExpress.MailClient.Win
-
-
 {
 	public class CustomAppointmentRibbonForm : AppointmentRibbonForm
 	{
@@ -86,31 +84,11 @@ namespace DevExpress.MailClient.Win
 
 			this.Ribbon.FindBarItem("btnTimeZones").Visibility = BarItemVisibility.Never;
 
-
+			//this.Scheduler.DataStorage.AppointmentsChanged += DataStorage_AppointmentsChanged;
+			//this.Scheduler.DataStorage.AppointmentsInserted += DataStorage_AppointmentsInserted;
+			//this.Scheduler.DataStorage.AppointmentDependencyDeleting += DataStorage_AppointmentDependencyDeleting;
 		}
 
-		protected override void OnSaveButton()
-		{
-			base.OnSaveButton();
-		}
-
-		protected override void OnFormClosing(FormClosingEventArgs e)
-		{
-			if (e.Cancel == false)
-			{
-			}
-			base.OnFormClosing(e);
-		}
-
-		protected override void OnFormClosed(FormClosedEventArgs e)
-		{
-			base.OnFormClosed(e);
-		}
-
-		protected override void OnDeleteButton()
-		{
-			base.OnDeleteButton();
-		}
 	}
 
 }

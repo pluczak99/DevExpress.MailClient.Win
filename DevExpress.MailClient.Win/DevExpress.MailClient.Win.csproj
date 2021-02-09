@@ -297,10 +297,18 @@
     </Compile>
     <Compile Include="Data\Contact.cs" />
     <Compile Include="Data\Task.cs" />
+    <Compile Include="DEVEXPRESSDataSet.cs">
+      <DependentUpon>DEVEXPRESSDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DEVEXPRESSDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DEVEXPRESSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEVEXPRESSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DEVEXPRESSDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Localization\Categories.cs" />
     <Compile Include="Localization\CollectionResources.cs" />
@@ -499,6 +507,17 @@
     </None>
     <None Include="DEVEXPRESSDataSet.xss">
       <DependentUpon>DEVEXPRESSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DEVEXPRESSDataSet1.xsc">
+      <DependentUpon>DEVEXPRESSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DEVEXPRESSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DEVEXPRESSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DEVEXPRESSDataSet1.xss">
+      <DependentUpon>DEVEXPRESSDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

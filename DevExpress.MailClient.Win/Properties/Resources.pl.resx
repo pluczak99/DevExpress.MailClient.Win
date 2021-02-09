@@ -507,6 +507,19 @@
   <data name="Frameworks" xml:space="preserve">
     <value>Frameworks</value>
   </data>
+  <data name="frmMain_newAppointmentItem1_Caption" xml:space="preserve">
+    <value>Nowe zadanie to-do</value>
+    <comment>frmM</comment>
+  </data>
+  <data name="frmMain_newAppointmentItem1_Hint" xml:space="preserve">
+    <value>Utwórz nowe zadanie to-do</value>
+  </data>
+  <data name="frmMain_newRecurringAppointmentItem1_Caption" xml:space="preserve">
+    <value>Nowe cykliczne zadanie to-do</value>
+  </data>
+  <data name="frmMain_newRecurringAppointmentItem1_Hint" xml:space="preserve">
+    <value>Utwórz nowe cykliczne zadanie to-do</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>Od</value>
   </data>

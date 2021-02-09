@@ -1165,4 +1165,17 @@ Left:	12 mm	Right:	12 mm</value>
   <data name="Reminder_lblSubject_Caption" xml:space="preserve">
     <value>Subject</value>
   </data>
+  <data name="frmMain_newAppointmentItem1_Caption" xml:space="preserve">
+    <value>New To-Do Task</value>
+    <comment>frmM</comment>
+  </data>
+  <data name="frmMain_newAppointmentItem1_Hint" xml:space="preserve">
+    <value>Create a new to-do task</value>
+  </data>
+  <data name="frmMain_newRecurringAppointmentItem1_Caption" xml:space="preserve">
+    <value>New Recurring To-Do Task</value>
+  </data>
+  <data name="frmMain_newRecurringAppointmentItem1_Hint" xml:space="preserve">
+    <value>Create a new recurring to-do task</value>
+  </data>
 </root>

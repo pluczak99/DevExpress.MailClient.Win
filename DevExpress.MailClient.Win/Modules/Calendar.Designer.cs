@@ -37,23 +37,13 @@ namespace DevExpress.MailClient.Win {
 			DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
 			this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
 			this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
-			this.dEVEXPRESSDataSet = new DevExpress.MailClient.Win.DEVEXPRESSDataSet();
-			this.dEVEXPRESSDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.resourcesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.resourcesTableAdapter = new DevExpress.MailClient.Win.DEVEXPRESSDataSetTableAdapters.ResourcesTableAdapter();
-			this.dEVEXPRESSDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.schedulerControl1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.dEVEXPRESSDataSet)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.dEVEXPRESSDataSetBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.dEVEXPRESSDataSetBindingSource1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// schedulerStorage1
 			// 
 			this.schedulerStorage1.Appointments.CustomFieldMappings.Add(new DevExpress.XtraScheduler.AppointmentCustomFieldMapping("ContactInfo", "ContactInfo", DevExpress.XtraScheduler.FieldValueType.String));
-			this.schedulerStorage1.Appointments.DataSource = this.dEVEXPRESSDataSetBindingSource1;
 			this.schedulerStorage1.Appointments.Mappings.AllDay = "AllDay";
 			this.schedulerStorage1.Appointments.Mappings.Description = "Description";
 			this.schedulerStorage1.Appointments.Mappings.End = "EndDate";
@@ -66,7 +56,7 @@ namespace DevExpress.MailClient.Win {
 			this.schedulerStorage1.Appointments.Mappings.Status = "Status";
 			this.schedulerStorage1.Appointments.Mappings.Subject = "Subject";
 			this.schedulerStorage1.Appointments.Mappings.Type = "EventType";
-			this.schedulerStorage1.Resources.DataSource = this.dEVEXPRESSDataSetBindingSource;
+			
 			this.schedulerStorage1.Resources.Mappings.Caption = "Name";
 			this.schedulerStorage1.Resources.Mappings.Id = "ID";
 			// 
@@ -100,30 +90,7 @@ namespace DevExpress.MailClient.Win {
 			this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler2);
 			this.schedulerControl1.Views.YearView.UseOptimizedScrolling = false;
 			this.schedulerControl1.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.SchedulerControl1_EditAppointmentFormShowing);
-			// 
-			// dEVEXPRESSDataSet
-			// 
-			this.dEVEXPRESSDataSet.DataSetName = "DEVEXPRESSDataSet";
-			this.dEVEXPRESSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-			// 
-			// dEVEXPRESSDataSetBindingSource
-			// 
-			this.dEVEXPRESSDataSetBindingSource.DataSource = this.dEVEXPRESSDataSet;
-			this.dEVEXPRESSDataSetBindingSource.Position = 0;
-			// 
-			// resourcesBindingSource
-			// 
-			this.resourcesBindingSource.DataMember = "Resources";
-			this.resourcesBindingSource.DataSource = this.dEVEXPRESSDataSetBindingSource;
-			// 
-			// resourcesTableAdapter
-			// 
-			this.resourcesTableAdapter.ClearBeforeFill = true;
-			// 
-			// dEVEXPRESSDataSetBindingSource1
-			// 
-			this.dEVEXPRESSDataSetBindingSource1.DataSource = this.dEVEXPRESSDataSet;
-			this.dEVEXPRESSDataSetBindingSource1.Position = 0;
+
 			// 
 			// Calendar
 			// 
@@ -133,34 +100,37 @@ namespace DevExpress.MailClient.Win {
 			this.Name = "Calendar";
 			((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.schedulerControl1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.dEVEXPRESSDataSet)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.dEVEXPRESSDataSetBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.dEVEXPRESSDataSetBindingSource1)).EndInit();
 			this.ResumeLayout(false);
 
+			
         }
+
+		private void SchedulerControl1_AllowAppointmentCreate(object sender, XtraScheduler.AppointmentOperationEventArgs e)
+		{
+			//dEVEXPRESSDataSet 
+		}
 
 		private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
 		private DevExpress.XtraScheduler.SchedulerControl schedulerControl1;
 
 		private void SchedulerControl1_EditAppointmentFormShowing1(object sender, XtraScheduler.AppointmentFormEventArgs e)
 		{
-			e.Appointment.CustomFields["_repository"] = this.todoTaskRepository;
+			//e.Appointment.CustomFields["_repository"] = this.todoTaskRepository;
+			this.schedulerStorage1.AppointmentsChanged += SchedulerStorage1_AppointmentsChanged;
+		}
+
+		private void SchedulerStorage1_AppointmentsChanged(object sender, XtraScheduler.PersistentObjectsEventArgs e)
+		{
+			
 		}
 
 		private void SchedulerControl1_InitNewAppointment(object sender, XtraScheduler.AppointmentEventArgs e)
 		{
 			//e.Appointment.SetId(Guid.NewGuid()); // assign ID to a new appointment and use it while saving
-			e.Appointment.CustomFields["_repository"] = this.todoTaskRepository;
+			//e.Appointment.CustomFields["_repository"] = this.todoTaskRepository;
 		}
 
 		#endregion
 
-		private System.Windows.Forms.BindingSource dEVEXPRESSDataSetBindingSource1;
-		private DEVEXPRESSDataSet dEVEXPRESSDataSet;
-		private System.Windows.Forms.BindingSource dEVEXPRESSDataSetBindingSource;
-		private System.Windows.Forms.BindingSource resourcesBindingSource;
-		private DEVEXPRESSDataSetTableAdapters.ResourcesTableAdapter resourcesTableAdapter;
 	}
 }

@@ -5,11 +5,11 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing) {
+		/// <summary> 
+		/// Clean up any resources being used.
+		/// </summary>
+		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		protected override void Dispose(bool disposing) {
             if (disposing && (components != null)) {
                 components.Dispose();
             }
@@ -53,13 +53,11 @@
 			((System.ComponentModel.ISupportInitialize)(this.dateNavigator1)).EndInit();
 			this.ResumeLayout(false);
 
-        }
+		}
 
-        #endregion
+		#endregion
 
-        private DevExpress.XtraScheduler.DateNavigator dateNavigator1;
-		private DevExpress.XtraTreeList.TreeList treeResources;
-		private DevExpress.XtraTreeList.Columns.TreeListColumn treeListColumn1;
+		private DevExpress.XtraScheduler.DateNavigator dateNavigator1;
 		private DevExpress.XtraEditors.PanelControl panelControl1;
 	}
 }

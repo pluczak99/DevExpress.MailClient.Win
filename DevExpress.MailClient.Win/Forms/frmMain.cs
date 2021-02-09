@@ -141,6 +141,11 @@ namespace DevExpress.MailClient.Win {
             ribbonControl1.Toolbar.ItemLinks.Add(skinPaletteRibbonGalleryBarItem1);
             appointmentRibbonPage1.Text = Properties.Resources.appointmentRibbonPage1Caption;
 
+            this.newAppointmentItem1.Caption = Properties.Resources.frmMain_newAppointmentItem1_Caption;
+			this.newAppointmentItem1.Hint = Properties.Resources.frmMain_newAppointmentItem1_Hint;
+            this.newRecurringAppointmentItem1.Caption = Properties.Resources.frmMain_newRecurringAppointmentItem1_Caption;
+            this.newRecurringAppointmentItem1.Hint = Properties.Resources.frmMain_newRecurringAppointmentItem1_Hint;
+
             this.ToDoTaskRepository = new ToDoTaskRepository();
         }
 

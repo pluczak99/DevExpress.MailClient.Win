@@ -29,7 +29,11 @@ namespace DevExpress.MailClient.Win
 		RibbonPageCategory appointmentCategory = null;
 		RibbonPage lastSelectedPage = null;
 
-		public ToDoTaskRepository todoTaskRepository { get; set; }
+		public DEVEXPRESSDataSet1 dataSet1 { get; set; }
+		public DEVEXPRESSDataSet1TableAdapters.AppointmentsTableAdapter adapterAppointments;
+		public DEVEXPRESSDataSet1TableAdapters.ResourcesTableAdapter adapterResources;
+
+
 
 		public override string ModuleName { get { return Properties.Resources.CalendarName; } }
 		public Calendar()
@@ -38,6 +42,15 @@ namespace DevExpress.MailClient.Win
 			DatabindScheduler();
 			schedulerControl1.Start = DateTime.Today;
 
+			this.dataSet1 = new DEVEXPRESSDataSet1();
+			this.schedulerControl1.DataStorage.Appointments.DataSource = dataSet1.Appointments;
+			this.schedulerControl1.DataStorage.Resources.DataSource = dataSet1.Resources;
+
+			this.adapterAppointments = new DEVEXPRESSDataSet1TableAdapters.AppointmentsTableAdapter();
+			this.adapterAppointments.Fill(dataSet1.Appointments);
+
+			this.adapterResources = new DEVEXPRESSDataSet1TableAdapters.ResourcesTableAdapter();
+			this.adapterResources.Fill(dataSet1.Resources);
 		}
 		public override DevExpress.XtraPrinting.IPrintable PrintableComponent
 		{
@@ -104,22 +117,22 @@ namespace DevExpress.MailClient.Win
 		}
 		internal override void ShowModule(bool firstShow)
 		{
-			if (this.todoTaskRepository != null)
-			{
-				var todotasks = this.todoTaskRepository.ListAllTasks();
-				foreach (var task in todotasks)
-				{
-					this.schedulerStorage1.Appointments.Add(new AppointmentInstance()
-					{
-						Start = task.StartDate,
-						End = task.EndDate,
-						Subject = $"Subject {task.Id}",
-						Description = task.Note,
-						Location = task.Location,
-						AllDay = task.AllDay
-					});
-				}
-			}
+			//if (this.todoTaskRepository != null)
+			//{
+			//	var todotasks = this.todoTaskRepository.ListAllTasks();
+			//	foreach (var task in todotasks)
+			//	{
+			//		this.schedulerStorage1.Appointments.Add(new AppointmentInstance()
+			//		{
+			//			Start = task.StartDate,
+			//			End = task.EndDate,
+			//			Subject = $"Subject {task.Id}",
+			//			Description = task.Note,
+			//			Location = task.Location,
+			//			AllDay = task.AllDay
+			//		});
+			//	}
+			//}
 
 			base.ShowModule(firstShow);
 			SubscribeSchedulerEvents();
@@ -134,19 +147,52 @@ namespace DevExpress.MailClient.Win
 		private void SubscribeSchedulerEvents()
 		{
 			this.schedulerStorage1.FilterAppointment += new PersistentObjectCancelEventHandler(this.schedulerStorage1_FilterAppointment);
+			this.schedulerStorage1.AppointmentDeleting += new PersistentObjectCancelEventHandler(schedulerStorage_AppointmentModifying);
+			this.schedulerStorage1.AppointmentInserting += new PersistentObjectCancelEventHandler(schedulerStorage_AppointmentModifying);
+			this.schedulerStorage1.AppointmentChanging += new PersistentObjectCancelEventHandler(schedulerStorage_AppointmentModifying);
+
 			this.schedulerStorage1.AppointmentsDeleted += new PersistentObjectsEventHandler(schedulerStorage1_AppointmentsDeleted);
-			this.schedulerStorage1.AppointmentDeleting += new PersistentObjectCancelEventHandler(schedulerStorage1_AppointmentDeleting);
-			this.schedulerControl1.SelectionChanged += new EventHandler(schedulerControl1_SelectionChanged);
-			//this.schedulerControl1.EditAppointmentFormShowing += SchedulerControl1_EditAppointmentFormShowing;
+			this.schedulerStorage1.AppointmentsChanged += new PersistentObjectsEventHandler(SchedulerStorage1_AppointmentsChanged1);
+			this.schedulerStorage1.AppointmentsInserted += new PersistentObjectsEventHandler(SchedulerStorage1_AppointmentsInserted);
+		}
+
+		private void schedulerStorage_AppointmentModifying(object sender, PersistentObjectCancelEventArgs e)
+		{
+			e.Cancel = false;
+			this.adapterAppointments.Update(this.dataSet1);
+			this.dataSet1.AcceptChanges();
+		}
+
+		private void SchedulerStorage1_AppointmentsChanged1(object sender, PersistentObjectsEventArgs e)
+		{
+			this.adapterAppointments.Update(this.dataSet1);
+			this.dataSet1.AcceptChanges();
+
+		}
+
+		private void SchedulerStorage1_AppointmentsInserted(object sender, PersistentObjectsEventArgs e)
+		{
+			this.adapterAppointments.Update(this.dataSet1);
+			this.dataSet1.AcceptChanges();
+		}
+
+		private void SchedulerStorage1_AppointmentsDeleted(object sender, PersistentObjectsEventArgs e)
+		{
+			this.adapterAppointments.Update(this.dataSet1);
+			this.dataSet1.AcceptChanges();
 		}
 
 		void UnsubscribeSchedulerEvents()
 		{
 			this.schedulerStorage1.FilterAppointment -= new PersistentObjectCancelEventHandler(this.schedulerStorage1_FilterAppointment);
-			this.schedulerControl1.SelectionChanged -= new EventHandler(schedulerControl1_SelectionChanged);
+
+			this.schedulerStorage1.AppointmentDeleting -= new PersistentObjectCancelEventHandler(schedulerStorage_AppointmentModifying);
+			this.schedulerStorage1.AppointmentChanging -= new PersistentObjectCancelEventHandler(schedulerStorage_AppointmentModifying);
+			this.schedulerStorage1.AppointmentInserting -= new PersistentObjectCancelEventHandler(schedulerStorage_AppointmentModifying);
+
 			this.schedulerStorage1.AppointmentsDeleted -= new PersistentObjectsEventHandler(schedulerStorage1_AppointmentsDeleted);
-			this.schedulerControl1.SelectionChanged -= new EventHandler(schedulerControl1_SelectionChanged);
-			//this.schedulerControl1.EditAppointmentFormShowing -= SchedulerControl1_EditAppointmentFormShowing;
+			this.schedulerStorage1.AppointmentsChanged -= new PersistentObjectsEventHandler(SchedulerStorage1_AppointmentsChanged1);
+			this.schedulerStorage1.AppointmentsInserted -= new PersistentObjectsEventHandler(SchedulerStorage1_AppointmentsInserted);
 		}
 
 		void SchedulerControl1_EditAppointmentFormShowing(object sender, AppointmentFormEventArgs e)
@@ -162,16 +208,7 @@ namespace DevExpress.MailClient.Win
 			e.Handled = true;
 		}
 
-		void schedulerStorage1_AppointmentDeleting(object sender, PersistentObjectCancelEventArgs e)
-		{
-			HideAppointmentCategory();
-		}
-
-		void schedulerControl1_SelectionChanged(object sender, EventArgs e)
-		{
-			UpdateAppointmentCategory();
-		}
-		void UpdateAppointmentCategory()
+				void UpdateAppointmentCategory()
 		{
 			if (this.schedulerControl1.SelectedAppointments.Count > 0)
 				ShowAppointmentCategory();
@@ -189,15 +226,9 @@ namespace DevExpress.MailClient.Win
 		}
 		void schedulerStorage1_AppointmentsDeleted(object sender, PersistentObjectsEventArgs e)
 		{
-			HideAppointmentCategory();
+			this.adapterAppointments.Update(this.dataSet1);
+			//HideAppointmentCategory();
 		}
-		private void schedulerControl1_InitNewAppointment(object sender, AppointmentEventArgs e)
-		{
-			List<int> selectedIds = this.calendarControls.GetSelectedResourceIds();
-			if (selectedIds.Count > 0)
-				e.Appointment.ResourceId = selectedIds[0];
-		}
-
 		private void SaveCalendar()
 		{
 			SaveFileDialog fileDialog = new SaveFileDialog();
@@ -284,6 +315,7 @@ namespace DevExpress.MailClient.Win
 					return page;
 			return null;
 		}
+
 	}
 
 }

@@ -1399,6 +1399,42 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to New To-Do Task.
+        /// </summary>
+        internal static string frmMain_newAppointmentItem1_Caption {
+            get {
+                return ResourceManager.GetString("frmMain_newAppointmentItem1_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create a new to-do task.
+        /// </summary>
+        internal static string frmMain_newAppointmentItem1_Hint {
+            get {
+                return ResourceManager.GetString("frmMain_newAppointmentItem1_Hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Recurring To-Do Task.
+        /// </summary>
+        internal static string frmMain_newRecurringAppointmentItem1_Caption {
+            get {
+                return ResourceManager.GetString("frmMain_newRecurringAppointmentItem1_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create a new recurring to-do task.
+        /// </summary>
+        internal static string frmMain_newRecurringAppointmentItem1_Hint {
+            get {
+                return ResourceManager.GetString("frmMain_newRecurringAppointmentItem1_Hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to From.
         /// </summary>
         internal static string From {
