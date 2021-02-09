@@ -41,5 +41,10 @@ namespace DevExpress.MailClient.Win.Forms {
             if(e.KeyData == Keys.Enter)
                 OkClick();
         }
-    }
+
+		protected override void OnShown(EventArgs e)
+		{
+			base.OnShown(e);
+		}
+	}
 }

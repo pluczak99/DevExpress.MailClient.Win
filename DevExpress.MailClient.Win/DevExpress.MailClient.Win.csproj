@@ -297,6 +297,24 @@
     </Compile>
     <Compile Include="Data\Contact.cs" />
     <Compile Include="Data\Task.cs" />
+    <Compile Include="DEVEXPRESSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DEVEXPRESSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\Categories.cs" />
+    <Compile Include="Localization\CollectionResources.cs" />
+    <Compile Include="Localization\DataSourceChangedEventArgs.cs" />
+    <Compile Include="Localization\DialogRole.cs" />
+    <Compile Include="Localization\FlagStatus.cs" />
+    <Compile Include="Localization\FontResources.cs" />
+    <Compile Include="Localization\MailFolder.cs" />
+    <Compile Include="Localization\MailType.cs" />
+    <Compile Include="Localization\RibbonLocalizer.cs" />
+    <Compile Include="Localization\StringResources.cs" />
+    <Compile Include="Localization\TagResources.cs" />
+    <Compile Include="Localization\TaskCategory.cs" />
+    <Compile Include="Localization\TaskStatus.cs" />
     <Compile Include="Utils\ControlExtensions.cs" />
     <Compile Include="Utils\ColorHelper.cs" />
     <Compile Include="Utils\DataHelper.cs" />
@@ -352,11 +370,11 @@
     <Compile Include="Forms\LanguageSelectorFormExt.Designer.cs">
       <DependentUpon>LanguageSelectorFormExt.cs</DependentUpon>
     </Compile>
-    <Compile Include="Localizer\BarLocalizer.cs" />
-    <Compile Include="Localizer\EditorLocalizer.cs" />
-    <Compile Include="Localizer\GridLocalizer.cs" />
-    <Compile Include="Localizer\NavBarLocalizer.cs" />
-    <Compile Include="Localizer\SchedulerLocalizer.cs" />
+    <Compile Include="Localization\BarLocalizer.cs" />
+    <Compile Include="Localization\EditorLocalizer.cs" />
+    <Compile Include="Localization\GridLocalizer.cs" />
+    <Compile Include="Localization\NavBarLocalizer.cs" />
+    <Compile Include="Localization\SchedulerLocalizer.cs" />
     <Compile Include="Modules\Calendar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -471,6 +489,17 @@
     <None Include="connectionStrings.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="DEVEXPRESSDataSet.xsc">
+      <DependentUpon>DEVEXPRESSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DEVEXPRESSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DEVEXPRESSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DEVEXPRESSDataSet.xss">
+      <DependentUpon>DEVEXPRESSDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -481,7 +510,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Resources\Resources.cs" />
+    <Compile Include="Localization\StringResourcesEn.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dll\EntityFramework.dll">

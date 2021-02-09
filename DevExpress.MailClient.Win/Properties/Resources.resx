@@ -1087,4 +1087,82 @@ Left:	12 mm	Right:	12 mm</value>
   <data name="appointmentRibbonForm_Resource_Label" xml:space="preserve">
     <value>Resource:</value>
   </data>
+  <data name="Appointment_btnDelete_Caption" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Appointment_btnDelete_Hint" xml:space="preserve">
+    <value>Delete this to do task appointment</value>
+  </data>
+  <data name="Appointment_btnSaveAndClose_Caption" xml:space="preserve">
+    <value>Save and Close</value>
+  </data>
+  <data name="Appointment_btnSaveAndClose_Hint" xml:space="preserve">
+    <value>Save and close the to-do task appointment</value>
+  </data>
+  <data name="Appointment_barLabel_Caption" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Appointment_barLabel_Hint" xml:space="preserve">
+    <value>Set appointment category</value>
+  </data>
+  <data name="Appointment_barReminder_Caption" xml:space="preserve">
+    <value>Reminder</value>
+  </data>
+  <data name="Appointment_barReminder_Hint" xml:space="preserve">
+    <value>Define reminder type</value>
+  </data>
+  <data name="Appointment_barStatus_Caption" xml:space="preserve">
+    <value>Set time</value>
+  </data>
+  <data name="Appointment_barStatus_Hint" xml:space="preserve">
+    <value>Set time type</value>
+  </data>
+  <data name="Appointment_btnNext_Caption" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Appointment_btnNext_Hint" xml:space="preserve">
+    <value>Next appointment</value>
+  </data>
+  <data name="Appointment_btnPrevious_Caption" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Appointment_btnPrevious_Hint" xml:space="preserve">
+    <value>Previous appointment</value>
+  </data>
+  <data name="Appointment_btnRecurrence_Caption" xml:space="preserve">
+    <value>Recurrence</value>
+  </data>
+  <data name="Appointment_btnRecurrence_Hint" xml:space="preserve">
+    <value>Define appointment recurrence</value>
+  </data>
+  <data name="Appointment_btnSave_Caption" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Appointment_btnSave_Hint" xml:space="preserve">
+    <value>Save appointment</value>
+  </data>
+  <data name="Appointment_Ribbon_Page_Caption" xml:space="preserve">
+    <value>APPOINTMENT</value>
+  </data>
+  <data name="Reminder_btnDismissAll_Caption" xml:space="preserve">
+    <value>Dismiss &amp;All</value>
+  </data>
+  <data name="Reminder_btnDismiss_Caption" xml:space="preserve">
+    <value>&amp;Dismiss</value>
+  </data>
+  <data name="Reminder_btnOpenItem_Caption" xml:space="preserve">
+    <value>&amp;Open Item</value>
+  </data>
+  <data name="Reminder_btnSnooze_Caption" xml:space="preserve">
+    <value>&amp;Snooze</value>
+  </data>
+  <data name="Reminder_lblSnooze_Caption" xml:space="preserve">
+    <value>&amp;Click Snooze to be reminder again in:</value>
+  </data>
+  <data name="Reminder_lblStart_Caption" xml:space="preserve">
+    <value>Start time</value>
+  </data>
+  <data name="Reminder_lblSubject_Caption" xml:space="preserve">
+    <value>Subject</value>
+  </data>
 </root>

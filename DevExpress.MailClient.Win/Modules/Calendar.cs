@@ -18,6 +18,7 @@ using System.Configuration;
 using DevExpress.XtraScheduler.Internal.Implementations;
 using MailClient.Data.Service;
 using MailClient.Data.Library;
+using DevExpress.MailClient.Win;
 
 namespace DevExpress.MailClient.Win
 {
@@ -46,23 +47,10 @@ namespace DevExpress.MailClient.Win
 			}
 		}
 
-		public List<Appointment> ConvertToDoTasksToAppointments ( IEnumerable<ToDoTask> tasks )
-		{
-			List<Appointment> appointments = new List<Appointment>();
-			foreach (var task in tasks)
-			{
-				var appointment = new AppointmentInstance();
-				appointment.Start = task.StartDate;
-				appointment.End = task.EndDate;
-				appointment.Description = task.Note;
-				appointments.Add(appointment);
-			}
-			return appointments;
-		}
 		protected override bool SaveCalendarVisible { get { return true; } }
 		private void DatabindScheduler()
 		{
-			//schedulerStorage1.Resources.DataSource = DataHelper.CalendarResources;
+			//var descriptions = this.calendarControls.ParentForm.DescribeControls();
 			//schedulerStorage1.Appointments.DataSource = this.todoTaskRepository.ListAllTasks();
 			//ToDoTaskRepository todoTaskRepository = new ToDoTaskRepository();
 
@@ -73,6 +61,8 @@ namespace DevExpress.MailClient.Win
 			schedulerControl1.MenuManager = manager;
 			this.ribbon = manager as RibbonControl;
 			this.appointmentCategory = FindAppointmentPage(this.ribbon);
+
+			//var descriptions1 = this.ribbon.DescribeControls();
 
 			//var appointment = new AppointmentInstance();
 			//appointment.Start = DateTime.Now;
@@ -87,9 +77,9 @@ namespace DevExpress.MailClient.Win
 			if (calendarControls == null)
 			{
 				this.calendarControls = data as ucCalendar;
-				this.calendarControls.InitDateNavigator(this.schedulerControl1);
-				this.calendarControls.InitResourcesTree(this.schedulerStorage1);
-				this.calendarControls.InitBarController(this.schedulerControl1);
+				this.calendarControls?.InitDateNavigator(this.schedulerControl1);
+				this.calendarControls?.InitResourcesTree(this.schedulerStorage1);
+				this.calendarControls?.InitBarController(this.schedulerControl1);
 			}
 
 		}
@@ -114,18 +104,21 @@ namespace DevExpress.MailClient.Win
 		}
 		internal override void ShowModule(bool firstShow)
 		{
-			var todotasks = this.todoTaskRepository.ListAllTasks();
-			foreach (var task in todotasks)
+			if (this.todoTaskRepository != null)
 			{
-				this.schedulerStorage1.Appointments.Add(new AppointmentInstance()
+				var todotasks = this.todoTaskRepository.ListAllTasks();
+				foreach (var task in todotasks)
 				{
-					Start = task.StartDate,
-					End = task.EndDate,
-					Subject = $"Subject {task.Id}",
-					Description = task.Note,
-					Location = task.Location,
-					AllDay = task.AllDay
-				});
+					this.schedulerStorage1.Appointments.Add(new AppointmentInstance()
+					{
+						Start = task.StartDate,
+						End = task.EndDate,
+						Subject = $"Subject {task.Id}",
+						Description = task.Note,
+						Location = task.Location,
+						AllDay = task.AllDay
+					});
+				}
 			}
 
 			base.ShowModule(firstShow);
@@ -160,14 +153,8 @@ namespace DevExpress.MailClient.Win
 		{
 			if (e.Appointment != null && e.Appointment.Id != null)
 			{
-				//var serializer = new XmlSerializer(typeof(AppointmentInstance));
-				//var stringWriter = new StringWriter();
-				//serializer.Serialize(stringWriter, e.Appointment);
-				//Console.WriteLine(stringWriter.ToString());
 			}
 
-
-			//e.Appointment.CustomFields.Add(new XtraScheduler.Native.CustomField("_repository", this.todoTaskRepository));
 			var form = new CustomAppointmentRibbonForm(this.schedulerControl1, e.Appointment, e.OpenRecurrenceForm);
 			form.LookAndFeel.ParentLookAndFeel = LookAndFeel;
 			form.SetMenuManager(this.schedulerControl1.MenuManager);

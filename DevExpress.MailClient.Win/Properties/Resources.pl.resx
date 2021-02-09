@@ -183,6 +183,63 @@
   <data name="appointmentRibbonPageGroup1Caption" xml:space="preserve">
     <value>Zadania To-Do</value>
   </data>
+  <data name="Appointment_barLabel_Caption" xml:space="preserve">
+    <value>Kategoria</value>
+  </data>
+  <data name="Appointment_barLabel_Hint" xml:space="preserve">
+    <value>Ustaw kategorię zadania</value>
+  </data>
+  <data name="Appointment_barReminder_Caption" xml:space="preserve">
+    <value>Przypomnienie</value>
+  </data>
+  <data name="Appointment_barReminder_Hint" xml:space="preserve">
+    <value>Zdefiniuj rodzaj przypomnienia</value>
+  </data>
+  <data name="Appointment_barStatus_Caption" xml:space="preserve">
+    <value>Ustaw czas jako</value>
+  </data>
+  <data name="Appointment_barStatus_Hint" xml:space="preserve">
+    <value>Ustaw typ czasu</value>
+  </data>
+  <data name="Appointment_btnDelete_Caption" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="Appointment_btnDelete_Hint" xml:space="preserve">
+    <value>Usuń zadanie</value>
+  </data>
+  <data name="Appointment_btnNext_Caption" xml:space="preserve">
+    <value>Następne</value>
+  </data>
+  <data name="Appointment_btnNext_Hint" xml:space="preserve">
+    <value>Następne zadanie</value>
+  </data>
+  <data name="Appointment_btnPrevious_Caption" xml:space="preserve">
+    <value>Poprzednie</value>
+  </data>
+  <data name="Appointment_btnPrevious_Hint" xml:space="preserve">
+    <value>Poprzednie zadanie</value>
+  </data>
+  <data name="Appointment_btnRecurrence_Caption" xml:space="preserve">
+    <value>Cykliczność</value>
+  </data>
+  <data name="Appointment_btnRecurrence_Hint" xml:space="preserve">
+    <value>Zdefiniuj cykliczność zadania</value>
+  </data>
+  <data name="Appointment_btnSaveAndClose_Caption" xml:space="preserve">
+    <value>Zapisz i zamknij</value>
+  </data>
+  <data name="Appointment_btnSaveAndClose_Hint" xml:space="preserve">
+    <value>Zapisz i zamknij zadanie</value>
+  </data>
+  <data name="Appointment_btnSave_Caption" xml:space="preserve">
+    <value>Zapisz</value>
+  </data>
+  <data name="Appointment_btnSave_Hint" xml:space="preserve">
+    <value>Zapisz zadanie</value>
+  </data>
+  <data name="Appointment_Ribbon_Page_Caption" xml:space="preserve">
+    <value>ZADANIE</value>
+  </data>
   <data name="arrangeRibbonPageGroup1Caption" xml:space="preserve">
     <value>Aranżuj</value>
   </data>
@@ -708,6 +765,27 @@ Left:	50 mm	Right:	50 mm</value>
   </data>
   <data name="ReminderText" xml:space="preserve">
     <value>Przypomnienia: {0}</value>
+  </data>
+  <data name="Reminder_btnDismissAll_Caption" xml:space="preserve">
+    <value>Usuń &amp;wszystkie</value>
+  </data>
+  <data name="Reminder_btnDismiss_Caption" xml:space="preserve">
+    <value>&amp;Usuń</value>
+  </data>
+  <data name="Reminder_btnOpenItem_Caption" xml:space="preserve">
+    <value>&amp;Otwórz zadanie</value>
+  </data>
+  <data name="Reminder_btnSnooze_Caption" xml:space="preserve">
+    <value>&amp;Drzemka</value>
+  </data>
+  <data name="Reminder_lblSnooze_Caption" xml:space="preserve">
+    <value>Wybierz drzemkę aby przypomnieć ponownie za:</value>
+  </data>
+  <data name="Reminder_lblStart_Caption" xml:space="preserve">
+    <value>Początek</value>
+  </data>
+  <data name="Reminder_lblSubject_Caption" xml:space="preserve">
+    <value>Przedmiot</value>
   </data>
   <data name="ReplyAllDescription" xml:space="preserve">
     <value>Odpowiedz nadawcy i wszystkim adresatom tej wiadomości</value>

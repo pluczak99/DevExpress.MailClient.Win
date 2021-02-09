@@ -492,18 +492,6 @@
   <data name="bbiClearFilter.Caption" xml:space="preserve">
     <value>Clear Filter</value>
   </data>
-  <data name="bbiNewFeed.Caption" xml:space="preserve">
-    <value>New Feed</value>
-  </data>
-  <data name="bbiEditFeed.Caption" xml:space="preserve">
-    <value>Edit Feed</value>
-  </data>
-  <data name="bbiDeleteFeed.Caption" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="bbiRefreshFeed.Caption" xml:space="preserve">
-    <value>Refresh</value>
-  </data>
   <data name="rgbiCurrentView.Caption" xml:space="preserve">
     <value>Current Contacts View</value>
   </data>
@@ -792,10 +780,10 @@
     <value>1270, 158</value>
   </data>
   <data name="ribbonStatusBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 835</value>
+    <value>0, 837</value>
   </data>
   <data name="ribbonStatusBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1270, 24</value>
+    <value>1270, 22</value>
   </data>
   <data name="&gt;&gt;ribbonStatusBar1.Name" xml:space="preserve">
     <value>ribbonStatusBar1</value>
@@ -867,10 +855,10 @@
     <value>0, 0</value>
   </data>
   <data name="ucCalendar1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 1, 1, 1</value>
+    <value>0, 1, 1, 0</value>
   </data>
   <data name="ucCalendar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 560</value>
+    <value>250, 560</value>
   </data>
   <data name="ucCalendar1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -888,7 +876,7 @@
     <value>0</value>
   </data>
   <data name="navBarGroupControlContainer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 560</value>
+    <value>250, 560</value>
   </data>
   <data name="navBarGroupControlContainer2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -924,16 +912,16 @@
     <value>2</value>
   </data>
   <data name="navBarControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+    <value>Left</value>
   </data>
   <data name="navBarControl2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="resource.ExpandedWidth" type="System.Int32, mscorlib">
-    <value>180</value>
+    <value>250</value>
   </data>
   <data name="navBarControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 342</value>
+    <value>250, 342</value>
   </data>
   <data name="navBarControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -981,10 +969,10 @@
     <value>0, 158</value>
   </data>
   <data name="resource.ExpandedWidth1" type="System.Int32, mscorlib">
-    <value>180</value>
+    <value>250</value>
   </data>
   <data name="navBarControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 677</value>
+    <value>250, 679</value>
   </data>
   <data name="navBarControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1010,17 +998,14 @@
   <data name="nbgContacts.Caption" xml:space="preserve">
     <value>Contacts</value>
   </data>
-  <data name="nbgFeeds.Caption" xml:space="preserve">
-    <value>Feeds</value>
-  </data>
   <data name="pcMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="pcMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 158</value>
+    <value>250, 158</value>
   </data>
   <data name="pcMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1090, 677</value>
+    <value>1020, 679</value>
   </data>
   <data name="pcMain.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

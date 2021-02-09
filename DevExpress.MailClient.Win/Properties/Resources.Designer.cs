@@ -115,6 +115,177 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Category.
+        /// </summary>
+        internal static string Appointment_barLabel_Caption {
+            get {
+                return ResourceManager.GetString("Appointment_barLabel_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set appointment category.
+        /// </summary>
+        internal static string Appointment_barLabel_Hint {
+            get {
+                return ResourceManager.GetString("Appointment_barLabel_Hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reminder.
+        /// </summary>
+        internal static string Appointment_barReminder_Caption {
+            get {
+                return ResourceManager.GetString("Appointment_barReminder_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Define reminder type.
+        /// </summary>
+        internal static string Appointment_barReminder_Hint {
+            get {
+                return ResourceManager.GetString("Appointment_barReminder_Hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set time.
+        /// </summary>
+        internal static string Appointment_barStatus_Caption {
+            get {
+                return ResourceManager.GetString("Appointment_barStatus_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set time type.
+        /// </summary>
+        internal static string Appointment_barStatus_Hint {
+            get {
+                return ResourceManager.GetString("Appointment_barStatus_Hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string Appointment_btnDelete_Caption {
+            get {
+                return ResourceManager.GetString("Appointment_btnDelete_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete this to do task appointment.
+        /// </summary>
+        internal static string Appointment_btnDelete_Hint {
+            get {
+                return ResourceManager.GetString("Appointment_btnDelete_Hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next.
+        /// </summary>
+        internal static string Appointment_btnNext_Caption {
+            get {
+                return ResourceManager.GetString("Appointment_btnNext_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next appointment.
+        /// </summary>
+        internal static string Appointment_btnNext_Hint {
+            get {
+                return ResourceManager.GetString("Appointment_btnNext_Hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous.
+        /// </summary>
+        internal static string Appointment_btnPrevious_Caption {
+            get {
+                return ResourceManager.GetString("Appointment_btnPrevious_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous appointment.
+        /// </summary>
+        internal static string Appointment_btnPrevious_Hint {
+            get {
+                return ResourceManager.GetString("Appointment_btnPrevious_Hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recurrence.
+        /// </summary>
+        internal static string Appointment_btnRecurrence_Caption {
+            get {
+                return ResourceManager.GetString("Appointment_btnRecurrence_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Define appointment recurrence.
+        /// </summary>
+        internal static string Appointment_btnRecurrence_Hint {
+            get {
+                return ResourceManager.GetString("Appointment_btnRecurrence_Hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        internal static string Appointment_btnSave_Caption {
+            get {
+                return ResourceManager.GetString("Appointment_btnSave_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save appointment.
+        /// </summary>
+        internal static string Appointment_btnSave_Hint {
+            get {
+                return ResourceManager.GetString("Appointment_btnSave_Hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save and Close.
+        /// </summary>
+        internal static string Appointment_btnSaveAndClose_Caption {
+            get {
+                return ResourceManager.GetString("Appointment_btnSaveAndClose_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save and close the to-do task appointment.
+        /// </summary>
+        internal static string Appointment_btnSaveAndClose_Hint {
+            get {
+                return ResourceManager.GetString("Appointment_btnSaveAndClose_Hint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to APPOINTMENT.
+        /// </summary>
+        internal static string Appointment_Ribbon_Page_Caption {
+            get {
+                return ResourceManager.GetString("Appointment_Ribbon_Page_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error: could not export appointments.
         /// </summary>
         internal static string AppointmentError {
@@ -2314,6 +2485,69 @@ namespace DevExpress.MailClient.Win.Properties {
             get {
                 object obj = ResourceManager.GetObject("Reminder", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;Dismiss.
+        /// </summary>
+        internal static string Reminder_btnDismiss_Caption {
+            get {
+                return ResourceManager.GetString("Reminder_btnDismiss_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dismiss &amp;All.
+        /// </summary>
+        internal static string Reminder_btnDismissAll_Caption {
+            get {
+                return ResourceManager.GetString("Reminder_btnDismissAll_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;Open Item.
+        /// </summary>
+        internal static string Reminder_btnOpenItem_Caption {
+            get {
+                return ResourceManager.GetString("Reminder_btnOpenItem_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;Snooze.
+        /// </summary>
+        internal static string Reminder_btnSnooze_Caption {
+            get {
+                return ResourceManager.GetString("Reminder_btnSnooze_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;Click Snooze to be reminder again in:.
+        /// </summary>
+        internal static string Reminder_lblSnooze_Caption {
+            get {
+                return ResourceManager.GetString("Reminder_lblSnooze_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start time.
+        /// </summary>
+        internal static string Reminder_lblStart_Caption {
+            get {
+                return ResourceManager.GetString("Reminder_lblStart_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subject.
+        /// </summary>
+        internal static string Reminder_lblSubject_Caption {
+            get {
+                return ResourceManager.GetString("Reminder_lblSubject_Caption", resourceCulture);
             }
         }
         

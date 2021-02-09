@@ -675,26 +675,22 @@ namespace DevExpress.MailClient.Win {
 			// 
 			// bbiNewFeed
 			// 
-			resources.ApplyResources(this.bbiNewFeed, "bbiNewFeed");
 			this.bbiNewFeed.Id = 32;
 			this.bbiNewFeed.Name = "bbiNewFeed";
 			// 
 			// bbiEditFeed
 			// 
-			resources.ApplyResources(this.bbiEditFeed, "bbiEditFeed");
 			this.bbiEditFeed.Id = 33;
 			this.bbiEditFeed.Name = "bbiEditFeed";
 			// 
 			// bbiDeleteFeed
 			// 
-			resources.ApplyResources(this.bbiDeleteFeed, "bbiDeleteFeed");
 			this.bbiDeleteFeed.Id = 34;
 			this.bbiDeleteFeed.ImageOptions.ImageUri.Uri = "Delete";
 			this.bbiDeleteFeed.Name = "bbiDeleteFeed";
 			// 
 			// bbiRefreshFeed
 			// 
-			resources.ApplyResources(this.bbiRefreshFeed, "bbiRefreshFeed");
 			this.bbiRefreshFeed.Id = 35;
 			this.bbiRefreshFeed.ImageOptions.ImageUri.Uri = "icon%20builder/actions_reload";
 			this.bbiRefreshFeed.Name = "bbiRefreshFeed";
@@ -1488,7 +1484,6 @@ namespace DevExpress.MailClient.Win {
 			// 
 			// nbgFeeds
 			// 
-			resources.ApplyResources(this.nbgFeeds, "nbgFeeds");
 			this.nbgFeeds.ControlContainer = this.navBarGroupControlContainer4;
 			this.nbgFeeds.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
 			this.nbgFeeds.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;

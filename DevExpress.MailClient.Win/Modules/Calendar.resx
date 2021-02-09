@@ -120,6 +120,15 @@
   <metadata name="schedulerStorage1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="dEVEXPRESSDataSetBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>933, 17</value>
+  </metadata>
+  <metadata name="dEVEXPRESSDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>170, 17</value>
+  </metadata>
+  <metadata name="dEVEXPRESSDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>333, 17</value>
+  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="schedulerControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -150,6 +159,12 @@
   <data name="&gt;&gt;schedulerControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="resourcesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>574, 17</value>
+  </metadata>
+  <metadata name="resourcesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>756, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -167,6 +182,36 @@
   </data>
   <data name="&gt;&gt;schedulerStorage1.Type" xml:space="preserve">
     <value>DevExpress.XtraScheduler.SchedulerStorage, DevExpress.XtraScheduler.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;dEVEXPRESSDataSet.Name" xml:space="preserve">
+    <value>dEVEXPRESSDataSet</value>
+  </data>
+  <data name="&gt;&gt;dEVEXPRESSDataSet.Type" xml:space="preserve">
+    <value>DevExpress.MailClient.Win.DEVEXPRESSDataSet, DEVEXPRESSDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dEVEXPRESSDataSetBindingSource.Name" xml:space="preserve">
+    <value>dEVEXPRESSDataSetBindingSource</value>
+  </data>
+  <data name="&gt;&gt;dEVEXPRESSDataSetBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resourcesBindingSource.Name" xml:space="preserve">
+    <value>resourcesBindingSource</value>
+  </data>
+  <data name="&gt;&gt;resourcesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resourcesTableAdapter.Name" xml:space="preserve">
+    <value>resourcesTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;resourcesTableAdapter.Type" xml:space="preserve">
+    <value>DevExpress.MailClient.Win.DEVEXPRESSDataSetTableAdapters.ResourcesTableAdapter, DEVEXPRESSDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dEVEXPRESSDataSetBindingSource1.Name" xml:space="preserve">
+    <value>dEVEXPRESSDataSetBindingSource1</value>
+  </data>
+  <data name="&gt;&gt;dEVEXPRESSDataSetBindingSource1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Calendar</value>
