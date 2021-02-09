@@ -16,7 +16,7 @@ using System.Xml.Serialization;
 
 using System.Configuration;
 using DevExpress.XtraScheduler.Internal.Implementations;
-using MailClient.Data.Service;
+
 using MailClient.Data.Library;
 using DevExpress.MailClient.Win;
 
@@ -38,7 +38,6 @@ namespace DevExpress.MailClient.Win
 		public Calendar()
 		{
 			InitializeComponent();
-			DatabindScheduler();
 			schedulerControl1.Start = DateTime.Today;
 
 			this.dataSet1 = new DEVEXPRESSDataSet1();
@@ -60,31 +59,13 @@ namespace DevExpress.MailClient.Win
 		}
 
 		protected override bool SaveCalendarVisible { get { return true; } }
-		private void DatabindScheduler()
-		{
-			//var descriptions = this.calendarControls.ParentForm.DescribeControls();
-			//schedulerStorage1.Appointments.DataSource = this.todoTaskRepository.ListAllTasks();
-			//ToDoTaskRepository todoTaskRepository = new ToDoTaskRepository();
 
-		}
 		internal override void InitModule(DevExpress.Utils.Menu.IDXMenuManager manager, object data)
 		{
 			base.InitModule(manager, data);
 			schedulerControl1.MenuManager = manager;
 			this.ribbon = manager as RibbonControl;
 			this.appointmentCategory = FindAppointmentPage(this.ribbon);
-
-			//var descriptions1 = this.ribbon.DescribeControls();
-
-			//var appointment = new AppointmentInstance();
-			//appointment.Start = DateTime.Now;
-			//appointment.End = DateTime.Now.AddDays(1);
-			//appointment.Subject = "BLAH";
-			//appointment.Duration = TimeSpan.FromHours(2);
-			//appointment.HasReminder = true;
-			//appointment.Reminder.TimeBeforeStart = TimeSpan.FromDays(5);
-			//this.schedulerControl1.DataStorage.Appointments.Add(appointment);
-
 
 			if (calendarControls == null)
 			{
@@ -117,23 +98,6 @@ namespace DevExpress.MailClient.Win
 		}
 		internal override void ShowModule(bool firstShow)
 		{
-			//if (this.todoTaskRepository != null)
-			//{
-			//	var todotasks = this.todoTaskRepository.ListAllTasks();
-			//	foreach (var task in todotasks)
-			//	{
-			//		this.schedulerStorage1.Appointments.Add(new AppointmentInstance()
-			//		{
-			//			Start = task.StartDate,
-			//			End = task.EndDate,
-			//			Subject = $"Subject {task.Id}",
-			//			Description = task.Note,
-			//			Location = task.Location,
-			//			AllDay = task.AllDay
-			//		});
-			//	}
-			//}
-
 			base.ShowModule(firstShow);
 			SubscribeSchedulerEvents();
 			UpdateAppointmentCategory();
@@ -159,6 +123,10 @@ namespace DevExpress.MailClient.Win
 		private void schedulerStorage_AppointmentModifying(object sender, PersistentObjectCancelEventArgs e)
 		{
 			e.Cancel = false;
+			if ((e.Object as Appointment).RecurrenceInfo != null)
+			{
+
+			}
 			this.adapterAppointments.Update(this.dataSet1);
 			this.dataSet1.AcceptChanges();
 		}
@@ -197,14 +165,15 @@ namespace DevExpress.MailClient.Win
 
 		void SchedulerControl1_EditAppointmentFormShowing(object sender, AppointmentFormEventArgs e)
 		{
-			if (e.Appointment != null && e.Appointment.Id != null)
-			{
-			}
-
 			var form = new CustomAppointmentRibbonForm(this.schedulerControl1, e.Appointment, e.OpenRecurrenceForm);
 			form.LookAndFeel.ParentLookAndFeel = LookAndFeel;
 			form.SetMenuManager(this.schedulerControl1.MenuManager);
+
 			e.DialogResult = form.ShowDialog(this);
+			if (e.DialogResult == DialogResult.OK)
+			{
+				
+			}
 			e.Handled = true;
 		}
 

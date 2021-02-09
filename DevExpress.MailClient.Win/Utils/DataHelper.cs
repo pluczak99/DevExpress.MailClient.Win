@@ -14,13 +14,12 @@ using System.Windows.Forms;
 using DevExpress.DevAV;
 using DevExpress.Utils;
 using DevExpress.XtraEditors;
-using MailClient.Data.Service;
+
 
 namespace DevExpress.MailClient.Win
 {
 	public class DataHelper
 	{
-		public ToDoTaskRepository TaskRepository { get; set; }
 
 		internal static bool ShowAllMessageCount = false;
 		internal static bool ShowUnreadMessageCount = true;

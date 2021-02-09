@@ -1,5 +1,4 @@
-﻿using MailClient.Data.Service;
-using System;
+﻿using System;
 
 namespace DevExpress.MailClient.Win
 {
@@ -22,9 +21,5 @@ namespace DevExpress.MailClient.Win
 			set { module = value; }
 		}
 
-		public ToDoTaskRepository Repository
-		{
-			get; set;
-		}
 	}
 }

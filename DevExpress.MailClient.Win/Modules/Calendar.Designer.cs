@@ -1,5 +1,4 @@
-﻿using MailClient.Data.Service;
-using System;
+﻿using System;
 
 namespace DevExpress.MailClient.Win {
     public partial class Calendar {

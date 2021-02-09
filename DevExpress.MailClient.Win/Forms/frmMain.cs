@@ -24,7 +24,7 @@ using DevExpress.Utils.Taskbar.Core;
 using DevExpress.Utils.Taskbar;
 using System.Globalization;
 using DevExpress.MailClient.Win.Properties;
-using MailClient.Data.Service;
+
 
 namespace DevExpress.MailClient.Win {
     public partial class frmMain : RibbonForm {
@@ -33,7 +33,6 @@ namespace DevExpress.MailClient.Win {
         internal FilterColumnsManager FilterColumnManager;
         ZoomManager zoomManager;
         List<BarItem> AllowCustomizationMenuList = new List<BarItem>();
-        ToDoTaskRepository ToDoTaskRepository { get; set; }
         public frmMain() {
             SplashScreenManager.ShowForm(null, typeof(ssMain), true, true, false, 1000);
 
@@ -146,7 +145,6 @@ namespace DevExpress.MailClient.Win {
             this.newRecurringAppointmentItem1.Caption = Properties.Resources.frmMain_newRecurringAppointmentItem1_Caption;
             this.newRecurringAppointmentItem1.Hint = Properties.Resources.frmMain_newRecurringAppointmentItem1_Hint;
 
-            this.ToDoTaskRepository = new ToDoTaskRepository();
         }
 
         void InitGalleryItem(GalleryItem galleryItem, string tag, string description) {
@@ -243,7 +241,6 @@ namespace DevExpress.MailClient.Win {
             return string.Format(" - {0}", modulesNavigator.CurrentModule.PartName);
         }
         private void navBarControl1_ActiveGroupChanged(object sender, DevExpress.XtraNavBar.NavBarGroupEventArgs e) {
-            ((NavBarGroupTagObject)e.Group.Tag).Repository = this.ToDoTaskRepository;
             object data = GetModuleData((NavBarGroupTagObject)e.Group.Tag);
             modulesNavigator.ChangeGroup(e.Group, data);
         }
@@ -349,17 +346,13 @@ namespace DevExpress.MailClient.Win {
 
 		private void newAppointmentItem1_ItemClick(object sender, ItemClickEventArgs e)
         {
-            e.Item.Id = new Random().Next(0, Int32.MaxValue);
+            //e.Item.Id = new Random().Next(0, Int32.MaxValue);
 		}
 
 		private void newRecurringAppointmentItem1_ItemClick(object sender, ItemClickEventArgs e)
 		{
-
+            
 		}
 
-		//private void newRecurringAppointmentItem1_ItemClick(object sender, ItemClickEventArgs e)
-		//{
-
-		//}
 	}
 }

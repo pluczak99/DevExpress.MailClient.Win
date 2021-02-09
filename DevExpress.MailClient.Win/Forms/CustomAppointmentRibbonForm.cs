@@ -5,13 +5,11 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraScheduler;
 using DevExpress.XtraScheduler.UI;
-using MailClient.Data.Service;
 
 namespace DevExpress.MailClient.Win
 {
 	public class CustomAppointmentRibbonForm : AppointmentRibbonForm
 	{
-		public ToDoTaskRepository Repository { get; set; }
 		public SchedulerControl Scheduler { get; set; }
 		public Appointment Appointment { get; set; }
 		public new bool OpenRecurrenceForm { get; set; }
@@ -23,31 +21,31 @@ namespace DevExpress.MailClient.Win
 
 		public CustomAppointmentRibbonForm(SchedulerControl control, Appointment apt, bool openRecurrenceForm) : base(control, apt, openRecurrenceForm)
 		{
+			this.OpenRecurrenceForm = openRecurrenceForm;
+		}
 
-			this.Scheduler = control;
-			if (apt.Type == AppointmentType.Pattern)
+		protected override DialogResult ShowRecurrenceForm(Form form)
+		{
+			if (this.OpenRecurrenceForm)
 			{
-				this.OpenRecurrenceForm = openRecurrenceForm;
+				var dr = form.ShowDialog();
+				return dr;
 			}
-			this.Storage.EnableReminders = true;
-			this.Appointment = this.Storage.CreateAppointment(apt.Type);
-			this.Appointment.Assign(apt);
-
+			return DialogResult.Cancel;
 		}
 
 		protected override void OnLoad(EventArgs e)
 		{
 			base.OnLoad(e);
-
-			if (this.Appointment.Id == null)
-			{
-				this.Appointment.SetId(Guid.NewGuid());
-				if (this.Appointment.HasReminder == false && this.Appointment.Type != AppointmentType.Pattern)
-				{
-					this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = TimeSpan.FromMinutes(15);
-					this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = this.Appointment.Reminder.TimeBeforeStart;
-				}
-			}
+			//if (this.Appointment.Id == null)
+			//{
+			//	this.Appointment.SetId(Guid.NewGuid());
+			//	if (this.Appointment.HasReminder == false && this.Appointment.Type != AppointmentType.Pattern)
+			//	{
+			//		this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = TimeSpan.FromMinutes(15);
+			//		this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = this.Appointment.Reminder.TimeBeforeStart;
+			//	}
+			//}
 
 			this.Controls.FindControl("lblSubject").SetText(Properties.Resources.appointmentRibbonForm_Subject_Label);
 			this.Controls.FindControl("lblResource").SetText(Properties.Resources.appointmentRibbonForm_Resource_Label);
@@ -74,6 +72,12 @@ namespace DevExpress.MailClient.Win
 			this.Ribbon.FindBarItem("btnPrevious").SetBarButtonItemTexts(Properties.Resources.Appointment_btnPrevious_Caption, Properties.Resources.Appointment_btnPrevious_Hint);
 
 			this.Ribbon.FindBarItem("btnTimeZones").Visibility = BarItemVisibility.Never;
+
+
+			if (this.OpenRecurrenceForm)
+			{
+				//this.Appointment.Type = AppointmentType.Pattern;
+			}
 
 		}
 
