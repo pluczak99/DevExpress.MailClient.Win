@@ -489,7 +489,6 @@
     </None>
     <None Include="ApplicationDescription.MD" />
     <None Include="Installation.MD" />
-    <None Include="Installation\DevExpress.ToDoList.Demo.msi" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -519,6 +518,7 @@
     <Content Include="Documentation\App_LanguageSelection.png" />
     <Content Include="Documentation\App_ToDoCyclicalTaskForm.png" />
     <Content Include="Documentation\App_ToDoTaskForm.png" />
+    <Content Include="Installation\DevExpress.ToDoList.Demo.exe" />
     <Content Include="Resources\Icons\DevExpress.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
