@@ -17,7 +17,6 @@ using System.Xml.Serialization;
 using System.Configuration;
 using DevExpress.XtraScheduler.Internal.Implementations;
 
-using MailClient.Data.Library;
 using DevExpress.MailClient.Win;
 
 namespace DevExpress.MailClient.Win
@@ -108,6 +107,8 @@ namespace DevExpress.MailClient.Win
 			HideAppointmentCategory();
 			base.HideModule();
 		}
+
+		#region Appointment modification
 		private void SubscribeSchedulerEvents()
 		{
 			this.schedulerStorage1.FilterAppointment += new PersistentObjectCancelEventHandler(this.schedulerStorage1_FilterAppointment);
@@ -162,6 +163,7 @@ namespace DevExpress.MailClient.Win
 			this.schedulerStorage1.AppointmentsChanged -= new PersistentObjectsEventHandler(SchedulerStorage1_AppointmentsChanged1);
 			this.schedulerStorage1.AppointmentsInserted -= new PersistentObjectsEventHandler(SchedulerStorage1_AppointmentsInserted);
 		}
+		#endregion
 
 		void SchedulerControl1_EditAppointmentFormShowing(object sender, AppointmentFormEventArgs e)
 		{

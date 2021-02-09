@@ -19,10 +19,8 @@ namespace DevExpress.MailClient.Win.Controls {
         SchedulerBarController barController;
 		private DEVEXPRESSDataSet1 dataSet;
 		private System.Windows.Forms.BindingSource dEVEXPRESSDataSetBindingSource1;
-		private DEVEXPRESSDataSet dEVEXPRESSDataSet;
 		private System.Windows.Forms.BindingSource dEVEXPRESSDataSetBindingSource;
 		private System.Windows.Forms.BindingSource resourcesBindingSource;
-		private DEVEXPRESSDataSetTableAdapters.ResourcesTableAdapter resourcesTableAdapter;
 
 
 

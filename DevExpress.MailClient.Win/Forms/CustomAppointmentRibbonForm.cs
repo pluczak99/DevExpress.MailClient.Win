@@ -12,6 +12,7 @@ namespace DevExpress.MailClient.Win
 	{
 		public SchedulerControl Scheduler { get; set; }
 		public Appointment Appointment { get; set; }
+
 		public new bool OpenRecurrenceForm { get; set; }
 
 		//public override bool SaveFormData(Appointment appointment)
@@ -22,16 +23,6 @@ namespace DevExpress.MailClient.Win
 		public CustomAppointmentRibbonForm(SchedulerControl control, Appointment apt, bool openRecurrenceForm) : base(control, apt, openRecurrenceForm)
 		{
 			this.OpenRecurrenceForm = openRecurrenceForm;
-		}
-
-		protected override DialogResult ShowRecurrenceForm(Form form)
-		{
-			if (this.OpenRecurrenceForm)
-			{
-				var dr = form.ShowDialog();
-				return dr;
-			}
-			return DialogResult.Cancel;
 		}
 
 		protected override void OnLoad(EventArgs e)
@@ -73,14 +64,20 @@ namespace DevExpress.MailClient.Win
 
 			this.Ribbon.FindBarItem("btnTimeZones").Visibility = BarItemVisibility.Never;
 
-
 			if (this.OpenRecurrenceForm)
 			{
-				//this.Appointment.Type = AppointmentType.Pattern;
-			}
+				//DialogResult dr = base.ShowRecurrenceForm(this.Owner as System.Windows.Forms.Form);
+				//if (dr == DialogResult.OK)
+				//{
 
+				//}
+			}
 		}
 
+		protected override void OnSaveButton()
+		{
+			base.OnSaveButton();
+		}
 	}
 
 }

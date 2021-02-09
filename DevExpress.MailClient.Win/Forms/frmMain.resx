@@ -126,7 +126,7 @@
     <value>0, 0</value>
   </data>
   <data name="helpControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>864, 494</value>
+    <value>815, 494</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="helpControl1.TabIndex" type="System.Int32, mscorlib">
@@ -148,7 +148,7 @@
     <value>151, 63</value>
   </data>
   <data name="backstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>864, 494</value>
+    <value>815, 494</value>
   </data>
   <data name="backstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -346,7 +346,7 @@
     <value>25, 20</value>
   </data>
   <data name="backstageViewControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1016, 558</value>
+    <value>967, 558</value>
   </data>
   <data name="backstageViewControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
