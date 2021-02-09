@@ -263,7 +263,6 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\ContactToolTipController.cs" />
-    <Compile Include="Data\Address.cs" />
     <Compile Include="Controls\PictureEditSimpleZoom.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -295,36 +294,29 @@
     <Compile Include="Controls\RibbonApplicationUserControl.Designer.cs">
       <DependentUpon>RibbonApplicationUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data\Contact.cs" />
-    <Compile Include="Data\Task.cs" />
+    <Compile Include="Utils\Data\Task.cs" />
     <Compile Include="DEVEXPRESSDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DEVEXPRESSDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Localization\Categories.cs" />
-    <Compile Include="Localization\CollectionResources.cs" />
-    <Compile Include="Localization\DataSourceChangedEventArgs.cs" />
-    <Compile Include="Localization\DialogRole.cs" />
-    <Compile Include="Localization\FlagStatus.cs" />
-    <Compile Include="Localization\FontResources.cs" />
-    <Compile Include="Localization\MailFolder.cs" />
-    <Compile Include="Localization\MailType.cs" />
-    <Compile Include="Localization\RibbonLocalizer.cs" />
-    <Compile Include="Localization\StringResources.cs" />
-    <Compile Include="Localization\TagResources.cs" />
-    <Compile Include="Localization\TaskCategory.cs" />
-    <Compile Include="Localization\TaskStatus.cs" />
+    <Compile Include="Resources\Localization\DataSourceChangedEventArgs.cs" />
+    <Compile Include="Resources\Localization\FlagStatus.cs" />
+    <Compile Include="Resources\Localization\FontResources.cs" />
+    <Compile Include="Resources\Localization\GridLocalizer.cs" />
+    <Compile Include="Resources\Localization\TagResources.cs" />
+    <Compile Include="Resources\Localization\TaskCategory.cs" />
+    <Compile Include="Resources\Localization\TaskStatus.cs" />
     <Compile Include="Utils\ControlExtensions.cs" />
     <Compile Include="Utils\ColorHelper.cs" />
     <Compile Include="Utils\DataHelper.cs" />
     <Compile Include="Controls\DateFilterMenu.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Managers\FilterColumnsManager.cs" />
+    <Compile Include="Utils\Managers\FilterColumnsManager.cs" />
     <Compile Include="Controls\FilterCriteriaItem.cs" />
-    <Compile Include="Managers\FilterCriteriaManager.cs" />
-    <Compile Include="Managers\FindControlManager.cs" />
+    <Compile Include="Utils\Managers\FilterCriteriaManager.cs" />
+    <Compile Include="Utils\Managers\FindControlManager.cs" />
     <Compile Include="Controls\ucCalendar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -355,14 +347,11 @@
     <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data\FullName.cs" />
     <Compile Include="Forms\frmMain_Resources.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Utils\EditorHelper.cs" />
     <Compile Include="Utils\GridHelper.cs" />
-    <Compile Include="Utils\TokenEditHelper.cs" />
-    <Compile Include="Data\LayoutOption.cs" />
     <Compile Include="Utils\ImageCreator.cs" />
     <Compile Include="Forms\LanguageSelectorFormExt.cs">
       <SubType>Form</SubType>
@@ -370,15 +359,14 @@
     <Compile Include="Forms\LanguageSelectorFormExt.Designer.cs">
       <DependentUpon>LanguageSelectorFormExt.cs</DependentUpon>
     </Compile>
-    <Compile Include="Localization\BarLocalizer.cs" />
-    <Compile Include="Localization\EditorLocalizer.cs" />
-    <Compile Include="Localization\GridLocalizer.cs" />
-    <Compile Include="Localization\NavBarLocalizer.cs" />
-    <Compile Include="Localization\SchedulerLocalizer.cs" />
-    <Compile Include="Modules\Calendar.cs">
+    <Compile Include="Resources\Localization\BarLocalizer.cs" />
+    <Compile Include="Resources\Localization\EditorLocalizer.cs" />
+    <Compile Include="Resources\Localization\NavBarLocalizer.cs" />
+    <Compile Include="Resources\Localization\SchedulerLocalizer.cs" />
+    <Compile Include="Controls\Calendar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\Calendar.Designer.cs">
+    <Compile Include="Controls\Calendar.Designer.cs">
       <DependentUpon>Calendar.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CustomAppointmentRibbonForm.cs">
@@ -391,10 +379,8 @@
     <Compile Include="Controls\ObjectToolTipController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Data\TaskGenerator.cs" />
-    <Compile Include="Data\UnknownContact.cs" />
     <Compile Include="Utils\ImageHelper.cs" />
-    <Compile Include="Utils\MyGridView.cs">
+    <Compile Include="Controls\MyGridView.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Utils\NavBarHelper.cs" />
@@ -402,8 +388,9 @@
     <Compile Include="Utils\RibbonInitUtils.cs" />
     <Compile Include="Utils\UniqueNameValidationRule.cs" />
     <Compile Include="Utils\UnpackHelper.cs" />
-    <Compile Include="Managers\ZoomManager.cs" />
+    <Compile Include="Utils\Managers\ZoomManager.cs" />
     <Compile Include="Utils\ValidationRulesHelper.cs" />
+    <Compile Include="Utils\WebHelper.cs" />
     <EmbeddedResource Include="Controls\ExportControl.ar.resx">
       <DependentUpon>ExportControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -466,7 +453,7 @@
     <EmbeddedResource Include="Forms\LanguageSelectorFormExt.resx">
       <DependentUpon>LanguageSelectorFormExt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Calendar.resx">
+    <EmbeddedResource Include="Controls\Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -500,6 +487,7 @@
     <None Include="DEVEXPRESSDataSet1.xss">
       <DependentUpon>DEVEXPRESSDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="Installation.MD" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -510,94 +498,89 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Localization\StringResourcesEn.cs" />
+    <None Include="Readme.MD" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DEVEXPRESS_CreateTables.sql" />
-    <Content Include="Dll\EntityFramework.dll">
+    <Content Include="Documentation\App_CalendarView.png" />
+    <Content Include="Documentation\App_LanguageSelection.png" />
+    <Content Include="Documentation\App_ToDoCyclicalTaskForm.png" />
+    <Content Include="Documentation\App_ToDoTaskForm.png" />
+    <Content Include="Resources\Icons\DevExpress.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Dll\System.Data.SQLite.dll">
+    <Content Include="Resources\Icons\Universal.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Dll\System.Data.SQLite.EF6.dll">
+    <Content Include="Resources\Icons\Win.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Icons\DevExpress.ico">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Icons\Universal.ico">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Icons\Win.ico">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Resource Include="Resources\ToDoListDemo.png" />
-    <Resource Include="Resources\Important.svg" />
-    <Resource Include="Resources\Low.svg" />
-    <Resource Include="Resources\Report.svg" />
-    <Resource Include="Resources\Watched.svg" />
-    <Resource Include="Resources\Delete.svg" />
-    <Resource Include="Resources\Boxview.svg" />
-    <Resource Include="Resources\bo_contact.svg" />
-    <Resource Include="Resources\Chek.svg" />
-    <Resource Include="Resources\Completed.svg" />
-    <Resource Include="Resources\Contact.svg" />
-    <Resource Include="Resources\ContactEdit.svg" />
-    <Resource Include="Resources\ContactNew.svg" />
-    <Resource Include="Resources\ContactUs.svg" />
-    <Resource Include="Resources\ContentViewbox.svg" />
-    <Resource Include="Resources\Custom.svg" />
-    <Resource Include="Resources\Date.svg" />
-    <Resource Include="Resources\DevExpressOnlineHelp.svg" />
-    <Resource Include="Resources\Doctor.svg" />
-    <Resource Include="Resources\EditFeed.svg" />
-    <Resource Include="Resources\EditTask.svg" />
-    <Resource Include="Resources\Feed.svg" />
-    <Resource Include="Resources\FlipLayout.svg" />
-    <Resource Include="Resources\Froward.svg" />
-    <Resource Include="Resources\GettingStarted.svg" />
-    <Resource Include="Resources\Mail1.svg" />
+    <Resource Include="Resources\Images\ToDoListDemo.png" />
+    <Resource Include="Resources\Images\Important.svg" />
+    <Resource Include="Resources\Images\Low.svg" />
+    <Resource Include="Resources\Images\Report.svg" />
+    <Resource Include="Resources\Images\Watched.svg" />
+    <Resource Include="Resources\Images\Delete.svg" />
+    <Resource Include="Resources\Images\Boxview.svg" />
+    <Resource Include="Resources\Images\bo_contact.svg" />
+    <Resource Include="Resources\Images\Chek.svg" />
+    <Resource Include="Resources\Images\Completed.svg" />
+    <Resource Include="Resources\Images\Contact.svg" />
+    <Resource Include="Resources\Images\ContactEdit.svg" />
+    <Resource Include="Resources\Images\ContactNew.svg" />
+    <Resource Include="Resources\Images\ContactUs.svg" />
+    <Resource Include="Resources\Images\ContentViewbox.svg" />
+    <Resource Include="Resources\Images\Custom.svg" />
+    <Resource Include="Resources\Images\Date.svg" />
+    <Resource Include="Resources\Images\DevExpressOnlineHelp.svg" />
+    <Resource Include="Resources\Images\Doctor.svg" />
+    <Resource Include="Resources\Images\EditFeed.svg" />
+    <Resource Include="Resources\Images\EditTask.svg" />
+    <Resource Include="Resources\Images\Feed.svg" />
+    <Resource Include="Resources\Images\FlipLayout.svg" />
+    <Resource Include="Resources\Images\Froward.svg" />
+    <Resource Include="Resources\Images\GettingStarted.svg" />
+    <Resource Include="Resources\Images\Mail1.svg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\MemoStyle.svg" />
-    <Resource Include="Resources\Miss.svg" />
-    <Resource Include="Resources\Mr.svg" />
-    <Resource Include="Resources\Mrs.svg" />
-    <Resource Include="Resources\Ms.svg" />
-    <Resource Include="Resources\NewFeed.svg" />
-    <Resource Include="Resources\NewMail.svg" />
-    <Resource Include="Resources\MessagePreview.svg" />
-    <Resource Include="Resources\NextWeek.svg" />
-    <Resource Include="Resources\NoDate.svg" />
-    <Resource Include="Resources\Normal.svg" />
-    <Resource Include="Resources\OpenClendar.svg" />
-    <Resource Include="Resources\Overdue.svg" />
-    <Resource Include="Resources\Owner.svg" />
-    <Resource Include="Resources\PaperKind_A3.svg" />
-    <Resource Include="Resources\PaperKind_A4.svg" />
-    <Resource Include="Resources\PaperKind_A5.svg" />
-    <Resource Include="Resources\PaperKind_A6.svg" />
-    <Resource Include="Resources\PaperKind_Executive.svg" />
-    <Resource Include="Resources\PaperKind_Legal.svg" />
-    <Resource Include="Resources\PaperKind_Letter.svg" />
-    <Resource Include="Resources\PaperKind_Tabloid.svg" />
-    <Resource Include="Resources\PDFViewerPrint.svg" />
-    <Resource Include="Resources\PrintOneSided.svg" />
-    <Resource Include="Resources\Professor.svg" />
-    <Resource Include="Resources\Reading.svg" />
-    <Resource Include="Resources\Reminder.svg" />
-    <Resource Include="Resources\RotateLayout.svg" />
-    <Resource Include="Resources\Reply.svg" />
-    <Resource Include="Resources\ReplyAll.svg" />
-    <Resource Include="Resources\Save.svg" />
-    <Resource Include="Resources\Scheduler_Today.svg" />
-    <Resource Include="Resources\Scheduler_Today1.svg" />
-    <Resource Include="Resources\Search.svg" />
-    <Resource Include="Resources\TableStyle.svg" />
-    <Resource Include="Resources\task.svg" />
-    <Resource Include="Resources\ThisWeek.svg" />
-    <Resource Include="Resources\Today.svg" />
+    <Resource Include="Resources\Images\MemoStyle.svg" />
+    <Resource Include="Resources\Images\Miss.svg" />
+    <Resource Include="Resources\Images\Mr.svg" />
+    <Resource Include="Resources\Images\Mrs.svg" />
+    <Resource Include="Resources\Images\Ms.svg" />
+    <Resource Include="Resources\Images\NewFeed.svg" />
+    <Resource Include="Resources\Images\NewMail.svg" />
+    <Resource Include="Resources\Images\MessagePreview.svg" />
+    <Resource Include="Resources\Images\NextWeek.svg" />
+    <Resource Include="Resources\Images\NoDate.svg" />
+    <Resource Include="Resources\Images\Normal.svg" />
+    <Resource Include="Resources\Images\OpenClendar.svg" />
+    <Resource Include="Resources\Images\Overdue.svg" />
+    <Resource Include="Resources\Images\Owner.svg" />
+    <Resource Include="Resources\Images\PaperKind_A3.svg" />
+    <Resource Include="Resources\Images\PaperKind_A4.svg" />
+    <Resource Include="Resources\Images\PaperKind_A5.svg" />
+    <Resource Include="Resources\Images\PaperKind_A6.svg" />
+    <Resource Include="Resources\Images\PaperKind_Executive.svg" />
+    <Resource Include="Resources\Images\PaperKind_Legal.svg" />
+    <Resource Include="Resources\Images\PaperKind_Letter.svg" />
+    <Resource Include="Resources\Images\PaperKind_Tabloid.svg" />
+    <Resource Include="Resources\Images\PDFViewerPrint.svg" />
+    <Resource Include="Resources\Images\PrintOneSided.svg" />
+    <Resource Include="Resources\Images\Professor.svg" />
+    <Resource Include="Resources\Images\Reading.svg" />
+    <Resource Include="Resources\Images\Reminder.svg" />
+    <Resource Include="Resources\Images\RotateLayout.svg" />
+    <Resource Include="Resources\Images\Reply.svg" />
+    <Resource Include="Resources\Images\ReplyAll.svg" />
+    <Resource Include="Resources\Images\Save.svg" />
+    <Resource Include="Resources\Images\Scheduler_Today.svg" />
+    <Resource Include="Resources\Images\Scheduler_Today1.svg" />
+    <Resource Include="Resources\Images\Search.svg" />
+    <Resource Include="Resources\Images\TableStyle.svg" />
+    <Resource Include="Resources\Images\task.svg" />
+    <Resource Include="Resources\Images\ThisWeek.svg" />
+    <Resource Include="Resources\Images\Today.svg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -632,14 +615,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Tomorrow.svg" />
-    <Resource Include="Resources\Unknown-user.png" />
+    <Resource Include="Resources\Images\Tomorrow.svg" />
+    <Resource Include="Resources\Images\Unknown-user.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\PrintDirectLarge.png" />
+    <Resource Include="Resources\Images\PrintDirectLarge.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\SplashScreen.png" />
+    <Resource Include="Resources\Images\SplashScreen.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AppIcon.ico" />

@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.Utils;
 using DevExpress.Utils.About;
+using DevExpress.MailClient.Win.Utils;
 using DevExpress.MailClient.Win.Properties;
 
 namespace DevExpress.MailClient.Win.Controls
@@ -58,15 +59,7 @@ namespace DevExpress.MailClient.Win.Controls
 		}
 		private void galleryControlGallery1_ItemClick(object sender, DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs e)
 		{
-			string link = string.Format("{0}", e.Item.Tag);
-			switch (link)
-			{
-				case "LinkHelp": link = "https://www.devexpress.com/products/net/controls/winforms/"; break;
-				case "LinkGetSupport": link = "https://www.devexpress.com/products/net/controls/winforms/"; break;
-				case "LinkGetStarted": link = "https://www.devexpress.com/products/net/controls/winforms/"; break;
-
-			}
-			if (!string.IsNullOrEmpty(link)) ObjectHelper.StartProcess(link);
+			WebHelper.RunLinkFromKeyword(e.Item.Tag?.ToString());
 		}
 	}
 }

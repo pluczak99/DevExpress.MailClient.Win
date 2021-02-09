@@ -28,7 +28,6 @@ using DevExpress.MailClient.Win.Properties;
 
 namespace DevExpress.MailClient.Win {
     public partial class frmMain : RibbonForm {
-        MailType currentMailType = MailType.Inbox;
         ModulesNavigator modulesNavigator;
         internal FilterColumnsManager FilterColumnManager;
         ZoomManager zoomManager;
@@ -179,15 +178,6 @@ namespace DevExpress.MailClient.Win {
             bbiDelete.Enabled = enabled;
             bbiUnreadRead.Enabled = enabled;
             bbiPriority.Enabled = enabled;
-        }
-        internal void EnableMail(bool enabled, bool unread) {
-            bbiReply.Enabled = enabled && currentMailType == MailType.Inbox;
-            bbiReplyAll.Enabled = enabled && currentMailType == MailType.Inbox;
-            bbiForward.Enabled = enabled && currentMailType == MailType.Inbox;
-        }
-        internal void EnableEditContact(bool enabled) {
-            bbiDeleteContact.Enabled = enabled;
-            bbiEditContact.Enabled = enabled;
         }
         internal void EnableLayoutButtons(bool enabled) {
             bbiRotateLayout.Enabled = enabled;

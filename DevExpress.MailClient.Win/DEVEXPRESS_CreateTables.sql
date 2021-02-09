@@ -37,8 +37,3 @@ CONSTRAINT [PK_Resources] PRIMARY KEY CLUSTERED
 
 GO
 
-SET IDENTITY_INSERT [dbo].[Resources] ON
-INSERT [dbo].[Resources] ([UniqueID], [ResourceID], [ResourceName]) VALUES (1, 10, N'Resource 1')
-INSERT [dbo].[Resources] ([UniqueID], [ResourceID], [ResourceName]) VALUES (2, 20, N'Resource 2')
-INSERT [dbo].[Resources] ([UniqueID], [ResourceID], [ResourceName]) VALUES (3, 30, N'Resource 3')
-SET IDENTITY_INSERT [dbo].[Resources] OFF

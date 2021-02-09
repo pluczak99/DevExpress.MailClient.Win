@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="FlipLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FlipLayout.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\FlipLayout.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="OpentFileQuestion" xml:space="preserve">
     <value>Do you want to open this file?</value>
@@ -137,7 +137,7 @@
     <value>Only print on one side of the page</value>
   </data>
   <data name="Feed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Feed.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Feed.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="DeleteTaskDescription" xml:space="preserve">
     <value>Delete this task.</value>
@@ -146,7 +146,7 @@
     <value>Please accept our apologies for the inconvenience. The feed URL is currently unavailable:&lt;br&gt;&lt;b&gt;{0}</value>
   </data>
   <data name="ThisWeek1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ThisWeek.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\ThisWeek.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="PaperKindExecutive" xml:space="preserve">
     <value>Executive</value>
@@ -161,7 +161,7 @@
     <value>Table Style</value>
   </data>
   <data name="Tomorrow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tomorrow.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Tomorrow.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Uncollated" xml:space="preserve">
     <value>Uncollated</value>
@@ -182,25 +182,25 @@
     <value>Flag this item as a task to due at the end of the work week.</value>
   </data>
   <data name="ContactCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Contact.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Contact.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="MessagePreview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MessagePreview.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\MessagePreview.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="PDFViewerPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PDFViewerPrint.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\PDFViewerPrint.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="CalendarName" xml:space="preserve">
     <value>Calendar</value>
   </data>
   <data name="Unknown_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Unknown-user.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Images\Unknown-user.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Today1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Today.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Today.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Watched" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Watched.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Watched.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Starting" xml:space="preserve">
     <value>Starting</value>
@@ -236,16 +236,16 @@
     <value>Fit Image</value>
   </data>
   <data name="EditFeed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EditFeed.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\EditFeed.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Froward" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Froward.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Froward.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="CollatedDescription" xml:space="preserve">
     <value>1,2,3   1,2,3  1,2,3</value>
   </data>
   <data name="PaperKind_A4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaperKind_A4.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\PaperKind_A4.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="FlagTomorrowDescription" xml:space="preserve">
     <value>Flag this item as a task with a due date of tomorrow.</value>
@@ -287,7 +287,7 @@
     <value>Flag this item as a task with no due date.</value>
   </data>
   <data name="NoDate1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NoDate.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\NoDate.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="SaveQuestion" xml:space="preserve">
     <value>Do you want to save changes?</value>
@@ -299,7 +299,7 @@
     <value>List non-completed tasks and group them by date.</value>
   </data>
   <data name="Overdue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Overdue.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Overdue.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Tomorrow" xml:space="preserve">
     <value>Tomorrow</value>
@@ -314,7 +314,7 @@
     <value>Filter e-mail messages by date.</value>
   </data>
   <data name="PaperKind_Letter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaperKind_Letter.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\PaperKind_Letter.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="From" xml:space="preserve">
     <value>From</value>
@@ -326,10 +326,10 @@
     <value>Is earlier this year</value>
   </data>
   <data name="Boxview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Boxview.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Boxview.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="PaperKind_Executive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaperKind_Executive.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\PaperKind_Executive.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="SearchString" xml:space="preserve">
     <value>Search {0} (Ctrl + E)</value>
@@ -344,10 +344,10 @@
     <value>Sent Items</value>
   </data>
   <data name="Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Normal.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Normal.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="NewFeed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NewFeed.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\NewFeed.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="PriorityHigh" xml:space="preserve">
     <value>High</value>
@@ -356,7 +356,7 @@
     <value>Normal</value>
   </data>
   <data name="bo_contact" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bo_contact.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\bo_contact.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Engineering" xml:space="preserve">
     <value>Engineering</value>
@@ -421,16 +421,16 @@ If this item is marked as read mark it as though you haven't read it yet.</value
     <value>WinForms</value>
   </data>
   <data name="PaperKind_A6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaperKind_A6.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\PaperKind_A6.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="CSVFilter" xml:space="preserve">
     <value>CSV files (*.csv)|*.csv</value>
   </data>
   <data name="Custom1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Custom.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Custom.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Completed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Completed.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Completed.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="PageInfo" xml:space="preserve">
     <value>Page {0} of </value>
@@ -456,7 +456,7 @@ If this item is marked as read mark it as though you haven't read it yet.</value
     <value>A5</value>
   </data>
   <data name="Mail1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mail1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Mail1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="FeedGroupMisc" xml:space="preserve">
     <value>Misc</value>
@@ -468,22 +468,22 @@ If this item is marked as read mark it as though you haven't read it yet.</value
     <value>OK</value>
   </data>
   <data name="Reminder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reminder.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Reminder.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Personal</value>
   </data>
   <data name="PrintDirectLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PrintDirectLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Images\PrintDirectLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PrintOneSided" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PrintOneSided.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\PrintOneSided.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Low" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Low.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Low.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Important" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Important.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Important.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="SearchColumnsDescription" xml:space="preserve">
     <value>Select columns against which a search is performed.</value>
@@ -492,7 +492,7 @@ If this item is marked as read mark it as though you haven't read it yet.</value
     <value>PDF files (*.pdf)|*.pdf</value>
   </data>
   <data name="GettingStarted" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GettingStarted.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\GettingStarted.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="TaskCategoryOffice" xml:space="preserve">
     <value>Work</value>
@@ -513,7 +513,7 @@ If this item is marked as read mark it as though you haven't read it yet.</value
     <value>Display e-mail messages that have attachments.</value>
   </data>
   <data name="Search1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Search.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="SearchUnreadDescription" xml:space="preserve">
     <value>Display unread e-mail messages.</value>
@@ -526,7 +526,7 @@ Left:	25 mm	Right:	25 mm</value>
     <value>215 mm x 355 mm</value>
   </data>
   <data name="SplashScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ToDoListDemo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Images\ToDoListDemo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ForwardTextStart" xml:space="preserve">
     <value>This is a forwarded message:
@@ -539,7 +539,7 @@ Left:	25 mm	Right:	25 mm</value>
     <value>DevExpress</value>
   </data>
   <data name="PaperKind_Tabloid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaperKind_Tabloid.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\PaperKind_Tabloid.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="NavigationDescription" xml:space="preserve">
     <value>Switch between modules.</value>
@@ -576,7 +576,7 @@ Left:	25 mm	Right:	25 mm</value>
     <value>Landscape Orientation</value>
   </data>
   <data name="Scheduler_Today1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Scheduler_Today1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Scheduler_Today1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="NoDate" xml:space="preserve">
     <value>No Date</value>
@@ -601,7 +601,7 @@ Left:	25 mm	Right:	25 mm</value>
 Left:	19 mm	Right:	19 mm</value>
   </data>
   <data name="Scheduler_Today" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Scheduler_Today.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Scheduler_Today.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="ReplyAllDescription" xml:space="preserve">
     <value>Reply to the sender and all other recipients of this message.</value>
@@ -613,7 +613,7 @@ Left:	19 mm	Right:	19 mm</value>
     <value>Please enter Due Date</value>
   </data>
   <data name="Chek" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chek.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Chek.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="PaperKindA3Description" xml:space="preserve">
     <value>296 mm x 420 mm</value>
@@ -622,19 +622,19 @@ Left:	19 mm	Right:	19 mm</value>
     <value>A3</value>
   </data>
   <data name="Reply1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reply.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Reply.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="ContactEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ContactEdit.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\ContactEdit.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Report" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Report.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Report.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="ContactNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ContactNew.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\ContactNew.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="ReplyAll1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReplyAll.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\ReplyAll.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="LowPriority" xml:space="preserve">
     <value>Low priority</value>
@@ -649,7 +649,7 @@ Left:	19 mm	Right:	19 mm</value>
     <value>MHT files (*.mht)|*.mht</value>
   </data>
   <data name="TableStyle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TableStyle.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\TableStyle.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="EmailHtml" xml:space="preserve">
     <value>&lt;br&gt;Email: &lt;b&gt;{0}&lt;/b&gt;</value>
@@ -661,7 +661,7 @@ Left:	19 mm	Right:	19 mm</value>
     <value>Flag this item as a task with a due date of today.</value>
   </data>
   <data name="RotateLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RotateLayout.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\RotateLayout.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="NewItemDescription" xml:space="preserve">
     <value>Create a new mail.</value>
@@ -712,13 +712,13 @@ Left:	19 mm	Right:	19 mm</value>
     <value>Announcements</value>
   </data>
   <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Delete.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Delete.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Export" xml:space="preserve">
     <value>Export</value>
   </data>
   <data name="OpenClendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenClendar.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\OpenClendar.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="MarginsNarrowDescription" xml:space="preserve">
     <value>Top:	12 mm	Bottom:	12 mm
@@ -737,19 +737,19 @@ Left:	12 mm	Right:	12 mm</value>
     <value>Delete this feed.</value>
   </data>
   <data name="PaperKind_Legal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaperKind_Legal.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\PaperKind_Legal.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Add" xml:space="preserve">
     <value>Add</value>
   </data>
   <data name="NextWeek1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NextWeek.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\NextWeek.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="ProgressPanelCaption" xml:space="preserve">
     <value>Please Wait</value>
   </data>
   <data name="Owner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Owner.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Owner.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="IsLastWeek" xml:space="preserve">
     <value>Is last week</value>
@@ -758,7 +758,7 @@ Left:	12 mm	Right:	12 mm</value>
     <value>148 mm x 210 mm</value>
   </data>
   <data name="ContentViewbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ContentViewbox.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\ContentViewbox.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Female" xml:space="preserve">
     <value>Female</value>
@@ -773,7 +773,7 @@ Left:	12 mm	Right:	12 mm</value>
     <value>Is yesterday</value>
   </data>
   <data name="NewMail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NewMail.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\NewMail.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="SearchResetDescription" xml:space="preserve">
     <value>Reset to the default filter column list.</value>
@@ -785,25 +785,25 @@ Left:	12 mm	Right:	12 mm</value>
     <value>Error: could not export to-do tasks</value>
   </data>
   <data name="task" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\task.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\task.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Doctor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Doctor.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Doctor.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Ms1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ms.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Ms.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Miss1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Miss.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Miss.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Mrs1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mrs.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Mrs.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Mr1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mr.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Mr.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Professor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Professor.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Professor.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="DateInbox" xml:space="preserve">
     <value>Received</value>
@@ -833,7 +833,7 @@ Left:	12 mm	Right:	12 mm</value>
     <value>Edit this feed's settings.</value>
   </data>
   <data name="PaperKind_A3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaperKind_A3.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\PaperKind_A3.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="DueDateError" xml:space="preserve">
     <value>Due Date can't be less than Start Date</value>
@@ -875,10 +875,10 @@ Left:	12 mm	Right:	12 mm</value>
     <value>News</value>
   </data>
   <data name="EditTask" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EditTask.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\EditTask.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="DevExpressOnlineHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DevExpressOnlineHelp.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\DevExpressOnlineHelp.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="MarginsModerate" xml:space="preserve">
     <value>Moderate</value>
@@ -899,7 +899,7 @@ Left:	12 mm	Right:	12 mm</value>
     <value>This Week</value>
   </data>
   <data name="Date1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Date.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Date.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="FeedBBCNews" xml:space="preserve">
     <value>BBC News</value>
@@ -911,7 +911,7 @@ Left:	12 mm	Right:	12 mm</value>
     <value>List all tasks.</value>
   </data>
   <data name="MemoStyle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MemoStyle.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\MemoStyle.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="HighPriority" xml:space="preserve">
     <value>High priority</value>
@@ -926,7 +926,7 @@ Left:	12 mm	Right:	12 mm</value>
     <value>To/From</value>
   </data>
   <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Save.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Save.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="AllFilesFilter" xml:space="preserve">
     <value>All files (*.*)|*.*</value>
@@ -935,10 +935,10 @@ Left:	12 mm	Right:	12 mm</value>
     <value>&lt;br&gt;Phone: &lt;b&gt;{0}&lt;/b&gt;</value>
   </data>
   <data name="PaperKind_A5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaperKind_A5.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\PaperKind_A5.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="Reading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reading.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\Reading.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="UnknownContactName" xml:space="preserve">
     <value>Unknown</value>
@@ -959,7 +959,7 @@ Left:	12 mm	Right:	12 mm</value>
     <value>Delete this contact.</value>
   </data>
   <data name="ContactUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ContactUs.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
+    <value>..\Resources\Images\ContactUs.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Culture=neutral</value>
   </data>
   <data name="btnAppointmentLabel" xml:space="preserve">
     <value>To-Do Task</value>

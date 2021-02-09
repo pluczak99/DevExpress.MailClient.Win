@@ -12,7 +12,8 @@ using System.Diagnostics;
 
 namespace DevExpress.MailClient.Win.Controls {
     public partial class ExportControl : RibbonApplicationUserControl {
-        public ExportControl() {
+        public ExportControl() 
+        {
             InitializeComponent();
         }
         List<ImageFormat> formats = new List<ImageFormat> { ImageFormat.Bmp, ImageFormat.Gif, ImageFormat.Jpeg, ImageFormat.Png, ImageFormat.Tiff, ImageFormat.Emf, ImageFormat.Wmf, ImageFormat.Png };
