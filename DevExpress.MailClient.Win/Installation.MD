@@ -59,3 +59,74 @@ NOTE: in the current implementation recurrent tasks cannot have reminders, appli
 </p>. 
 
 NOTE: in the current implementation the recurrence edit form has not been localized fully for the Polish language.
+
+## Calendar View Options
+
+1. Buttons "Wstecz" and "Naprzód" allow navigating the current calendar view a time period into the past or a time period into the future.
+
+Current date:
+<p align="center">
+<img align="center" src="Documentation/App_Calendar_CurrentView.png"></img>
+</p>
+
+After clicking "Wstecz" button:
+<p align="center">
+<img align="center" src="Documentation/App_Calendar_CurrentView_Back.png"></img>
+</p>
+
+
+After clicking "Naprzód" button:
+<p align="center">
+<img align="center" src="Documentation/App_Calendar_CurrentView_Forward.png"></img>
+</p>
+
+
+2. Ribbon buttons from "Widok kalendarza" group allow for the following calendar display modes:
+   1. "Widok dzienny" (Daily View) - shows daily view - presents a single day with hours.
+   <p align="center">
+<img align="center" src="Documentation/App_Calendar_DailyView.png)"></img>
+</p>
+
+   2. "Widok tygodnia roboczego" (Workweek View) - shows view of Monday to Friday (Saturday and Sunday are not included in this view)
+      <p align="center">
+<img align="center" src="Documentation/App_Calendar_WorkweekView_FullHours.png"></img>
+</p>
+
+	1. In this view and in Daily View there is an option ("Pokaż godziny robocze"), which changes in the calendar view the lower and upper hour range displayed. 
+	Working hours typically start at 9:00 AM and end at 5:00 PM. If this option is not enabled, the calendar view shows hours 0:00 AM to 11:59 PM.
+<p align="center">
+<img align="center" src="Documentation/App_Calendar_DailyView.png"></img>
+</p>
+
+
+   3. "Widok tygodniowy" (Week View) - shows view of Monday to Sunday
+<p align="center">
+<img align="center" src="Documentation/App_Calendar_Week.png"></img>
+</p>
+  
+   4. "Widok miesięczny" (Month View) - shows a summarized view of an entire current month
+<p align="center">
+<img align="center" src="Documentation/App_Calendar_MonthlyView.png"></img>
+</p>
+
+		1. In this view there is an additional option ("Kompresuj Weekend"), which shows Saturday and consecutive Sunday as a single day, while displaying tasks potentially scheduled for those weekend days
+Effect of this option is visible in the rightmost column in the Calendar View - Saturday and Sunday and mentioned as a single day (Sat/Sun).
+<p align="center">
+<img align="center" src="Documentation/App_Calendar_MonthlyView_CompressWeekend.png"></img>
+</p>
+
+   5. "Widok na osi czasu" (Timeline view) - tasks are displayed depending on date and time they are scheduled to start
+<p align="center">
+<img align="center" src="Documentation/App_Calendar_Timeline.png"></img>
+</p>
+    
+		1. In this view there is an additional option ("Skala czasu"), which allows visually compressed view of scheduled tasks.
+<p align="center">
+<img align="center" src="Documentation/App_Calendar_Timeline_Scale.png"></img>
+</p>
+
+   # Application options in Calendar mode
+When clicked on the backstage view's icon (top left of the window, just below application window's title bar), the user can see additional options to export/import/print calendar and tasks.
+<p align="center">
+<img align="center" src="Documentation/App_Backstageview.png"></img>
+</p>

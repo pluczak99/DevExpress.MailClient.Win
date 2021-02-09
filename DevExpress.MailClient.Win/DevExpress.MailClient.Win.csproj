@@ -502,7 +502,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DEVEXPRESS_CreateTables.sql" />
+    <Content Include="Documentation\App_Backstageview.png" />
     <Content Include="Documentation\App_CalendarView.png" />
+    <Content Include="Documentation\App_Calendar_CurrentView.png" />
+    <Content Include="Documentation\App_Calendar_CurrentView_Back.png" />
+    <Content Include="Documentation\App_Calendar_CurrentView_Forward.png" />
+    <Content Include="Documentation\App_Calendar_DailyView.png" />
+    <Content Include="Documentation\App_Calendar_MonthlyView.png" />
+    <Content Include="Documentation\App_Calendar_MonthlyView_CompressWeekend.png" />
+    <Content Include="Documentation\App_Calendar_Timeline.png" />
+    <Content Include="Documentation\App_Calendar_Timeline_Scale.png" />
+    <Content Include="Documentation\App_Calendar_Week.png" />
+    <Content Include="Documentation\App_Calendar_WorkweekView_FullHours.png" />
     <Content Include="Documentation\App_LanguageSelection.png" />
     <Content Include="Documentation\App_ToDoCyclicalTaskForm.png" />
     <Content Include="Documentation\App_ToDoTaskForm.png" />
