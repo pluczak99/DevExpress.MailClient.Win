@@ -105,30 +105,8 @@ namespace DevExpress.MailClient.Win {
 			
         }
 
-		private void SchedulerControl1_AllowAppointmentCreate(object sender, XtraScheduler.AppointmentOperationEventArgs e)
-		{
-			//dEVEXPRESSDataSet 
-		}
-
 		private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
 		private DevExpress.XtraScheduler.SchedulerControl schedulerControl1;
-
-		private void SchedulerControl1_EditAppointmentFormShowing1(object sender, XtraScheduler.AppointmentFormEventArgs e)
-		{
-			//e.Appointment.CustomFields["_repository"] = this.todoTaskRepository;
-			this.schedulerStorage1.AppointmentsChanged += SchedulerStorage1_AppointmentsChanged;
-		}
-
-		private void SchedulerStorage1_AppointmentsChanged(object sender, XtraScheduler.PersistentObjectsEventArgs e)
-		{
-			
-		}
-
-		private void SchedulerControl1_InitNewAppointment(object sender, XtraScheduler.AppointmentEventArgs e)
-		{
-			//e.Appointment.SetId(Guid.NewGuid()); // assign ID to a new appointment and use it while saving
-			//e.Appointment.CustomFields["_repository"] = this.todoTaskRepository;
-		}
 
 		#endregion
 

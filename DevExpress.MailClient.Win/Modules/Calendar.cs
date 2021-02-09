@@ -34,7 +34,6 @@ namespace DevExpress.MailClient.Win
 		public DEVEXPRESSDataSet1TableAdapters.ResourcesTableAdapter adapterResources;
 
 
-
 		public override string ModuleName { get { return Properties.Resources.CalendarName; } }
 		public Calendar()
 		{
@@ -95,6 +94,7 @@ namespace DevExpress.MailClient.Win
 				this.calendarControls?.InitBarController(this.schedulerControl1);
 			}
 
+			this.adapterAppointments.Fill(dataSet1.Appointments);
 		}
 		private RibbonPageCategory FindAppointmentPage(RibbonControl ribbonControl)
 		{
@@ -208,7 +208,7 @@ namespace DevExpress.MailClient.Win
 			e.Handled = true;
 		}
 
-				void UpdateAppointmentCategory()
+		void UpdateAppointmentCategory()
 		{
 			if (this.schedulerControl1.SelectedAppointments.Count > 0)
 				ShowAppointmentCategory();
@@ -227,7 +227,9 @@ namespace DevExpress.MailClient.Win
 		void schedulerStorage1_AppointmentsDeleted(object sender, PersistentObjectsEventArgs e)
 		{
 			this.adapterAppointments.Update(this.dataSet1);
-			//HideAppointmentCategory();
+			this.dataSet1.AcceptChanges();
+
+			this.schedulerControl1.SelectedAppointments?.Clear();
 		}
 		private void SaveCalendar()
 		{

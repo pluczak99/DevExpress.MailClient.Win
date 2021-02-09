@@ -16,23 +16,23 @@ namespace DevExpress.MailClient.Win
 		public Appointment Appointment { get; set; }
 		public new bool OpenRecurrenceForm { get; set; }
 
-		public override bool SaveFormData(Appointment appointment)
-		{
-			return base.SaveFormData(appointment);
-		}
+		//public override bool SaveFormData(Appointment appointment)
+		//{
+		//	return base.SaveFormData(appointment);
+		//}
 
 		public CustomAppointmentRibbonForm(SchedulerControl control, Appointment apt, bool openRecurrenceForm) : base(control, apt, openRecurrenceForm)
 		{
 
-			this.Repository = apt.CustomFields["_repository"] as ToDoTaskRepository;
 			this.Scheduler = control;
-			//this.Appointment = apt;
-			this.OpenRecurrenceForm = openRecurrenceForm;
+			if (apt.Type == AppointmentType.Pattern)
+			{
+				this.OpenRecurrenceForm = openRecurrenceForm;
+			}
 			this.Storage.EnableReminders = true;
-			this.Appointment = this.Storage.CreateAppointment(AppointmentType.Normal);
+			this.Appointment = this.Storage.CreateAppointment(apt.Type);
 			this.Appointment.Assign(apt);
 
-			//this.Scheduler.DataStorage.Remi
 		}
 
 		protected override void OnLoad(EventArgs e)
@@ -44,17 +44,8 @@ namespace DevExpress.MailClient.Win
 				this.Appointment.SetId(Guid.NewGuid());
 				if (this.Appointment.HasReminder == false && this.Appointment.Type != AppointmentType.Pattern)
 				{
-					var r = this.Storage.CreateReminder(this.Appointment);
-					if (r != null)
-					{
-						r.TimeBeforeStart = TimeSpan.FromMinutes(15);
-						r.AlertTime = this.Appointment.Start.Subtract(r.TimeBeforeStart);
-						
-						this.Appointment.Reminders.Add(r);
-						//this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = TimeSpan.FromMinutes(15);
-						//this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = this.Appointment.Reminder.TimeBeforeStart;	
-					}
 					this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = TimeSpan.FromMinutes(15);
+					this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = this.Appointment.Reminder.TimeBeforeStart;
 				}
 			}
 
@@ -84,9 +75,6 @@ namespace DevExpress.MailClient.Win
 
 			this.Ribbon.FindBarItem("btnTimeZones").Visibility = BarItemVisibility.Never;
 
-			//this.Scheduler.DataStorage.AppointmentsChanged += DataStorage_AppointmentsChanged;
-			//this.Scheduler.DataStorage.AppointmentsInserted += DataStorage_AppointmentsInserted;
-			//this.Scheduler.DataStorage.AppointmentDependencyDeleting += DataStorage_AppointmentDependencyDeleting;
 		}
 
 	}

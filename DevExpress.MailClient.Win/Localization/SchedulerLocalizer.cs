@@ -198,9 +198,9 @@ namespace DevExpress.MailClient.Win.Localizer
 				case SchedulerStringId.MenuCmd_SwitchToTimelineView:
 					return "Widok osi czasu";
 				case SchedulerStringId.Abbr_Week:
-					return "tygodni";
+					return "tydzień/tygodnie";
 				case SchedulerStringId.Abbr_Year:
-					return "rok/lat";
+					return "rok/lata";
 				case SchedulerStringId.MenuCmd_5Minutes:
 					return "5 minut";
 				case SchedulerStringId.PrintTimeIntervalControlInvalidStartEndTime:
@@ -216,7 +216,7 @@ namespace DevExpress.MailClient.Win.Localizer
 				case SchedulerStringId.Caption_GroupByResourceDescription:
 					return "Grupuj zadania według zasobu";
 				case SchedulerStringId.Abbr_Weeks:
-					return "tygodni";
+					return "tydzień/tygodnie";
 				case SchedulerStringId.Abbr_Years:
 					return "lat";
 				case SchedulerStringId.AppointmentLabel_Important:
