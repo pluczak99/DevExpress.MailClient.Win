@@ -513,6 +513,7 @@
     <Compile Include="Localization\StringResourcesEn.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DEVEXPRESS_CreateTables.sql" />
     <Content Include="Dll\EntityFramework.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

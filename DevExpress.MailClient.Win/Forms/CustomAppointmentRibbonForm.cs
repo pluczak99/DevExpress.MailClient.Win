@@ -15,10 +15,6 @@ namespace DevExpress.MailClient.Win
 
 		public new bool OpenRecurrenceForm { get; set; }
 
-		//public override bool SaveFormData(Appointment appointment)
-		//{
-		//	return base.SaveFormData(appointment);
-		//}
 
 		public CustomAppointmentRibbonForm(SchedulerControl control, Appointment apt, bool openRecurrenceForm) : base(control, apt, openRecurrenceForm)
 		{
@@ -28,15 +24,6 @@ namespace DevExpress.MailClient.Win
 		protected override void OnLoad(EventArgs e)
 		{
 			base.OnLoad(e);
-			//if (this.Appointment.Id == null)
-			//{
-			//	this.Appointment.SetId(Guid.NewGuid());
-			//	if (this.Appointment.HasReminder == false && this.Appointment.Type != AppointmentType.Pattern)
-			//	{
-			//		this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = TimeSpan.FromMinutes(15);
-			//		this.Ribbon.FindRibbonControl<BarEditItem>("barReminder").EditValue = this.Appointment.Reminder.TimeBeforeStart;
-			//	}
-			//}
 
 			this.Controls.FindControl("lblSubject").SetText(Properties.Resources.appointmentRibbonForm_Subject_Label);
 			this.Controls.FindControl("lblResource").SetText(Properties.Resources.appointmentRibbonForm_Resource_Label);
@@ -64,19 +51,6 @@ namespace DevExpress.MailClient.Win
 
 			this.Ribbon.FindBarItem("btnTimeZones").Visibility = BarItemVisibility.Never;
 
-			if (this.OpenRecurrenceForm)
-			{
-				//DialogResult dr = base.ShowRecurrenceForm(this.Owner as System.Windows.Forms.Form);
-				//if (dr == DialogResult.OK)
-				//{
-
-				//}
-			}
-		}
-
-		protected override void OnSaveButton()
-		{
-			base.OnSaveButton();
 		}
 	}
 

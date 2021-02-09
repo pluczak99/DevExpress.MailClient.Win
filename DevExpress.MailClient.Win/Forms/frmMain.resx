@@ -190,7 +190,7 @@
     <value>20, 20</value>
   </data>
   <data name="galleryControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>825, 276</value>
+    <value>776, 276</value>
   </data>
   <data name="galleryControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -217,7 +217,7 @@
     <value>20, 20, 20, 200</value>
   </data>
   <data name="backstageViewClientControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>865, 496</value>
+    <value>816, 496</value>
   </data>
   <data name="backstageViewClientControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -241,7 +241,7 @@
     <value>0, 0</value>
   </data>
   <data name="printControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>865, 496</value>
+    <value>816, 496</value>
   </data>
   <data name="printControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -262,7 +262,7 @@
     <value>151, 62</value>
   </data>
   <data name="backstageViewClientControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>865, 496</value>
+    <value>816, 496</value>
   </data>
   <data name="backstageViewClientControl3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -286,7 +286,7 @@
     <value>0, 0</value>
   </data>
   <data name="exportControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>865, 496</value>
+    <value>816, 496</value>
   </data>
   <data name="exportControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -307,7 +307,7 @@
     <value>151, 62</value>
   </data>
   <data name="backstageViewClientControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>865, 496</value>
+    <value>816, 496</value>
   </data>
   <data name="backstageViewClientControl4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

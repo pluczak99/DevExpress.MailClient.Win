@@ -183,16 +183,22 @@
   <data name="&gt;&gt;schedulerStorage1.Type" xml:space="preserve">
     <value>DevExpress.XtraScheduler.SchedulerStorage, DevExpress.XtraScheduler.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;appointmentsBindingSource.Name" xml:space="preserve">
+    <value>appointmentsBindingSource</value>
+  </data>
+  <data name="&gt;&gt;appointmentsBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;dEVEXPRESSDataSet1.Name" xml:space="preserve">
     <value>dEVEXPRESSDataSet1</value>
   </data>
   <data name="&gt;&gt;dEVEXPRESSDataSet1.Type" xml:space="preserve">
     <value>DevExpress.MailClient.Win.DEVEXPRESSDataSet1, DEVEXPRESSDataSet1.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;appointmentsBindingSource.Name" xml:space="preserve">
-    <value>appointmentsBindingSource</value>
+  <data name="&gt;&gt;resourcesBindingSource.Name" xml:space="preserve">
+    <value>resourcesBindingSource</value>
   </data>
-  <data name="&gt;&gt;appointmentsBindingSource.Type" xml:space="preserve">
+  <data name="&gt;&gt;resourcesBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;appointmentsTableAdapter.Name" xml:space="preserve">
@@ -200,12 +206,6 @@
   </data>
   <data name="&gt;&gt;appointmentsTableAdapter.Type" xml:space="preserve">
     <value>DevExpress.MailClient.Win.DEVEXPRESSDataSet1TableAdapters.AppointmentsTableAdapter, DEVEXPRESSDataSet1.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;resourcesBindingSource.Name" xml:space="preserve">
-    <value>resourcesBindingSource</value>
-  </data>
-  <data name="&gt;&gt;resourcesBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;resourcesTableAdapter.Name" xml:space="preserve">
     <value>resourcesTableAdapter</value>
