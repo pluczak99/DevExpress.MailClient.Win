@@ -34,13 +34,13 @@ namespace DevExpress.MailClient.Win {
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //LanguageSelectorForm.SetCulture("pl");
             DialogResult result = new LanguageSelectorFormExt().ShowDialog();
             if (result == DialogResult.Cancel)
             {
                 return;
             }
-            Application.Run(new frmMain());
-        }
+			LanguageSelectorFormExt.SetSelectedUILocale();
+			Application.Run(new frmMain());
+		}
     }
 }

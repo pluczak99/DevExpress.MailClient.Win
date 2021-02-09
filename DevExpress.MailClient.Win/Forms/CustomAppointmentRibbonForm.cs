@@ -19,6 +19,7 @@ namespace DevExpress.MailClient.Win
 		public CustomAppointmentRibbonForm(SchedulerControl control, Appointment apt, bool openRecurrenceForm) : base(control, apt, openRecurrenceForm)
 		{
 			this.OpenRecurrenceForm = openRecurrenceForm;
+			LanguageSelectorFormExt.SetSelectedUILocale(this);
 		}
 
 		protected override void OnLoad(EventArgs e)

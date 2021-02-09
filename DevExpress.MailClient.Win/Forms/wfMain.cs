@@ -10,7 +10,9 @@ using DevExpress.XtraWaitForm;
 
 namespace DevExpress.MailClient.Win.Forms {
     public partial class wfMain : DemoWaitForm {
-        public wfMain() {
+        public wfMain() 
+        {
+            LanguageSelectorFormExt.SetSelectedUILocale(this);
             DevExpress.Utils.LocalizationHelper.SetCurrentCulture(DataHelper.ApplicationArguments);
             InitializeComponent();
             ProgressPanel.Caption = DevExpress.MailClient.Win.Properties.Resources.ProgressPanelCaption;

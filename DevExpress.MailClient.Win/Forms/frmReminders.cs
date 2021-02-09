@@ -12,6 +12,7 @@ namespace DevExpress.MailClient.Win.Forms {
     public partial class frmReminders : XtraForm {
         public frmReminders() {
             InitializeComponent();
+            LanguageSelectorFormExt.SetSelectedUILocale(this);
         }
         public Task CurrentTask {
             get {

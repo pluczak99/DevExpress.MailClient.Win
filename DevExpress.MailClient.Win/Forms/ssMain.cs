@@ -11,6 +11,7 @@ namespace DevExpress.MailClient.Win.Forms {
     public partial class ssMain : DemoSplashScreen {
         int dotCount = 0;
         public ssMain() {
+            LanguageSelectorFormExt.SetSelectedUILocale(this);
             DevExpress.Utils.LocalizationHelper.SetCurrentCulture(DataHelper.ApplicationArguments);
             InitializeComponent();
             labelControl1.Text = string.Format("{0}{1}", labelControl1.Text, GetYearString());

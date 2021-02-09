@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Diagnostics;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Globalization;
 using System.Windows.Forms;
 using DevExpress.MailClient.Win.Forms;
 using DevExpress.XtraEditors;
@@ -26,38 +28,76 @@ namespace DevExpress.MailClient.Win
 		private Color DropdownBackColor { get; set; }
 
 		private Color DropdownFontColor { get; set; }
+
+		public static string Locale { get; private set; }
+		public static CultureInfo CultureInfo { get; private set; }
 		public LanguageSelectorFormExt()
 		{
 			InitializeComponent();
 		}
 
+		// setting selected locale for threads and UI
+		public static void SetSelectedUILocale()
+		{
+			LanguageSelectorFormExt.CultureInfo = new CultureInfo(Locale);
+			SetCulture(Locale);
+		}
+
+		// setting selected locale for specific form and all its controls
+		public static void SetSelectedUILocale(Form form)
+		{
+			SetCulture(Locale);
+			
+			if (form != null)
+			{
+				ComponentResourceManager resources = new ComponentResourceManager(form.GetType());
+				try
+				{
+
+					foreach (var control in form.ListAllControls())
+					{ 
+						resources.ApplyResources(control, control.Name, CultureInfo);
+					}
+				}
+				catch (Exception exc)
+				{
+					Debug.WriteLine($"Exception: {exc.GetType().FullName}, Message: {exc.Message}");
+				}
+
+			}
+		}
 		private void btnOK_Click(object sender, EventArgs e)
 		{
 			string locale = "";
 			switch (dropdownLanguages.SelectedItem.ToString().ToLowerInvariant())
 			{
 				case "polish":
-					locale = "pl";
+					Locale = "pl";
 					break;
 				default:
-					locale = "en";
+					Locale = "en";
 					break;
 			}
-			SetCulture(locale);
 			this.DialogResult = DialogResult.OK;
 		}
 
-		internal static void SetCulture(string name)
+		private static void SetCulture(string name)
 		{
-			System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(name);
-			System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(name);
-			Properties.Resources.Culture = System.Threading.Thread.CurrentThread.CurrentCulture;   //TODO
-			GridLocalizer.Active = GetActiveGridLocalizer(name);
-			XtraEditors.Controls.Localizer.Active = GetActiveEditorLocalizer(name);
-			SchedulerLocalizer.Active = GetActiveSchedulerLocalizer(name);
-			SchedulerExtensionsLocalizer.Active = GetActiveSchedulerExtensionsLocalizer(name);
-			BarLocalizer.Active = GetActiveBarLocalizer(name);
-			NavBarLocalizer.Active = GetActiveNavBarLocalizer(name);
+			if (!string.IsNullOrEmpty(name))
+			{
+				System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo;
+				System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo;
+				Properties.Resources.Culture = CultureInfo;
+
+				#region DevExpress localization internals
+				GridLocalizer.Active = GetActiveGridLocalizer(name);
+				XtraEditors.Controls.Localizer.Active = GetActiveEditorLocalizer(name);
+				SchedulerLocalizer.Active = GetActiveSchedulerLocalizer(name);
+				SchedulerExtensionsLocalizer.Active = GetActiveSchedulerExtensionsLocalizer(name);
+				BarLocalizer.Active = GetActiveBarLocalizer(name);
+				NavBarLocalizer.Active = GetActiveNavBarLocalizer(name);
+				#endregion
+			}
 		}
 
 		private void LanguageSelectorFormExt_Load(object sender, EventArgs e)
@@ -66,9 +106,9 @@ namespace DevExpress.MailClient.Win
 			dropdownLanguages.Items.Add("English");
 			dropdownLanguages.SelectedIndex = 0;
 			this.ActiveControl = dropdownLanguages;
-
 		}
 
+		#region Handling DevExpress localizers depending on selected UI language
 		private static XtraLocalizer<SchedulerExtensionsStringId> GetActiveSchedulerExtensionsLocalizer(string name)
 		{
 			switch (name)
@@ -134,7 +174,9 @@ namespace DevExpress.MailClient.Win
 					return GridLocalizer.Active;
 			}
 		}
+		#endregion
 
+		#region Handling keyboard while selecting UI language
 		private void dropdownLanguages_KeyPress(object sender, KeyPressEventArgs e)
 		{
 			KeyPressEventArgs args = new KeyPressEventArgs(e.KeyChar);
@@ -158,5 +200,6 @@ namespace DevExpress.MailClient.Win
 					break;
 			}
 		}
+		#endregion
 	}
 }

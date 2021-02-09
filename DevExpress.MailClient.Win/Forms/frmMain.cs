@@ -34,8 +34,8 @@ namespace DevExpress.MailClient.Win {
         ZoomManager zoomManager;
         List<BarItem> AllowCustomizationMenuList = new List<BarItem>();
         public frmMain() {
-            SplashScreenManager.ShowForm(null, typeof(ssMain), true, true, false, 1000);
-
+            LanguageSelectorFormExt.SetSelectedUILocale(this);
+            SplashScreenManager.ShowForm(null, typeof(ssMain), true, true, false, 2000);
             TaskbarHelper.InitDemoJumpList(TaskbarAssistant.Default, this);
             InitializeComponent();
             InitializeComponentExt();
