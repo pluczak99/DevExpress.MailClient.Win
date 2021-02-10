@@ -84,7 +84,7 @@ After clicking "Naprzód" button:
 2. Ribbon buttons from "Widok kalendarza" group allow for the following calendar display modes:
    1. "Widok dzienny" (Daily View) - shows daily view - presents a single day with hours.
    <p align="center">
-<img align="center" src="Documentation/App_Calendar_DailyView.png)"></img>
+<img align="center" src="Documentation/App_Calendar_DailyView.png"></img>
 </p>
 
    2. "Widok tygodnia roboczego" (Workweek View) - shows view of Monday to Friday (Saturday and Sunday are not included in this view)
