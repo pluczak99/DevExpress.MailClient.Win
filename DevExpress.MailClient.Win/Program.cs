@@ -39,8 +39,10 @@ namespace DevExpress.MailClient.Win {
             {
                 return;
             }
-			LanguageSelectorFormExt.SetSelectedUILocale();
-			Application.Run(new frmMain());
+            var frmMain = new frmMain();
+			LanguageSelectorFormExt.SetCulture();
+            LanguageSelectorFormExt.SetSelectedUILocale(frmMain);
+			Application.Run(frmMain);
 		}
     }
 }

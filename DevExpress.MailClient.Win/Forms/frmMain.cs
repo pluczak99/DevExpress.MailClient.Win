@@ -33,12 +33,14 @@ namespace DevExpress.MailClient.Win {
         ZoomManager zoomManager;
         List<BarItem> AllowCustomizationMenuList = new List<BarItem>();
         public frmMain() {
-            LanguageSelectorFormExt.SetSelectedUILocale(this);
             SplashScreenManager.ShowForm(null, typeof(ssMain), true, true, false, 2000);
             TaskbarHelper.InitDemoJumpList(TaskbarAssistant.Default, this);
             InitializeComponent();
             InitializeComponentExt();
-            rpcSearch.Text = TagResources.SearchTools;
+			//LanguageSelectorFormExt.SetCulture();
+			//LanguageSelectorFormExt.SetSelectedUILocale(this);
+
+			rpcSearch.Text = TagResources.SearchTools;
             InitNavBarGroups();
             RibbonButtonsInitialize();
             modulesNavigator = new ModulesNavigator(ribbonControl1, pcMain);
@@ -64,7 +66,10 @@ namespace DevExpress.MailClient.Win {
             navBarControl1.ActiveGroup = (NavBarGroup)e.Item.Tag;
         }
         void RibbonButtonsInitialize() {
-            InitBarButtonItem(bbiRotateLayout, TagResources.RotateLayout, Properties.Resources.RotateLayoutDescription);
+			LanguageSelectorFormExt.SetCulture();
+			//LanguageSelectorFormExt.SetSelectedUILocale(this);
+
+			InitBarButtonItem(bbiRotateLayout, TagResources.RotateLayout, Properties.Resources.RotateLayoutDescription);
             InitBarButtonItem(bbiFlipLayout, TagResources.FlipLayout, Properties.Resources.FlipLayoutDescription);
             InitBarButtonItem(bbiDelete, TagResources.DeleteItem, Properties.Resources.DeleteItemDescription);
             InitBarButtonItem(bbiNew, TagResources.NewMail, Properties.Resources.NewItemDescription);

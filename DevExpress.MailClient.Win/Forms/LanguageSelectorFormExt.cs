@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Diagnostics;
 using System.Linq;
@@ -37,17 +39,10 @@ namespace DevExpress.MailClient.Win
 		}
 
 		// setting selected locale for threads and UI
-		public static void SetSelectedUILocale()
-		{
-			LanguageSelectorFormExt.CultureInfo = new CultureInfo(Locale);
-			SetCulture(Locale);
-		}
 
 		// setting selected locale for specific form and all its controls
 		public static void SetSelectedUILocale(Form form)
 		{
-			SetCulture(Locale);
-			
 			if (form != null)
 			{
 				ComponentResourceManager resources = new ComponentResourceManager(form.GetType());
@@ -55,7 +50,7 @@ namespace DevExpress.MailClient.Win
 				{
 
 					foreach (var control in form.ListAllControls())
-					{ 
+					{
 						resources.ApplyResources(control, control.Name, CultureInfo);
 					}
 				}
@@ -72,36 +67,64 @@ namespace DevExpress.MailClient.Win
 			switch (dropdownLanguages.SelectedItem.ToString().ToLowerInvariant())
 			{
 				case "polish":
-					Locale = "pl";
+					Locale = "pl-PL";
 					break;
 				default:
-					Locale = "en";
+					Locale = "en-US";
 					break;
 			}
+			LanguageSelectorFormExt.CultureInfo = new CultureInfo(Locale);
+			SetCulture();
 			this.DialogResult = DialogResult.OK;
 		}
 
-		private static void SetCulture(string name)
+		public static void SetCulture()
 		{
-			if (!string.IsNullOrEmpty(name))
-			{
-				System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo;
-				System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo;
-				Properties.Resources.Culture = CultureInfo;
+			System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo;
+			System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo;
+			Application.CurrentCulture = LanguageSelectorFormExt.CultureInfo;
+			Properties.Resources.Culture = CultureInfo;
 
-				#region DevExpress localization internals
-				GridLocalizer.Active = GetActiveGridLocalizer(name);
-				XtraEditors.Controls.Localizer.Active = GetActiveEditorLocalizer(name);
-				SchedulerLocalizer.Active = GetActiveSchedulerLocalizer(name);
-				SchedulerExtensionsLocalizer.Active = GetActiveSchedulerExtensionsLocalizer(name);
-				BarLocalizer.Active = GetActiveBarLocalizer(name);
-				NavBarLocalizer.Active = GetActiveNavBarLocalizer(name);
-				#endregion
-			}
+			#region DevExpress localization internals
+			GridLocalizer.Active = GetActiveGridLocalizer(Locale);
+			XtraEditors.Controls.Localizer.Active = GetActiveEditorLocalizer(Locale);
+			SchedulerLocalizer.Active = GetActiveSchedulerLocalizer(Locale);
+			SchedulerExtensionsLocalizer.Active = GetActiveSchedulerExtensionsLocalizer(Locale);
+			BarLocalizer.Active = GetActiveBarLocalizer(Locale);
+			NavBarLocalizer.Active = GetActiveNavBarLocalizer(Locale);
+			#endregion
 		}
 
 		private void LanguageSelectorFormExt_Load(object sender, EventArgs e)
 		{
+			if (!string.IsNullOrEmpty(ConfigurationManager.ConnectionStrings["DevExpress.MailClient.Win.Properties.Settings.DEVEXPRESSConnectionString"].ConnectionString))
+			{
+				try
+				{
+					using (var sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DevExpress.MailClient.Win.Properties.Settings.DEVEXPRESSConnectionString"].ConnectionString))
+					{
+						try
+						{
+							sqlConnection.Open();
+						}
+						catch (Exception exc)
+						{
+							MessageBox.Show("Database DEVEXPRESS probably cannot be connected to - make sure you created the DB and apply the SQL scripts to create Appointment and Resource tables per documentation");
+						}
+						finally
+						{
+							if (sqlConnection.State == ConnectionState.Open)
+							{
+								sqlConnection.Close();
+							}
+						}
+
+					}
+				}
+				catch (Exception exc1)
+				{
+				}
+			}
 			dropdownLanguages.Items.Add("Polish");
 			dropdownLanguages.Items.Add("English");
 			dropdownLanguages.SelectedIndex = 0;
@@ -113,7 +136,7 @@ namespace DevExpress.MailClient.Win
 		{
 			switch (name)
 			{
-				case "pl":
+				case "pl-PL":
 					return new PolishSchedulerExtensionLocalizer();
 				default:
 					return SchedulerExtensionsLocalizer.Active;
@@ -124,7 +147,7 @@ namespace DevExpress.MailClient.Win
 		{
 			switch (name)
 			{
-				case "pl":
+				case "pl-PL":
 					return new PolishNavBarLocalizer();
 				default:
 					return NavBarLocalizer.Active;
@@ -135,7 +158,7 @@ namespace DevExpress.MailClient.Win
 		{
 			switch (name)
 			{
-				case "pl":
+				case "pl-PL":
 					return new PolishBarLocalizer();
 				default:
 					return BarLocalizer.Active;
@@ -146,7 +169,7 @@ namespace DevExpress.MailClient.Win
 		{
 			switch (name)
 			{
-				case "pl":
+				case "pl-PL":
 					return new PolishSchedulerLocalizer();
 				default:
 					return SchedulerLocalizer.Active;
@@ -157,7 +180,7 @@ namespace DevExpress.MailClient.Win
 		{
 			switch (name)
 			{
-				case "pl":
+				case "pl-PL":
 					return new PolishEditorLocalizer();
 				default:
 					return XtraEditors.Controls.Localizer.Active;
@@ -168,7 +191,7 @@ namespace DevExpress.MailClient.Win
 		{
 			switch (name)
 			{
-				case "pl":
+				case "pl-PL":
 					return new PolishGridLocalizer();
 				default:
 					return GridLocalizer.Active;

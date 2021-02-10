@@ -11,12 +11,12 @@ namespace DevExpress.MailClient.Win.Forms {
     public partial class ssMain : DemoSplashScreen {
         int dotCount = 0;
         public ssMain() {
-            LanguageSelectorFormExt.SetSelectedUILocale(this);
-            DevExpress.Utils.LocalizationHelper.SetCurrentCulture(DataHelper.ApplicationArguments);
             InitializeComponent();
             labelControl1.Text = string.Format("{0}{1}", labelControl1.Text, GetYearString());
-            pictureEdit2.Image = global::DevExpress.MailClient.Win.Properties.Resources.SplashScreen;
-            Timer tmr = new Timer();
+			LanguageSelectorFormExt.SetSelectedUILocale(this);
+			DevExpress.Utils.LocalizationHelper.SetCurrentCulture(DataHelper.ApplicationArguments);
+			pictureEdit2.Image = global::DevExpress.MailClient.Win.Properties.Resources.SplashScreen;
+			Timer tmr = new Timer();
             tmr.Interval = 400;
             tmr.Tick += new EventHandler(tmr_Tick);
             tmr.Start();

@@ -112,7 +112,7 @@ namespace DevExpress.MailClient.Win.Localizer
 				case SchedulerStringId.PrintMonthlyOptControlOnePagePerMonth:
 					return "1 strona/miesiąc";
 				case SchedulerStringId.MenuCmd_NewRecurringAppointment:
-					return "Nowe cykliczne zadanie";
+					return "Nowe cykliczne zadanie to-do";
 				case SchedulerStringId.Caption_UntitledAppointment:
 					return "(bez tytułu)";
 				case SchedulerStringId.MenuCmd_NewRecurringEvent:

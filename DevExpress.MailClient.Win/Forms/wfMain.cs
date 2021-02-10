@@ -12,11 +12,11 @@ namespace DevExpress.MailClient.Win.Forms {
     public partial class wfMain : DemoWaitForm {
         public wfMain() 
         {
-            LanguageSelectorFormExt.SetSelectedUILocale(this);
-            DevExpress.Utils.LocalizationHelper.SetCurrentCulture(DataHelper.ApplicationArguments);
             InitializeComponent();
-            ProgressPanel.Caption = DevExpress.MailClient.Win.Properties.Resources.ProgressPanelCaption;
-            ProgressPanel.Description = DevExpress.MailClient.Win.Properties.Resources.ProgressPanelDescription;
+			LanguageSelectorFormExt.SetSelectedUILocale(this);
+			DevExpress.Utils.LocalizationHelper.SetCurrentCulture(DataHelper.ApplicationArguments);
+			ProgressPanel.Caption = DevExpress.MailClient.Win.Properties.Resources.ProgressPanelCaption;
+			ProgressPanel.Description = DevExpress.MailClient.Win.Properties.Resources.ProgressPanelDescription;
         }
     }
 }
