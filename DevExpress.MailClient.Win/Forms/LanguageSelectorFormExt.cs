@@ -45,6 +45,7 @@ namespace DevExpress.MailClient.Win
 		{
 			if (form != null)
 			{
+				
 				ComponentResourceManager resources = new ComponentResourceManager(form.GetType());
 				try
 				{
@@ -73,12 +74,10 @@ namespace DevExpress.MailClient.Win
 					Locale = "en-US";
 					break;
 			}
-			LanguageSelectorFormExt.CultureInfo = new CultureInfo(Locale);
-			SetCulture();
 			this.DialogResult = DialogResult.OK;
 		}
 
-		public static void SetCulture()
+		internal static void SetCulture()
 		{
 			System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo;
 			System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo;
@@ -97,11 +96,16 @@ namespace DevExpress.MailClient.Win
 
 		private void LanguageSelectorFormExt_Load(object sender, EventArgs e)
 		{
-			if (!string.IsNullOrEmpty(ConfigurationManager.ConnectionStrings["DevExpress.MailClient.Win.Properties.Settings.DEVEXPRESSConnectionString"].ConnectionString))
+			Locale = ConfigurationManager.AppSettings["Locale"];
+			LanguageSelectorFormExt.CultureInfo = new CultureInfo(Locale);
+			SetCulture();
+			SetSelectedUILocale(this);
+
+			if (!string.IsNullOrEmpty(ConfigurationManager.ConnectionStrings["DEVEXPRESSConnectionString"].ConnectionString))
 			{
 				try
 				{
-					using (var sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DevExpress.MailClient.Win.Properties.Settings.DEVEXPRESSConnectionString"].ConnectionString))
+					using (var sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DEVEXPRESSConnectionString"].ConnectionString))
 					{
 						try
 						{

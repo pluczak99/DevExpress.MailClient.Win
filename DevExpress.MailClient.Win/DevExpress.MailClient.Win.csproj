@@ -203,23 +203,12 @@
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Data.SQLite, Version=1.0.108.0, Culture=neutral, PublicKeyToken=4c3bc44151be4b47, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Data.SQLite.EF6, Version=1.0.108.0, Culture=neutral, PublicKeyToken=4c3bc44151be4b47, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System.ServiceModel">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
       <Private>False</Private>
@@ -293,6 +282,9 @@
     </Compile>
     <Compile Include="Controls\RibbonApplicationUserControl.Designer.cs">
       <DependentUpon>RibbonApplicationUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEVEXPRESSDataSet1.cs">
+      <DependentUpon>DEVEXPRESSDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Utils\Data\Task.cs" />
     <Compile Include="DEVEXPRESSDataSet1.Designer.cs">
@@ -472,9 +464,6 @@
     </Compile>
     <None Include="App.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="connectionStrings.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="DEVEXPRESSDataSet1.xsc">
       <DependentUpon>DEVEXPRESSDataSet1.xsd</DependentUpon>

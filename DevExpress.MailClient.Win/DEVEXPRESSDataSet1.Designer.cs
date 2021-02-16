@@ -10,8 +10,6 @@
 
 #pragma warning disable 1591
 
-using DevExpress.XtraScheduler;
-
 namespace DevExpress.MailClient.Win {
     
     
@@ -567,7 +565,7 @@ namespace DevExpress.MailClient.Win {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public AppointmentsRow AddAppointmentsRow(
-                        AppointmentType Type, 
+                        int Type, 
                         System.DateTime StartDate, 
                         System.DateTime EndDate, 
                         System.DateTime QueryStartDate, 
@@ -1196,10 +1194,10 @@ namespace DevExpress.MailClient.Win {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public AppointmentType Type {
+            public int Type {
                 get {
                     try {
-                        return ((AppointmentType)(this[this.tableAppointments.TypeColumn]));
+                        return ((int)(this[this.tableAppointments.TypeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Type\' in table \'Appointments\' is DBNull.", e);
@@ -2336,7 +2334,7 @@ SELECT UniqueID, Type, StartDate, EndDate, QueryStartDate, QueryEndDate, AllDay,
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(
-                    global::System.Nullable<AppointmentType> Type, 
+                    global::System.Nullable<int> Type, 
                     global::System.Nullable<global::System.DateTime> StartDate, 
                     global::System.Nullable<global::System.DateTime> EndDate, 
                     global::System.Nullable<global::System.DateTime> QueryStartDate, 

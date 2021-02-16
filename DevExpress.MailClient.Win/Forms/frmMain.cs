@@ -67,7 +67,7 @@ namespace DevExpress.MailClient.Win {
         }
         void RibbonButtonsInitialize() {
 			LanguageSelectorFormExt.SetCulture();
-			//LanguageSelectorFormExt.SetSelectedUILocale(this);
+			LanguageSelectorFormExt.SetSelectedUILocale(this);
 
 			InitBarButtonItem(bbiRotateLayout, TagResources.RotateLayout, Properties.Resources.RotateLayoutDescription);
             InitBarButtonItem(bbiFlipLayout, TagResources.FlipLayout, Properties.Resources.FlipLayoutDescription);
