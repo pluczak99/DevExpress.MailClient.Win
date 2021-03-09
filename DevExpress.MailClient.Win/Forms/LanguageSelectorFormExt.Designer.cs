@@ -36,7 +36,9 @@ namespace DevExpress.MailClient.Win
 			this.btnCancel = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.checkEditRememberLanguageChoice = new DevExpress.XtraEditors.CheckEdit();
 			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.checkEditRememberLanguageChoice.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// dropdownLanguages
@@ -95,12 +97,21 @@ namespace DevExpress.MailClient.Win
 			this.label1.TabIndex = 2;
 			this.label1.Text = "User Interface Language:";
 			// 
+			// checkEditRememberLanguageChoice
+			// 
+			this.checkEditRememberLanguageChoice.Location = new System.Drawing.Point(23, 133);
+			this.checkEditRememberLanguageChoice.Name = "checkEditRememberLanguageChoice";
+			this.checkEditRememberLanguageChoice.Properties.Caption = "&Remember choice";
+			this.checkEditRememberLanguageChoice.Size = new System.Drawing.Size(200, 18);
+			this.checkEditRememberLanguageChoice.TabIndex = 3;
+			// 
 			// LanguageSelectorFormExt
 			// 
 			this.AcceptButton = this.btnOK;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(460, 189);
+			this.Controls.Add(this.checkEditRememberLanguageChoice);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.btnCancel);
 			this.Controls.Add(this.btnOK);
@@ -113,6 +124,7 @@ namespace DevExpress.MailClient.Win
 			this.Load += new System.EventHandler(this.LanguageSelectorFormExt_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.checkEditRememberLanguageChoice.Properties)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -124,5 +136,6 @@ namespace DevExpress.MailClient.Win
 		private System.Windows.Forms.Button btnCancel;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Label label1;
+		private CheckEdit checkEditRememberLanguageChoice;
 	}
 }

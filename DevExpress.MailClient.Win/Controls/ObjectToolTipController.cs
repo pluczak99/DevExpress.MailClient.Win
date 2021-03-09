@@ -2,6 +2,9 @@
 using System.Drawing;
 using System.Windows.Forms;
 using DevExpress.Utils;
+using DevExpress.XtraBars;
+using DevExpress.XtraScheduler;
+using DevExpress.XtraScheduler.UI;
 
 namespace DevExpress.MailClient.Win
 {
@@ -34,6 +37,8 @@ namespace DevExpress.MailClient.Win
 			info.Object = DateTime.Now.Ticks;
 			info.SuperTip = new SuperToolTip();
 			info.SuperTip.Items.Add(item);
+			info.SuperTip.Items.AddSeparator();
+			info.SuperTip.Items.Add((editObject as Appointment).Description);
 			info.ToolTipPosition = this.parent.PointToScreen(location);
 			controller.ShowHint(info);
 		}

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DevExpress.Utils;
+using DevExpress.XtraScheduler.Drawing;
+using System;
 
 namespace DevExpress.MailClient.Win {
     public partial class Calendar {
@@ -41,6 +43,7 @@ namespace DevExpress.MailClient.Win {
 			this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
 			this.appointmentsTableAdapter = new DevExpress.MailClient.Win.DEVEXPRESSDataSet1TableAdapters.AppointmentsTableAdapter();
 			this.resourcesTableAdapter = new DevExpress.MailClient.Win.DEVEXPRESSDataSet1TableAdapters.ResourcesTableAdapter();
+			this.toolTipController1 = new DevExpress.Utils.ToolTipController(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dEVEXPRESSDataSet1)).BeginInit();
@@ -103,6 +106,8 @@ namespace DevExpress.MailClient.Win {
 			this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler1);
 			this.schedulerControl1.Views.FullWeekView.Enabled = true;
 			this.schedulerControl1.Views.GanttView.Enabled = false;
+
+
 			timeScaleMonth1.Enabled = false;
 			timeScaleMonth1.Width = 100;
 			timeScaleWeek1.Width = 100;
@@ -122,6 +127,10 @@ namespace DevExpress.MailClient.Win {
 			this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler2);
 			this.schedulerControl1.Views.YearView.UseOptimizedScrolling = false;
 			this.schedulerControl1.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.SchedulerControl1_EditAppointmentFormShowing);
+			this.schedulerControl1.AppointmentViewInfoCustomizing += SchedulerControl1_AppointmentViewInfoCustomizing;
+			this.schedulerControl1.ToolTipController = new ToolTipController(this.components);
+			this.schedulerControl1.ToolTipController.BeforeShow += ToolTipController_BeforeShow;
+			this.schedulerControl1.ToolTipController.ToolTipType = ToolTipType.SuperTip;
 			// 
 			// appointmentsTableAdapter
 			// 
@@ -146,6 +155,45 @@ namespace DevExpress.MailClient.Win {
 
         }
 
+		private void SchedulerControl1_AppointmentViewInfoCustomizing(object sender, XtraScheduler.AppointmentViewInfoCustomizingEventArgs e)
+		{
+			if (e.ViewInfo.DisplayText == String.Empty)
+				e.ViewInfo.ToolTipText = String.Format("Started at {0:g}", e.ViewInfo.Appointment.Start);
+
+		}
+
+		private void ToolTipController_BeforeShow(object sender, DevExpress.Utils.ToolTipControllerShowEventArgs e)
+		{
+			ToolTipController controller = sender as ToolTipController;
+			AppointmentViewInfo aptViewInfo = controller.ActiveObject as AppointmentViewInfo;
+			if (aptViewInfo == null) return;
+
+			if (this.toolTipController1.ToolTipType == ToolTipType.Standard)
+			{
+				e.IconType = ToolTipIconType.Information;
+				e.ToolTip = aptViewInfo.Description;
+			}
+
+			if (this.toolTipController1.ToolTipType == ToolTipType.SuperTip)
+			{
+				SuperToolTip SuperTip = new SuperToolTip();
+				SuperTip.AllowHtmlText = DefaultBoolean.True;
+				SuperToolTipSetupArgs args = new SuperToolTipSetupArgs();
+				args.Title.AllowHtmlText = DefaultBoolean.True;
+				args.Title.Text = "<b>Subject</b>";
+				args.Contents.Text = aptViewInfo.DisplayText;
+				args.ShowFooterSeparator = true;
+				args.Footer.AllowHtmlText = DefaultBoolean.True;
+				args.Footer.Text = "<b>" + aptViewInfo.Description + "</b>";
+
+				SuperTip.Setup(args);
+				e.AllowHtmlText = DefaultBoolean.True;
+				e.SuperTip = SuperTip;
+			}
+		}
+
+
+
 		private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
 		private DevExpress.XtraScheduler.SchedulerControl schedulerControl1;
 
@@ -156,5 +204,6 @@ namespace DevExpress.MailClient.Win {
 		private System.Windows.Forms.BindingSource resourcesBindingSource;
 		private DEVEXPRESSDataSet1TableAdapters.AppointmentsTableAdapter appointmentsTableAdapter;
 		private DEVEXPRESSDataSet1TableAdapters.ResourcesTableAdapter resourcesTableAdapter;
+		private DevExpress.Utils.ToolTipController toolTipController1;
 	}
 }

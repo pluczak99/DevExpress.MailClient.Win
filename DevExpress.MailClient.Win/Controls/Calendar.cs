@@ -20,6 +20,8 @@ using DevExpress.XtraScheduler.Internal.Implementations;
 
 using DevExpress.MailClient.Win;
 using static DevExpress.MailClient.Win.DEVEXPRESSDataSet1;
+using DevExpress.Utils;
+using DevExpress.XtraScheduler.Drawing;
 
 namespace DevExpress.MailClient.Win
 {
@@ -29,7 +31,6 @@ namespace DevExpress.MailClient.Win
 		ucCalendar calendarControls;
 		RibbonPageCategory appointmentCategory = null;
 		RibbonPage lastSelectedPage = null;
-
 		public DEVEXPRESSDataSet1 dataSet1 { get; set; }
 		public DEVEXPRESSDataSet1TableAdapters.AppointmentsTableAdapter adapterAppointments;
 		public DEVEXPRESSDataSet1TableAdapters.ResourcesTableAdapter adapterResources;
@@ -42,7 +43,44 @@ namespace DevExpress.MailClient.Win
 			schedulerControl1.Start = DateTime.Today;
 			this.dataSet1 = new DEVEXPRESSDataSet1();
 
+			toolTipController1.ShowBeak = true;
+			toolTipController1.ToolTipType = ToolTipType.SuperTip;
+			schedulerControl1.OptionsView.ToolTipVisibility = ToolTipVisibility.Always;
 		}
+
+		#region #ToolTipControllerBeforeShow
+		readonly Font titleFont = new Font("Times New Roman", 14),
+					  footerFont = new Font("Comic Sans MS", 8);
+		private void toolTipController1_BeforeShow(object sender, ToolTipControllerShowEventArgs e)
+		{
+			ToolTipController controller = sender as ToolTipController;
+			AppointmentViewInfo aptViewInfo = controller.ActiveObject as AppointmentViewInfo;
+			if (aptViewInfo == null) return;
+
+			if (toolTipController1.ToolTipType == ToolTipType.Standard)
+			{
+				e.IconType = ToolTipIconType.Information;
+				e.ToolTip = aptViewInfo.Description;
+			}
+
+			if (toolTipController1.ToolTipType == ToolTipType.SuperTip)
+			{
+				SuperToolTip SuperTip = new SuperToolTip();
+				SuperToolTipSetupArgs args = new SuperToolTipSetupArgs();
+				args.Title.Text = "Info";
+				args.Title.Font = titleFont;
+				args.Contents.Text = aptViewInfo.Description;
+				//args.Contents.Image = resImage;
+				args.ShowFooterSeparator = true;
+				args.Footer.Font = footerFont;
+				args.Footer.Text = "SuperTip";
+				SuperTip.Setup(args);
+				e.SuperTip = SuperTip;
+			}
+		}
+		#endregion #ToolTipControllerBeforeShow
+
+
 		public override DevExpress.XtraPrinting.IPrintable PrintableComponent
 		{
 			get
@@ -104,11 +142,14 @@ namespace DevExpress.MailClient.Win
 
 			SubscribeSchedulerEvents();
 
+			this.schedulerControl1.OptionsCustomization.AllowDisplayAppointmentFlyout = false;
+			toolTipController1.BeforeShow += toolTipController1_BeforeShow;
 		}
 		internal override void HideModule()
 		{
 			UnsubscribeSchedulerEvents();
 			HideAppointmentCategory();
+			toolTipController1.BeforeShow -= toolTipController1_BeforeShow;
 			base.HideModule();
 		}
 
@@ -266,6 +307,8 @@ namespace DevExpress.MailClient.Win
 					return page;
 			return null;
 		}
+
+
 
 	}
 

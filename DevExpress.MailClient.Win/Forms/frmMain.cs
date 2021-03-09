@@ -24,7 +24,8 @@ using DevExpress.Utils.Taskbar.Core;
 using DevExpress.Utils.Taskbar;
 using System.Globalization;
 using DevExpress.MailClient.Win.Properties;
-
+using DevExpress.Utils;
+using DevExpress.XtraScheduler.Drawing;
 
 namespace DevExpress.MailClient.Win {
     public partial class frmMain : RibbonForm {
@@ -148,10 +149,10 @@ namespace DevExpress.MailClient.Win {
 			this.newAppointmentItem1.Hint = Properties.Resources.frmMain_newAppointmentItem1_Hint;
             this.newRecurringAppointmentItem1.Caption = Properties.Resources.frmMain_newRecurringAppointmentItem1_Caption;
             this.newRecurringAppointmentItem1.Hint = Properties.Resources.frmMain_newRecurringAppointmentItem1_Hint;
-
         }
 
-        void InitGalleryItem(GalleryItem galleryItem, string tag, string description) {
+
+		void InitGalleryItem(GalleryItem galleryItem, string tag, string description) {
             galleryItem.Tag = tag;
             galleryItem.Hint = description;
         }

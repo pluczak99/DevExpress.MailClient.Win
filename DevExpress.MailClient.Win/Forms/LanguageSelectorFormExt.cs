@@ -45,7 +45,7 @@ namespace DevExpress.MailClient.Win
 		{
 			if (form != null)
 			{
-				
+
 				ComponentResourceManager resources = new ComponentResourceManager(form.GetType());
 				try
 				{
@@ -74,6 +74,8 @@ namespace DevExpress.MailClient.Win
 					Locale = "en-US";
 					break;
 			}
+			Properties.Settings.Default.RememberLanguagePreferences = checkEditRememberLanguageChoice.Checked;
+			Properties.Settings.Default.Save();
 			this.DialogResult = DialogResult.OK;
 		}
 
@@ -96,43 +98,53 @@ namespace DevExpress.MailClient.Win
 
 		private void LanguageSelectorFormExt_Load(object sender, EventArgs e)
 		{
-			Locale = ConfigurationManager.AppSettings["Locale"];
+			checkEditRememberLanguageChoice.Checked = Properties.Settings.Default.RememberLanguagePreferences;
+
+			Locale = Properties.Settings.Default.LanguagePreferences;
 			LanguageSelectorFormExt.CultureInfo = new CultureInfo(Locale);
 			SetCulture();
 			SetSelectedUILocale(this);
 
-			if (!string.IsNullOrEmpty(ConfigurationManager.ConnectionStrings["DEVEXPRESSConnectionString"].ConnectionString))
+			if (!Properties.Settings.Default.RememberLanguagePreferences)
 			{
-				try
-				{
-					using (var sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DEVEXPRESSConnectionString"].ConnectionString))
-					{
-						try
-						{
-							sqlConnection.Open();
-						}
-						catch (Exception exc)
-						{
-							MessageBox.Show("Database DEVEXPRESS probably cannot be connected to - make sure you created the DB and apply the SQL scripts to create Appointment and Resource tables per documentation");
-						}
-						finally
-						{
-							if (sqlConnection.State == ConnectionState.Open)
-							{
-								sqlConnection.Close();
-							}
-						}
 
+				if (!string.IsNullOrEmpty(ConfigurationManager.ConnectionStrings["DEVEXPRESSConnectionString"].ConnectionString))
+				{
+					try
+					{
+						using (var sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DEVEXPRESSConnectionString"].ConnectionString))
+						{
+							try
+							{
+								sqlConnection.Open();
+							}
+							catch (Exception exc)
+							{
+								MessageBox.Show("Database DEVEXPRESS probably cannot be connected to - make sure you created the DB and apply the SQL scripts to create Appointment and Resource tables per documentation");
+							}
+							finally
+							{
+								if (sqlConnection.State == ConnectionState.Open)
+								{
+									sqlConnection.Close();
+								}
+							}
+
+						}
+					}
+					catch (Exception exc1)
+					{
 					}
 				}
-				catch (Exception exc1)
-				{
-				}
+				dropdownLanguages.Items.Add("Polish");
+				dropdownLanguages.Items.Add("English");
+				dropdownLanguages.SelectedIndex = 0;
+				this.ActiveControl = dropdownLanguages;
 			}
-			dropdownLanguages.Items.Add("Polish");
-			dropdownLanguages.Items.Add("English");
-			dropdownLanguages.SelectedIndex = 0;
-			this.ActiveControl = dropdownLanguages;
+			else
+			{
+				this.DialogResult = DialogResult.OK;
+			}
 		}
 
 		#region Handling DevExpress localizers depending on selected UI language

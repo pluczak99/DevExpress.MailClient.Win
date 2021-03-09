@@ -1764,6 +1764,6 @@ namespace DevExpress.MailClient.Win {
         private XtraBars.BarButtonItem bbiReminder;
         private XtraBars.SkinDropDownButtonItem skinDropDownButtonItem1;
         private XtraBars.SkinPaletteRibbonGalleryBarItem skinPaletteRibbonGalleryBarItem1;
-    }
+	}
 }
 
